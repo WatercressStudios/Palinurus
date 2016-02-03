@@ -232,7 +232,7 @@ label scene7:
    
     i "... Budapest, I-"
     
-    scene prestasisangry
+    scene prestasisangry with fade
     
     b "You said you 'understood,' Illarion!?"
  
@@ -240,7 +240,7 @@ label scene7:
  
     b "... Don't you see!?"
     
-    scene prestasisworriedspeaking with fade
+    scene prestasisworriedspeaking
     
     b "I'm not the ingenious, amazing artificial intelligence you thought I was."
  
@@ -252,7 +252,7 @@ label scene7:
     
     b "I'm just... a program that wishes it was human."
     
-    scene prestasisworriedspeaking with fade
+    scene prestasisworriedspeaking
     
     b "So if you 'understand' how I feel, Illarion, then it's because you're human. You understand things like this."
  
@@ -260,7 +260,7 @@ label scene7:
  
     b "Because, after all this time,"
     
-    scene prestasisangry with fade
+    scene prestasisangry
     
     b "I still don't!"
  
@@ -268,7 +268,7 @@ label scene7:
  
     b "I can't understand myself at all!"
     
-    scene cockpit4 with dissolve
+    scene cockpit4 with fade
     
     "In a fit of rage, Budapest switches off her display."
  

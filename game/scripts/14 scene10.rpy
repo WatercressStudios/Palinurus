@@ -317,35 +317,35 @@ label scene10:
 
     b "Thank you for everything."
     
-    scene end4 with fade
+    scene end2
     
     "All at once, the cabin lights switched off."
     
-    scene end4 with fade
+    scene end3 
     
     "Every piece of machinery went dead."
     
-    scene end4 with fade
+    scene end4 
     
     "My suit pressurized shut, tight against my skin; a helmet closed over my head."
     
-    scene end5 with fade
+    scene end5 
     
     "I took a deep breath."
    
     i "Goodbye."
     
-    scene end3 with fade
+    scene end6 
     
     "And in a split second, the glass of the cockpit shattered into billions of shards, and I was launched into the realm of space."
     
-    scene end6 with fade
+    scene space with fade
+
+    stop music fadeout 1.0
     
     "The crushing weight of the dark all around me,"
 
     "The terrible silence everywhere."
-    
-    scene space with fade
     
     play music "music/ode.ogg"
     

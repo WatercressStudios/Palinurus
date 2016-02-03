@@ -1,4 +1,4 @@
-﻿# This file is in the public domain. Feel free to modify it as a basis
+# This file is in the public domain. Feel free to modify it as a basis
 # for your own screens.
 
 # Note that many of these screens may be given additional arguments in the
@@ -200,6 +200,7 @@ screen main_menu_bonus():
         style_group "mm"
         xalign .98
         yalign .98
+
 
         has vbox
 
