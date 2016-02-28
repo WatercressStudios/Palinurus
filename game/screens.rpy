@@ -169,10 +169,10 @@ screen nvl(dialogue, items=None):
     use quick_menu
 
 ##############################################################################
-# Main Menu
+# Main Menu Init
 #
-# Screen that's used to display the main menu, when Ren'Py first starts
-# http://www.renpy.org/doc/html/screen_special.html#main-menu
+# All this does is choose between the two menus, depending on whether or 
+# not the player has beaten the game once.
 
 screen main_menu():
 
@@ -184,8 +184,11 @@ screen main_menu():
     else:
         use main_menu_normies
 
-
-
+##############################################################################
+# Gallery Main Menu
+#
+# This replaces the main menu once the game has detected that 
+# the player has completed the game.  It unlocks the art gallery.
 screen main_menu_bonus():
 
     # This ensures that any other menu screen is replaced.
@@ -605,9 +608,10 @@ init -2:
         insensitive_color "#4448"
 
 
-##                          ##
-## CG and Art Gallery Below ##
-##                          ##
+##############################################################################
+# CG Nav
+#
+# This is the menu that shows while the player is in the CG gallery
 
 screen cgnav():
 
@@ -632,27 +636,32 @@ init -2:
     style gm_nav_button:
         size_group "gm_nav"
 
+##############################################################################
+# Gallery
+#
+# This section handles the creation of all galleries at once.
+
 init python:
-    #Galleries settings - start
-    #list the CG gallery images here:
+    # Each gallery item should be arranged in a list and assigned to a variable.
+    # The files listed here should only be the pictures seen in the gallery, NO VARIANTS
     gallery_cg_items = ["initialization", "budablush", "budaproud", "budasmile1", "hug", "prestasisangry", "prestasisworried", "joy1", "sing1", "surprised"]
-    #list the BG gallery images here (if a BG includes several variations, such as night version, include only one variation here):
-    gallery_art_items = ["art1", "art2", "art3", "art4", "art5", "art6", "art7", "art8", "art9", "art10", "art11", "art12", "art13", "art14", "art15", "art16", "art17", "art18", "art19", "art20", "art21", "art22", "art23", "art24", "art25"]
-    #how many rows and columns in the gallery screens?
+    gallery_art_items = ["art1", "art2", "art3", "art4", "art5", "art6", "art7", "art8", "art9", "art10", "art11", "art12", "art13", "art14", "art15", 
+    "art16", "art17", "art18", "art19", "art20", "art21", "art22", "art23", "art24", "art25"]
+    # The number of rows and columns for all galleries.
     gal_rows = 4
     gal_cols = 3
-    #thumbnail size in pixels:
+    # The size that thumbnails should be scaled to.
     thumbnail_x = 267
     thumbnail_y = 150
-    #the setting above (267x150) will work well with 16:9 screen ratio. Make sure to adjust it, if your are using 4:3 or something else.
-    #Galleries settings - end
+    # The setting above (267x150) will work well with 16:9 screen ratio. Make sure to adjust it, if your are using 4:3 or something else.
     
+    # Building the interface
     gal_cells = gal_rows * gal_cols    
     g_cg = Gallery()
     for gal_item in gallery_cg_items:
         g_cg.button(gal_item + " butt")
         g_cg.image(gal_item)
-        g_cg.unlock(gal_item)
+        g_cg.unlock(gal_item) # Uncommenting this makes the picture locked until viewed in the game.
         #Code for multiple variants of the same still
         #if gal_item == "bg kitchen":
             #g_cg.image("bg kitchen dining")
@@ -743,7 +752,7 @@ init +1 python:
         renpy.image (gal_item + " butt", im.Scale(ImageReference(gal_item), thumbnail_x, thumbnail_y))
 
 
-screen cg_gallery:
+screen cg_gallery: # The CG screen
     tag menu
     use cgnav
     frame background None xpos 00:

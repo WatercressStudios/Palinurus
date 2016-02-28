@@ -1,5 +1,5 @@
 label scene10:
-    
+
     stop music fadeout 1.0
     
     b "..."
@@ -9,15 +9,15 @@ label scene10:
     show bud neutralx
     
     "She clears her throat and bats her eyelids."
-   
+
     b "Initiating battery-draining process."
-   
+
     i "Wait."
     
     show bud neutralclosed
     
     b "Spooling distress beacon encoder."
-   
+
     p "Budapest, wait."
 
     p "Stop."
@@ -91,7 +91,7 @@ label scene10:
     show bud crysmile
     
     b "It's time for this to end now."
-   
+
     i "..."
     
     show bud smiletalk
@@ -109,15 +109,15 @@ label scene10:
     show bud smiletalkclosed
     
     b "I'll get to say goodbye in my own words. To know what it's like to take my last breath, even if I never truly even breathed."
-   
+
     i "..."
 
     p "It doesn't look like I'm going to be stopping you."
-   
+
     show bud neutralhalf
     
     b "Not really, no."
-   
+
     p "..."
 
     p "In that case, then..."
@@ -125,7 +125,7 @@ label scene10:
     p "I want you to know, Budapest..."
 
     p "That you're a much stronger person than I could ever be."
-   
+
     show bud neutral
     
     b "Hmph. That's a nice thought to entertain."
@@ -133,9 +133,9 @@ label scene10:
     show bud neutralsquint
     
     b "Do you think so?"
-   
+
     i "I know so."
-   
+
     b "..."
     
     show bud neutralclosed
@@ -147,11 +147,11 @@ label scene10:
     show bud sad
     
     "Budapest shakes her head, as if she's trying to clear her mind."
-   
+
     b "That reminds me, Illarion. There's..."
 
     b "There's one last poem I'd like to show you before this all ends."
-   
+
     i "... Yeah?"
     
     show bud neutraltalk
@@ -177,7 +177,7 @@ label scene10:
     scene joy1 with fade
     
     b "Let me see if I can remember... how it goes..."
-   
+
     b '"Joy, beautiful sparkle of the Gods,"'
     
     scene joy2 with fade
@@ -209,14 +209,13 @@ label scene10:
     b '"Brothers, over the stars unfurled..."'
     
     play music "music/Stasis.ogg"
-    
     scene cockpit1 with fade
     show bud smiletalkclosed with dissolve
     
     b '...'
 
     b '"A loving Father must dwell."'
-   
+
     i "..."
 
     p "That was beautiful, Budapest."
@@ -226,9 +225,9 @@ label scene10:
     b "Mm? Was it?"
 
     b "Or are you just trying to make me feel better?"
-   
+
     "I snickered under my tears."
-   
+
     p "Both, I guess."
     
     show bud neutralx
@@ -250,7 +249,7 @@ label scene10:
     "As she worked, I saw Budapest give a smile."
 
     "The smallest, but the happiest smile."
-   
+
     b "Sending distress beacon now."
 
     b "..."
@@ -280,11 +279,11 @@ label scene10:
     b "But I guess this is how things are."
 
     b "Right?"
-   
+
     show bud crysmile
-   
+
     "Another small laugh, under more tears."
-   
+
     i "... Right."
     
     show bud cryclosedneutral
@@ -306,11 +305,11 @@ label scene10:
     scene end1 with fade
     
     "I heard the trace of one last, faint sigh."
-   
+
     b "Illarion?"
 
     i "Budapest?"
-   
+
     b "Goodbye now."
 
     b "Be safe, okay?"
@@ -332,7 +331,7 @@ label scene10:
     scene end5 
     
     "I took a deep breath."
-   
+
     i "Goodbye."
     
     scene end6 

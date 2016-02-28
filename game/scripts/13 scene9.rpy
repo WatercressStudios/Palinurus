@@ -9,49 +9,49 @@ label scene9:
     show bud angryfrown
     
     b "You... don't have much time left."
-  
+    
     b "It turns out, back when were knocked off-course in the debris storm, a small scrab of metallic debris managed to collide with the cockpit, leaving a microscopic crack."
     
     show bud panicfrown
     
     b "It was at first only millimeters long but, after all this time, it's grown and..."
-  
+    
     b "The cockpit windshield's integrity is currently at two percent. It's going to be breached very soon."
-  
+    
     b "And then that window is breached, it will shatter, and the cockpit will be exposed to open space."
     
     show bud neutraltalk
     
     b "Your hard-suit should seal and protect you from the elements for some time, but... it's not going to last forevor."
-   
+    
     i "The wind-shield is... cracking?"
-  
+    
     p "And it's been happening this whole time?"
-   
+    
     show bud panicslight
-   
+    
     b "Well, there was an amount of possible weak-points which my diagnostic systems detected as soon as we cleared the debris storm, but things really worsened while you were asleep."
-  
+    
     b "I first noticed that the crack had grown larger about one, maybe two hundred years ago... or maybe, it was even earlier than that..."
     
     show bud worryclosex
     
     b "I'm sorry. It's not so clear."
-  
+    
     b "My memory isn't exactly what it used to be..."
     
     show bud worrytalkx
     
     b "But surely, things have been continually worsening. Things have gotten very bad."
-  
+    
     b "And I've just been sitting here, like some powerless little girl. There wasn't a single thing I could do about the crack."
-  
+    
     b "All I could do was sit and watch the crack grow longer and longer, like it was a brutal, heartless example of my own mortality."
 
     show bud worrysquintx
     
     b "It's like I've been watching the countdown to the end of the world, all these past centuries."
-   
+    
     i "... Alright. I think I understand the situation now."
 
     i "Thank you, Budapest."
@@ -59,19 +59,19 @@ label scene9:
     show bud neutral
     
     i "I'm grateful that you've been taking care of me... for such a long time."
-   
+    
     show bud neutralhalf
-   
+    
     "I groaned and shook my head."
-   
+    
     i "Ach. I'm sorry. My head's still hurting quite a bit..."
-   
+    
     show bud weaksmile
-   
+    
     "Budapest snickered."
-   
+    
     b "Join the club."
-   
+    
     "I laughed back."
     
     show bud neutral
@@ -87,7 +87,7 @@ label scene9:
     "A light smile returns to her face; I think it's the first real smile I've seen since I woke up."
 
     "She looks a little like she used to. Just a little bit happy, even in the severity of the situation."
-     
+    
     show bud neutraltalk
     
     b "This may be a little hard to believe, but..."
@@ -119,13 +119,13 @@ label scene9:
     b "And if the universal signal of distress hadn't changed from the time of the seas of Old Earth to ours, I doubt it has from ours to theirs."
     
     show bud neutralclosed
-        
+    
     "I used a moment to take in everything Budapest was telling me."
 
     "Her voice was getting quieter and lighter, and there was more static and feedback coming from the speakers, so it was hard to make out, but I think I understood most of it."
 
     "I sat there, digesting, until the realization hit me."
-   
+    
     i "But, Budapest, if you're going to be draining the last of your battery, then..."
     
     show bud neutralhalf
@@ -141,7 +141,7 @@ label scene9:
     show bud worryx
     
     b "I'll die."
-   
+    
     i "You..."
 
     i "I can't let you do that."
@@ -169,7 +169,7 @@ label scene9:
     show bud painfullooksquint
     
     b "I couldn't... I wouldn't be able to force myself to watch that."
-   
+    
     i "Budapest..."
     
     show bud weaksmile
@@ -183,7 +183,7 @@ label scene9:
     show bud sad
     
     b "It's not pretty, but... but it's the way things have to be."
-   
+    
     "I can feel tears beginning to well up."
 
     "I can't help myself."
@@ -213,7 +213,7 @@ label scene9:
     show bud painfullooksquint
     
     b "You're so... human, Illarion."
-   
+    
     show bud weaksmile
     
     "Budapest smiles a weak, pained smile."

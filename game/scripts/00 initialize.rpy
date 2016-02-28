@@ -1,24 +1,22 @@
-# PALINURUS
-# CREATED BY WATERCRESS STUDIOS
-# FOR NANORENO 2015
-# © WATERCRESS STUDIOS
-# watercressstudios.com
- 
-# Character declaration.
- 
+######################### 
+# Character Declaration #
+#########################
 define v = Character(None, kind=nvl, what_xalign=0.5, window_xalign=0.5)
 define b = Character("Budapest", color="#B33542", show_two_window=True, who_ypos=2)
 define p = Character("Passenger", color="#3b56c4", show_two_window=True, who_ypos=2)
 define i = Character("Illarion", color="#3b56c4", show_two_window=True, who_ypos=2)
 
+
+# Allows the NVL in the 1st 4 lines to be center aligned without doing it manually.
 init:
     style nvl_vbox:
         xfill True
 
     $ c = Character(None, kind=nvl, what_prefix="", what_suffix="")
 
-# Sprite declaration.
- 
+######################
+# Sprite Declaration #
+######################
 image bud angry                  = "sprites/bud_angry.png"
 image bud angryfrown             = "sprites/bud_angryfrown.png"
 image bud neutral                = "sprites/bud_neutral.png"
@@ -215,8 +213,9 @@ image console warningworrytalk     = "sprites/console_warningworrytalk.png"
 image console lorelook             = "sprites/console_lorelook.png"
 image console worryyell            = "sprites/console_worryyell.png"
 
-# BG declaration.
- 
+##################
+# BG Declaration #
+##################
 image black                = "#000"
 image white                = "#FFF"
 image cockpit              = "bg/cockpit.png" # Cockpit with transparent surface
@@ -238,7 +237,11 @@ image cabinfire            = "bg/cabinfire.png"
 image cockpitblackout      = "bg/cockpitblackout.png"
 image nebula               = "bg/nebula.jpg"
 
-# Anniversary CGs
+###################
+# Anniversary CGs #
+###################
+# These are under init so that they are loaded when the game starts, so they can be accessed from 
+# the gallery
 init:
 
     image blush                    = "cg/blush.png" #Added
@@ -274,8 +277,7 @@ init:
     image sing2                    = "cg/sing2.png" #Added
     image surprised                = "cg/surprised.png" #Added
 
-# Art Gallery Images
-    
+    # Art Gallery Images    
     image art1    = "cg/artgal/001.jpg"
     image art2    = "cg/artgal/002.png"
     image art3    = "cg/artgal/003.png"
@@ -330,11 +332,10 @@ init:
     image art24   = "cg/artgal/024.png"
     image art25   = "cg/artgal/025.jpg"
 
-#VFX 
+#######
+# VFX #
+#######
 image watercress = "vfx/watercress.png"
-
-
-# The game starts here.
 
 # Splash Screen
 label splashscreen:
@@ -348,7 +349,10 @@ label splashscreen:
     with Pause(1)
 
     return
- 
+
+# Game starts here
+# Shortest scene ever
+
 label start:
 
     jump scene1

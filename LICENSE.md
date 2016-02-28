@@ -14,11 +14,9 @@ The content (including but not limited to music, text, and art) is released unde
 For the full text of the license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 
-The code is released under the MIT License
+The code is released under the MIT License.  
 
 ## The MIT License (MIT)
-
-Copyright (c) 2015
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -38,4 +36,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Copyright (C) Watercress Studios 2015
+Copyright © Watercress 2016
