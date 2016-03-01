@@ -13,7 +13,7 @@ label scene1:
     
     scene black with fade
     scene station with fade
-    play music "music/glasscockpit.ogg"
+    play music "music/Glass Cockpit.ogg"
     
     "Mirabelle Station spiraled, ceaselessly, in an otherwise unremarkable corner of deep space."
     
