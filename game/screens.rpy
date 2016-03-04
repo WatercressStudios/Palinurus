@@ -38,6 +38,7 @@ screen say(who, what, side_image=None, two_window=False):
                     style "say_who_window"
 
                     text who:
+                        size 18
                         id "who"
 
             window:
@@ -593,7 +594,7 @@ init -2:
     style quick_button:
         is default
         background None
-        ypadding 4
+        ypadding 6
         xpadding 5
         xalign 0.5
         ypos -4

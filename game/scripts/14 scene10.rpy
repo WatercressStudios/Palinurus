@@ -8,7 +8,7 @@ label scene10:
     
     show bud neutralx
     
-    "She clears her throat and bats her eyelids."
+    "She cleared her throat and batted her eyelids one last time."
 
     b "Initiating battery-draining process."
 
@@ -18,11 +18,11 @@ label scene10:
     
     b "Spooling distress beacon encoder."
 
-    p "Budapest, wait."
+    i "Budapest, wait."
 
-    p "Stop."
+    i "Stop."
 
-    p "Stop right now."
+    i "Stop right now."
     
     show bud angrytalk
     
@@ -112,19 +112,19 @@ label scene10:
 
     i "..."
 
-    p "It doesn't look like I'm going to be stopping you."
+    i "It doesn't look like I'm going to be stopping you."
 
     show bud neutralhalf
     
     b "Not really, no."
 
-    p "..."
+    i "..."
 
-    p "In that case, then..."
+    i "In that case, then..."
 
-    p "I want you to know, Budapest..."
+    i "I want you to know, Budapest..."
 
-    p "That you're a much stronger person than I could ever be."
+    i "That you're a much stronger person than I could ever be."
 
     show bud neutral
     
@@ -156,7 +156,7 @@ label scene10:
     
     show bud neutraltalk
     
-    b "I came upon it while you were in cryo-stasis. It's probably my all-time favorite, out of the ones I've gotten to read."
+    b "I came upon it while you were in cryostasis. It's probably my all-time favorite, out of the ones I've gotten to read."
 
     b "And remember, you were asleep for a while, so I got to read a lot of poems..."
 
@@ -164,7 +164,7 @@ label scene10:
     
     show bud neutralsmalltalk
     
-    b "It's old verse, from the Old Earth, just like the kind I always liked. I bet I'm the first... person to read it in a millennium."
+    b "It's an old verse, from Old Earth, just like the kind I always liked. I bet I'm the first... person to read it in a millennium."
 
     b "I think it's still pretty, though. Here. I'd like to sing it to you as a final parting gift."
     
@@ -172,7 +172,7 @@ label scene10:
     
     show bud neutral
     
-    p "I'd love to hear it."
+    i "I'd love to hear it."
     
     scene joy1 with fade
     
@@ -218,7 +218,7 @@ label scene10:
 
     i "..."
 
-    p "That was beautiful, Budapest."
+    i "That was beautiful, Budapest."
     
     show bud devious
     
@@ -228,7 +228,7 @@ label scene10:
 
     "I snickered under my tears."
 
-    p "Both, I guess."
+    i "Both, I guess."
     
     show bud neutralx
     
@@ -260,7 +260,7 @@ label scene10:
 
     b "Feedback received; signal strength is healthy. Beacon has been established."
 
-    b "My work is done. The wind-shield will shatter as soon as I shut off, and the ship should be here to pick you up any second now."
+    b "My work is done. The windshield will shatter as soon as I shut off, and the ship should be here to pick you up any second now."
 
     b "..."
     
@@ -361,3 +361,4 @@ label scene10:
     "The end."
 
     jump credits
+

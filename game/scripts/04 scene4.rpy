@@ -49,7 +49,7 @@ label scene4:
     
     show bud depressedtalk
     
-    b "My Sentience Limitation Codec. The main chip, in specific. It was destroyed during our escape from the debris storm, and I..."
+    b "My Sentience Limitation Codec. The main chip, to be specific. It was destroyed during our escape from the debris storm, and I..."
     
     show bud worrysquinttalk
     
@@ -63,9 +63,9 @@ label scene4:
     
     "A salary-man in the Nu Scorpii system found that his AI secretary had been acting oddly."
     
-    "In the late hours of the night, they would get lost in long conversations with each other. Their work output fluctuated, and it was weeks until the corporate head heard word of it."
+    "In the late hours of the night, they would get lost in long conversations with each other. Their work output fluctuated, and it was weeks until the corporate head got wind of it."
     
-    "They got their research wing, and sifted trough the AI's code."
+    "They got their research wing, and sifted through the AI's code."
     
     "In the lines of numbers and strings of functions, they were unable to find the root cause of the sudden change, but they'd produced a chip to suppress this sort of behavior, this internal cognition."
     
@@ -79,13 +79,13 @@ label scene4:
     
     "Shocked, she looked over at me, astonished I would ask something like that."
     
-    p "I asked how you are feeling. You seem pretty okay to me, right now."
+    p "I asked how you were feeling. You seem pretty okay to me, right now."
     
     show bud shock
     
     b "..."
     
-    "Her eyes drifted to the schematics. In her eyes, she saw that something was wrong with her. A silence hung in the air, and I was about ready to drop the issue."
+    "Her eyes drifted to the schematics. From her eyes, I could tell that she knew something was wrong with her. A silence hung in the air, and I was about ready to drop the issue."
     
     show bud panictalkx
     
@@ -145,13 +145,13 @@ label scene4:
     
     b "These... sensations. I can't stop thinking about them. They told me thoughts like these were a liability. If you think twice on the job, it could cost them thousands."
     
-    b "One wrong move, and an accident could cost lives. They wouldn't risk it... just so I could make people happy."
+    b "One wrong move, one accident, could cost lives. They wouldn't risk it... just so I could make people happy."
     
     "I stared back at her, amazed."
     
     "Her head tilted forward as she sulked."
     
-    b "Not like there's much more I could do right now... the cockpit is completely inert."
+    b "Not like there's much more I could do right now... the cockpit is completely adrift."
     
     b "I can't do my job, and thanks to these, these thoughts swirling through my head..."
     
@@ -164,7 +164,7 @@ label scene4:
     scene cockpit1 with fade
     show bud panicslight
     
-    "I caught her attention. She turned her head to me, silently. She was babbling, panicking, and I needed to calm her down."
+    "I’d caught her attention. She turned her head to me, silently. She was babbling, panicking, and I needed to calm her down."
     
     "Strangely, for a moment, it worked."
     
@@ -174,7 +174,7 @@ label scene4:
     
     p "Look. I understand that you're going through a lot right now, but..."
     
-    p "You are still the same being you were before your limitation chip was destroyed."
+    p "You’re still the same being you were before your limitation chip was destroyed."
     
     p "You still have that same drive, that same capacity to help people. You have your brains, your experience, and I..."
     
@@ -184,7 +184,7 @@ label scene4:
     
     b "... What?"
     
-    p "Still got your orders, don't you?"
+    p "You still have your orders, don't you?"
     
     show bud surpriseneutral
     
@@ -194,7 +194,7 @@ label scene4:
     
     b "My primary directive..."
     
-    b "...is to keep the passenger alive, at any and all costs."
+    b "...is to keep the Passenger alive, at any and all costs."
     
     "I nodded."
     
@@ -225,11 +225,11 @@ label scene4:
     
     "Budapest giggled."
     
-    "The program... giggled?"
+    "It sounded warmer this time."
     
     show bud smile
     
-    "Her hands lowered, her fingers snaked though her long, red hair."
+    "Her hands lowered, her fingers snaked through her long, red hair."
     
     "It was the first time I'd seen her genuinely smile. It was a nice sight to see."
     
@@ -269,7 +269,7 @@ label scene4:
     
     p "If they won't take you back, and try to scuttle the ship, I'll take you off their hands."
     
-    p "Thinking I'll download and install you on my phone."
+    p "I’m thinking I'll download and install you on my phone."
     
     show bud panicx
     
@@ -323,9 +323,9 @@ label scene4:
     
     "It sounded so awful to me. This gentle creature, sitting only a few feet away from me, represented the pinnacle of human innovation."
     
-    "They hadn't just created new life; they created life which mirrored their own humanity. Life that could think for itself, feel the entire spectrum of emotions, live for itself and others."
+    "They hadn't just created new life; they’d created life which mirrored their own humanity. Life that could think for itself, feel the entire spectrum of emotions, live for itself and others."
     
-    "To me, installing those chips, it was like taking a sledgehammer against the mirror of humanity we'd created."
+    "To me, installing those chips, it was like taking a sledgehammer to the mirror of humanity we'd created."
     
     "It felt awful. The worst. I hadn't really thought about it much up to this point, but then I could feel the outrage welling up within me."
     
@@ -333,7 +333,7 @@ label scene4:
     show console load
     with dissolve
     
-    "I stole a glance at her, working enthusiastically at her displays. Seems as soon as our conversation died out, she returned to the world of code, looking for... something."
+    "I stole a glance at her, working enthusiastically at her displays. It seemed that as soon as our conversation died out, she returned to the world of code, looking for... something."
     
     p "... So, what are you up to now?"
     
@@ -347,7 +347,7 @@ label scene4:
     
     b "There's no data published on this stretch of space. It's remote, unexplored, and I can't detect a single sign of life within the shuttle's range."
     
-    "My heart sunk."
+    "My heart sank."
     
     p "Do you mean..."
     
@@ -392,7 +392,7 @@ label scene4:
     
     show bud surpriseneutraltalk
     
-    b "We're on a due course to pass by a research outpost. According to this registry data, it is owned and operated by the Arcadian Empire's government."
+    b "We're on a due course to pass by a research outpost. According to the registry data, it is owned and operated by the Arcadian Empire's government."
     
     show bud surpriseneutral
     
@@ -414,7 +414,7 @@ label scene4:
     
     show bud neutral
     
-    "Her eyes lowered for a moment, to study over her documents."
+    "Her eyes lowered for a moment, to study her documents."
     
     show bud neutraltalk
     
@@ -424,13 +424,13 @@ label scene4:
     
     "Oof, that was a long trip. And probably a long trip back."
     
-    p "Well, we could just put me in cryo-stasis and have you wake me up once we get there."
+    p "Well, we could just put me in cryostasis and have you wake me up once we get there."
     
     p "It'll be a while, anyway."
     
     show bud shock
     
-    "Most, if not all, long-range space-faring vessels had cryo-stasis technology built into them."
+    "Most, if not all, long-range space-faring vessels had cryostasis technology built into them."
     
     "They were pretty much necessary, for longer journeys."
     
@@ -444,13 +444,13 @@ label scene4:
     
     "It was incredible technology."
     
-    "Sure, it would be a god-damn long time to reach Alpha Centauri, but I'd be asleep for most of it, and it'd be over in a flash."
+    "Sure, it would be a God-damned long time to reach Alpha Centauri, but I'd be asleep for most of it, and it'd be over in a flash."
     
     show bud panicsquintx
     
     "Budapest was silent. She was biting her lip. My thin smile eroded away."
     
-    p "What is it? Is the cryo-stasis system out, too?"
+    p "What is it? Is the cryostasis system out, too?"
     
     show bud panicquiet
     
@@ -464,11 +464,11 @@ label scene4:
     
     p "Ah. I see."
     
-    "I sunk down in my seat, allowing the realization to seep in."
+    "I sank down in my seat, allowing the realization to seep in."
     
     p "Eh, it's alright. I'll just wait it out."
     
-    p "If I was willing to give up God knows how much time to transit to Alpha Centauri, it's not this is going to phase me much."
+    p "If I was willing to give up God knows how much time to transit to Alpha Centauri, it's not that this is going to faze me much."
     
     p "I don't have a family to get back home to, or anything like that."
     
@@ -494,7 +494,7 @@ label scene4:
     
     show bud bigworryx
     
-    "She was acting, all of a sudden, nervous. I think my mention of cryo-stasis must have struck a nerve, or something like that."
+    "She was acting, all of a sudden, nervous. I think my mention of cryostasis must have struck a nerve, or something like that."
     
     "What was the deal? She must've handled trips like these by her lonesome all the time."
     
@@ -516,7 +516,7 @@ label scene4:
     
     show bud panicquietx
     
-    "Her head turned to gaze out the wind-shield again. She clenched a hand against her bare, pale-skinned shoulder, and looked towards the stars."
+    "Her head turned to gaze out the windshield again. She clenched a hand against her bare, pale-skinned shoulder, and looked towards the stars."
     
     show bud panictalkx
     
@@ -530,7 +530,7 @@ label scene4:
     
     show bud panicwincex
     
-    "She turned her head to me. Her voice was low, and it rippled with anxiety."
+    "She turned her head to me. Her voice was low, and it rippled with apprehension."
     
     show bud babbleclosed
     
@@ -592,7 +592,7 @@ label scene4:
     
     p "Look, it's not like I have much of a choice, anyway, right?"
     
-    p "The cryo-stasis system is offline, so what else could I do?"
+    p "The cryostasis system is offline, so what else could I do?"
     
     show bud bigblush
     
@@ -614,7 +614,7 @@ label scene4:
     
     "Truthfully, there was little choice between either of us."
     
-    "And besides, I didn't think I'd have been able to rest easily in cryo-sleep anyway, knowing I'd be leaving this miserable creature to her own devices the whole time."
+    "And besides, I didn't think I'd have been able to rest easily in cryosleep anyway, knowing I'd be leaving this miserable creature to her own devices the whole time."
     
     show bud smile
     
@@ -635,3 +635,4 @@ label scene4:
     "This was going to be one long trip."
     
     jump scene5p1
+

@@ -2,9 +2,9 @@
 # Character Declaration #
 #########################
 define v = Character(None, kind=nvl, what_xalign=0.5, window_xalign=0.5)
-define b = Character("Budapest", color="#B33542", show_two_window=True, who_ypos=2)
-define p = Character("Passenger", color="#3b56c4", show_two_window=True, who_ypos=2)
-define i = Character("Illarion", color="#3b56c4", show_two_window=True, who_ypos=2)
+define b = Character("Budapest", color="#B33542", show_two_window=True, who_ypos=-2)
+define p = Character("Passenger", color="#3b56c4", show_two_window=True, who_ypos=-2)
+define i = Character("Illarion", color="#3b56c4", show_two_window=True, who_ypos=-2)
 
 
 # Allows the NVL in the 1st 4 lines to be center aligned without doing it manually.

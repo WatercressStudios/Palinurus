@@ -19,13 +19,13 @@ label scene6:
     scene cockpit3
     show bud srsfaec
     
-    "We must have been on the last leg of our journey by now. I thought the very notion would've made me restless, eager to get out of this cramped cockpit, board a one-way ticket to Alpha Centauri."
+    "We must have been on the last leg of our journey by then. I thought the very notion would've made me restless, eager to get out of this cramped cockpit, board a one-way ticket to Alpha Centauri."
     
     "But here I sat, counting the stars that drifted by lazily. The atmosphere was quiet. It was eerie."
     
     "I glanced aside to Budapest, who was staring intently out beyond the stars. There was a look in her eyes I had difficulty reading. Was she studying what was going on? Keeping an eye out for other ships?"
     
-    "She was so quiet. Normally, she was rattling off about her latest discovery from the archives, or blasting some old sound file she came across. The silence that hung over the cockpit now, in the absence of her cheerful exuberance, hung like a fog."
+    "She was so quiet. Normally, she was rattling on about her latest discovery from the archives, or blasting some old sound file she’d come across. The silence that hung over the cockpit now, in the absence of her cheerful exuberance, lingered like a heavy fog."
     
     "I adjusted myself in my seat, grinding my teeth together quietly. Something about this was wrong."
     
@@ -33,7 +33,7 @@ label scene6:
     
     b "Illarion."
     
-    "I perked my head up. Her tone was serious, straight-forward… yet underlined with a hushed pang of struggle."
+    "I perked my head up. Her tone was serious, straight-forward… yet underlined with the silent agony of struggle."
     
     show bud neutral
     
@@ -85,11 +85,11 @@ label scene6:
     
     b "And that is how Palinurus met his end in the middle of that storm."
     
-    b "A god of sleep descended upon him while he was at the helm and, with a branch, he brushed Palinurus. Falling into a deep sleep, he fell off the ship, and into the churning abyss."
+    b "A god of sleep descended upon him while he was at the helm and, with a branch, he brushed Palinurus. Falling into a deep sleep, he was swept overboard, and into the churning abyss."
     
     show bud neutral
     
-    b "The branch was dipped in the Rivers of Lethe and Styx. The former caused complete forgetfulness; the latter, the promise of immortality."
+    b "The branch had been dipped in the Rivers of Lethe and Styx. The former caused complete forgetfulness; the latter, the promise of immortality."
     
     b "With nothing to save him, he sank deeper, and deeper into the ocean's depths, pulled down by Neptune's power."
     
@@ -107,7 +107,7 @@ label scene6:
     
     "She chuckled to herself… but no joy could be heard in that laugh. It was distant, somewhere else entirely."
     
-    "She took no joy from sharing this story. Something was wrong."
+    "She took no joy from sharing this story. Something was very wrong."
     
     show bud panicx
     
@@ -115,13 +115,13 @@ label scene6:
     
     scene budasmile1
     
-    b "...I've experienced so many things alongside you. I've learned so much, had so many new sensations course through me."
+    b "...I've experienced so many things alongside you. I've learned so much, had so many new sensations coursed through me."
     
     b "I'm… not sure I'm ready to leave it all behind. I don't think I could forget that."
     
     "She was speaking of our time together. Of course she didn't want to let those memories go."
     
-    "She may have been truly alive for all of a month, but for her, that was all she needed. She lived more than most humans would ever aspire."
+    "She might have been truly alive for all of a month, but for her, that was all she needed. She’d lived more than most humans would ever aspire to."
     
     "I had a wrenching feeling in my gut. When we returned, what would happen to her? Would they call her irreparable? Would they erase her programming, clear her memory banks, install a new suppression chip?"
     
@@ -137,7 +137,7 @@ label scene6:
     
     i "We'll make it out of this. And when we get to Alpha Centauri, you'll be with me. I won't let them lay a finger on you."
     
-    i "You won't have to forget anything. You'll get to live, see more than just empty space and databases. I don't care what it takes. We'll see everything there is to see in this universe. No matter was fate says."
+    i "You won't have to forget anything. You'll get to live, see more than just empty space and databases. I don't care what it takes. We'll see everything there is to see in this universe. No matter what fate says."
     
     scene cockpit3 with fade
     show bud neutral
@@ -166,17 +166,17 @@ label scene6:
     
     "I felt tears welling in the corners of my eyes. I couldn't let her talk about herself like that."
     
-    "She wasn't a lifeless program. She was real, she had a heart. She had more heart than anyone else I knew in my life."
+    "She wasn't a lifeless program. She was real, she had a heart. She had more heart than anyone else I’d known in my life."
     
     show bud worryneutralhalfeye
     
-    "She stared back into my eyes. Those wide, glimmering eyes that had reflected a hope I could only dream of. I never wanted the light to die from those eyes, never wanted her to lose that hope."
+    "She stared back into my eyes. Her own wide, glimmering eyes reflected a hope I could only dream of. I never wanted the light to die from those eyes, never wanted her to lose that hope."
     
-    "She was trembling. I wish I could steady her, hold her tight, but I couldn't. I raised a hand to her shoulder. It hovered in the air, like it was poised to offer comfort… but didn't. It couldn't."
+    "She was trembling. I wish I could steady her, hold her tight, but I couldn't. I raised a hand to her shoulder. It hovered in the air, like it was poised to offer comfort… but didn't. It couldn't. It was only my hand."
     
     "..."
     
-    "I look up to her again. Her smile was small, but growing larger with every passing second."
+    "I looked up at her again. Her smile was small, but growing larger with every passing second."
     
     i "I'll protect you, Budapest. I swear on it."
     
@@ -211,3 +211,4 @@ label scene6:
     scene black
 
     jump scene7
+

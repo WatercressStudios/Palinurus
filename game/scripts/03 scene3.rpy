@@ -1,7 +1,6 @@
 label scene3:
     
-    play music "music/Digital Virulence.mp3"
-    # Could you tell that it's scene three?
+    play music "music/glasscockpit.mp3"
     scene cockpitblackout
     with dissolve
     
@@ -9,15 +8,15 @@ label scene3:
     
     "I clutched to my seat for dear life, feeling the g-forces press me into my seat."
     
-    "Our cockpit, once draped in flashing lights and info-graphic displays, was instead shrouded in a suffocating curtain of darkness, pierced only by the distant stars..."
+    "Our cockpit, once draped in flashing lights and info-graphic displays, was instead shrouded in a suffocating curtain of darkness..."
     
-    "Flittering in the distance like fireflies far beyond my reach."
+    "The only light caught in chaotic glimpses of the stars through the windshield."
     
-    "I winced as the seat-straps dug into my chest, the only thing keeping me from a hard collision with the wind-shield."
+    "I winced as the seat-straps dug into my chest, the only thing keeping me from a hard collision with the windshield."
     
-    "I felt nauseous; the full impact of the centrifugal forces laid itself bare."
+    "I felt nauseous; the might of the centrifugal forces crushing the very air from my lungs."
     
-    "I strained to look to my side, where the Navigator had previously been, furiously pecking away at the interfaces to troubleshoot our wreck of a transit shuttle."
+    "I strained to look to my side, where the Navigator had previously been, furiously pecking away at the interfaces to salvage our wreck of a transit shuttle."
     
     "The logical part of me understood what it was up to, operating inside circuitry and wiring... but I still felt a wave of dread overcome me."
     
@@ -54,7 +53,7 @@ label scene3:
     
     "A flashing red light, planted to the control board, indicated that something was amiss."
     
-    "I missed that memo."
+    "Don’t worry flashing light, I noticed."
     
     "The operating system booted up before my eyes, green code buzzing across a hovering black screen faster than my human eyes could hope to process."
     
@@ -66,7 +65,7 @@ label scene3:
     
     '"enabling database access"'
     
-    '"Metis Kernel v.12.5.0: wed jun 1 00:12:00 IST 2567; copyright APPLESOFT:xnu-14932/1"'
+    '"Metis Kernel v.12.5.0: mon jun 1 00:12:00 IST 2567; copyright APPLESOFT:xnu-14932/1"'
     
     '"standard timeslicing quantum is 10000 us"'
     
@@ -80,7 +79,7 @@ label scene3:
     scene cockpit1
     show bud excitedclosed with dissolve
     
-    "And then suddenly, a flash of white light."
+    "Suddenly, a flash of white light."
     
     b "I'm here! I'm here."
     
@@ -106,7 +105,7 @@ label scene3:
     
     show bud panic
     
-    "All of a sudden, the cockpit lurched forwards near-immediately."
+    "Before the AI could provide me with an estimate, the cockpit lurched forward."
     
     p "Ack!"
     
@@ -123,7 +122,7 @@ label scene3:
     
     show console warningworry
     
-    "It seemed to yell its response. I opened my jaw to say something in response, but in this state it was pointless to yell at it."
+    "It seemed to yell its response. I opened my jaw to respond, but in this state it was pointless to yell at it."
     
     show console warningneutral
     
@@ -184,7 +183,7 @@ label scene3:
     
     show bud excitedclosed
     
-    b "Stability subsystem has returned online to partial effectiveness!"
+    b "Stability subsystem has returned to partial effectiveness!"
     
     show bud excitedsmileclosed
     
@@ -198,7 +197,7 @@ label scene3:
     
     "As I cracked my neck, I found myself face-to-face with the program at the helm."
     
-    "There was something... different in her eyes now. I couldn't quite tell what it was, it was abstract, almost... spiritual."
+    "There was something... different in her eyes now. I couldn't quite tell what it was, it was abstract, almost..."
     
     "Emotional."
     
@@ -214,9 +213,9 @@ label scene3:
     
     show bud normaltalkeyebrows
     
-    "I wasn't quite sure what it was asking. It was still a machine, wasn't it? A construct. It felt all kinds of weird, being stared at so closely like that."
+    "I wasn't quite sure what her eyes seemed to be asking. It was still a machine, wasn't it? A construct. It felt all kinds of weird, being stared at so closely like that."
     
-    "The AI continued on for a moment, and then nodded."
+    "The AI continued gazing at me for a moment, and then nodded."
     
     show bud neutralx
     
@@ -236,7 +235,7 @@ label scene3:
     
     show bud neutraleyebrowsx
     
-    "The AI explained all this, concisely, as it continued to study me closely. My brow raised in response."
+    "The AI explained all this, concisely, as it continued to study me closely. I raised my eyebrows in response."
     
     show bud normaltalkeyebrows
     
@@ -264,7 +263,7 @@ label scene3:
     
     "I smirked. In any case, that was one hell of an understatement on her part."
     
-    p "Me? I feel like I just spent 10 minutes on a roller coaster."
+    p "Me? I feel like I just spent 10 minutes in a blender."
     
     show bud panicx
     
@@ -272,7 +271,7 @@ label scene3:
     
     show bud neutral
     
-    "The program tilted her head. Apparently, it was unable to calculate similes."
+    "The program tilted her head. Apparently, it was unable to comprehend similes."
     
     p "Haha, never mind. I'm fine! Just a little sore, is all."
     
@@ -322,7 +321,7 @@ label scene3:
     
     "She seemed like a different person."
     
-    "Or, er, different from the machine I spoke with when I boarded."
+    "Ahhh, different from the machine I spoke with when I boarded, I meant."
     
     "I thought I might've seen a spark, or something like that, in her eyes."
     
@@ -356,7 +355,7 @@ label scene3:
     
     show console warningsoftsmilelook
     
-    "That was it, I thought. The unchanged expression on her face meant I'd hit the mark. At least I could think well on a dime."
+    "That was it, I thought. The unchanged expression on her face meant I'd hit the mark. At least my brain was still in one piece."
     
     p "I just wanted to say, uh... thanks. For... you know... saving me, and all that."
     
@@ -392,7 +391,7 @@ label scene3:
     
     "There was that look in her eyes again. She stared at me often, surely studying me, watching how I moved, how I spoke, how I breathed..."
     
-    "But it was more than that. She didn't look away when she talked to me. Upfront, honest. When she said something, I knew she meant it."
+    "But it was more than that. She looked straight into me. Upfront, honest."
     
     scene cockpit1
     
@@ -454,10 +453,11 @@ label scene3:
     
     p "... Right?"
     
-    "Budapest went silent, her eyes dead-locked on the schematics and diagrams hovering around her."
+    "Budapest went silent, her eyes locked on the schematics and diagrams hovering around her."
     
     show console warningworrytalk
     
     b "There was... one other thing."
     
     jump scene4
+

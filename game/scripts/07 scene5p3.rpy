@@ -7,11 +7,11 @@ label scene5p3:
     scene cockpit2 with dissolve
     play music "music/Beautiful Dreamer.mp3"
     
-    "That was the first thought that popped into my head as I parted my eyelids to an expanse of stars that may as well have been the same ones I fell asleep counting."
+    "That was the first thought that popped into my head as I parted my eyelids to an expanse of stars that might as well have been the same ones I fell asleep counting."
     
     "Even with centuries of entertainment to fill the void, time began to lose its coherence; minutes blended into hours which melded into days."
     
-    "Such is the fate of man in space, which I suppose is why cryo-stasis was invented: to quickly pass the long intervals between departure and arrival that could otherwise drive you bonkers."
+    "Such is the fate of man in space, which I suppose is why cryostasis was invented: to quickly pass the long intervals between departure and arrival that could otherwise drive you bonkers."
     
     "The second thought that occurred to me as I stirred awake in my seat was that, for an AI, Budapest was one hell of a singer."
     
@@ -29,11 +29,11 @@ label scene5p3:
     
     b "Lull’d by the moonlight have all passed away…"
     
-    "Her arms hung by her side and swayed gently in time with each line, and, for a moment, I forgot she wasn’t human. Why would an AI move so gracefully to the tune of a song?"
+    "Her arms hung by her side as she swayed gently in time with each line, and, for a moment, I forgot she wasn’t human. Why would an AI move so gracefully to the tune of a song?"
     
     "Why would an AI — even a sentient one — sing, for that matter? Was it some sort of lullaby meant for me?"
     
-    "I don’t know long I was out, but she couldn’t have sung me to sleep. My periods of sleep and wakefulness may be starting to blend together into one indistinct blur, but there’s no way I could forget a voice so genuine, so sweet."
+    "I don’t know long I was out, but she couldn’t have sung me to sleep. My periods of sleep and wakefulness might have been starting to blend together into one indistinct blur, but there’s no way I could have forgotten a voice so genuine, so sweet."
     
     b "...awake unto me!"
     
@@ -45,11 +45,11 @@ label scene5p3:
     
     "Then again, maybe the point was to wake me up; she seemed unaware that her song had gained an audience, but perhaps she wasn’t."
     
-    "I never paused to consider how lonely Budapest must be when I’m asleep."
+    "I had never paused to consider how lonely Budapest must be when I slept."
     
-    "When I’m conscious, she has someone to share her feelings with, someone to relate her excitement to as she digests volume after volume of human history."
+    "When I’ve been conscious, she has had someone to share her feelings with, someone to relate her excitement to as she digests volume after volume of human history."
     
-    "But for the duration of my slumber, she’s left alone with no one to share these new experiences with."
+    "But for the duration of my slumbers, she’s been left alone with no one to share these new experiences with."
     
     "Whether she had intended to wake me or not, I decided that I wouldn’t do or say anything that might interrupt her singing."
     
@@ -176,7 +176,7 @@ label scene5p3:
     show bud angryfrown
     with dissolve
     
-    p "... To catch a look at Budapest pouting angrily at me."
+    p "... To catch Budapest pouting angrily at me."
     
     show bud angrytalkx
     
@@ -203,7 +203,7 @@ label scene5p3:
     
     show bud panicx
     
-    b "Nevermind."
+    b "Never mind."
     
     show bud panictalkx
     
@@ -243,7 +243,7 @@ label scene5p3:
     
     b "I… I don’t know sir, no one’s ever asked before."
     
-    "Naturally. Until recently, there were never any feelings to be inquired of."
+    "Naturally. Until recently, there were never any feelings to be inquired about."
     
     p "Then, let’s look at this from another angle: why shouldn’t you ever think of yourself?"
     
@@ -339,3 +339,4 @@ label scene5p3:
     i "And the same to you, Budapest."
 
     jump scene5p4
+

@@ -15,13 +15,13 @@ label scene8:
     
     "I was finally awake."
     
-    "I was awake, my senses flooding to the brim with suddenly-revived sensory emotion; but I couldn't move my body."
+    "I was awake, my senses flooding to the brim with suddenly-revived biochemical emotion, but I couldn't move my body."
     
-    "I felt so cold. Every single fiber of my being, the blood in my veins, my sore bones, my swelling, pounding head... ached."
+    "I felt so cold. Every single fiber of my being, the blood in my veins, my sore bones, my swelling, pounding head, ached."
     
-    "I felt the sting of restraints and harnesses strapping me to my seat, still horridly right after God knows how many years."
+    "I felt the sting of restraints and harnesses strapping me to my seat, still horridly right after only God knows how many years."
     
-    "The whirring of biomedical equipment and the gruesome piercing of several needles along the back of my head and spine reminded me, somberly, of the cryo-stasis I'd just awakened from."
+    "The whirring of biomedical equipment and the gruesome piercing of several needles along the back of my head and spine reminded me, somberly, of the cryostasis I'd just awakened from."
     
     b "..."
     
@@ -59,7 +59,7 @@ label scene8:
     
     b "Are you alright!? I..."
     
-    b "I know it hurts. I'm sorry. The pain should wear off in due time. The carbon-insulation chemicals are working their way through your bloodstream right now."
+    b "I know it hurts. I'm sorry. The pain should wear off in due time. The fluorocarbon-insulation chemicals are working their way out through your bloodstream right now."
     
     i "I think I can feel them starting to take effect."
     
@@ -77,7 +77,7 @@ label scene8:
     
     i "A-a few hundred years!?"
     
-    i "How long was I in stasis for!?"
+    i "How long was I in stasis for?!"
     
     show bud neutralclosed
     
@@ -95,7 +95,7 @@ label scene8:
     
     b "Don't worry. I had lots of things to do to fill the time. I read more books, watched more movies, listened to more music..."
     
-    b "You know, if you had told me, 'Budapest, you're going to get six hundred years to relax and consume thousands upon thousands of years of compounded human culture,' I would have gone livid with excitement."
+    b "You know, if you had once told me, 'Budapest, you're going to get six hundred years to relax and consume thousands upon thousands of years of compounded human culture,' I would have gone livid with excitement."
     
     show bud neutralx
     
@@ -293,7 +293,7 @@ label scene8:
     
     show bud cryclosed
     
-    "I chuckle, lightly, and shake my head. It hurts but I do it anyway."
+    "I chuckled lightly and shook my head. It hurt but I did it anyway."
     
     i "It's alright, Budapest."
     
@@ -303,6 +303,8 @@ label scene8:
     
     "She was a dying, artificial girl."
     
-    "An archaic, ancient machine running on fumes... but she was happy to see me again."
+    "An archaic, ancient machine running on fumes…” 
+    “But she was happy to see me again."
 
     jump scene9
+

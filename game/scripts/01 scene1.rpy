@@ -3,7 +3,7 @@ label scene1:
     stop music
     scene black
     
-    v "\n\n\n\n\n\n\n\nPalinurus."
+    v "\n\n\n\n\n\n\n\n\n\n\nPalinurus."
     
     v "The story of the ocean of stars."
     
@@ -13,29 +13,29 @@ label scene1:
     
     scene black with fade
     scene station with fade
-    play music "music/Glass Cockpit.ogg"
+    play music "music/DataCube Loop.ogg"
     
     "Mirabelle Station spiraled, ceaselessly, in an otherwise unremarkable corner of deep space."
     
-    "I was waiting for my flight number to be called. I tapped a finger against my knee, tap, tap, eager to be on my way."
+    "I was waiting for my flight number to be called. I tapped a finger against my knee, eager to be on my way."
     
     "I'd rehearsed this ritual countless times before."
     
     "Mirabelle Station was hardly remarkable, as far as space stations went. Though then again, who was to say there were many truly remarkable space stations in the first place?"
     
-    "Surely there were probably hundreds of millions of travelers, passing in droves through Andromeda Central Station."
+    "Surely there were hundreds of millions of travelers, passing in droves through Andromeda Central Station."
     
     "Andromeda was a work of art, and performers, painters, composers would all gather in the artificially terraformed central plaza to find an audience."
     
     "It was a mosaic of colors, sights, sounds... a brazen horde of inter-galactic human culture. Like a Venice atop a sea of stars."
     
-    "... And I was stuck here, on this gray, factory-produced pit stop, waiting by my lonesome for my flight's preparations to finish up."
+    "... And I was stuck here, at this gray, factory-produced pit stop, waiting by my lonesome for my flight's preparations to finish up."
     
     "For as long as I could remember, space travel out in the boonies was like this; lonely, tedious, cramped, time-consuming... stripped down to the status of a commute that never seemed to end."
     
     "Space travel as an enterprise was far too expensive, and far too dangerous, for allowing anything short of a mega-corporation to handle the logistics."
     
-    "I glanced down to my ticket. Sure enough, there it was. 'Titan Transportation Solutions,' in loud, bold, bleak font. They were one of the big players in this whole field, and they were the ones that footed the bill for, I don't know, thousands of space stations just like this one."
+    "I glanced down to my ticket. Sure enough, there it was. 'Titan Transportation Solutions,' in loud, bold, bleak font. They were one of the big players in the field, and they were the ones that footed the bill for, I don't know, thousands of space stations just like this one."
     
     "And let's be perfectly clear here: space is big. Enormous. Try to wrap your head around how infinitely spread out, how empty it all really is. You can't."
     
@@ -56,7 +56,7 @@ label scene1:
     
     "From the outside, it looked relatively unremarkable. It was sleek, like an arrow."
     
-    "The cockpit stood out. The wind-shield wrapped itself around the front of the vessel, stopping just as the ship's nose began to flow downwards into its underbelly."
+    "The cockpit stood out. The windshield wrapped itself around the front of the vessel, stopping just as the ship's nose began to flow downwards into its underbelly."
     
     "Its exterior was sleek, its curving wings wide like that of an albatross."
     
@@ -66,39 +66,41 @@ label scene1:
     
     '"We are now boarding one-man Shuttle Flight 93094B. Shuttle Flight 93094B."'
     
-    '"Passenger of Flight 93094B, please secure your belongings and board imminently."'
+    '"Passenger of Flight 93094B, please secure your belongings and board immediately."'
     
     "Finally; that was just the notice I'd been waiting for. My flight was prepped and ready."
     
     scene black
     with dissolve
     
-    "I hurried over down the hangar bay, checked to make sure the shuttle was marked with my flight number, and slipped myself inside."
+    "I hurried down the main concourse of the hangar bay, checked to make sure the shuttle was marked with my flight number, and slipped inside."
     
-    "The cabin interior betrayed its sleek exterior. Electric lights lined the wall at waist height, with white lights along the ceiling, lighting the vessel up with a flow."
+    "The cabin interior betrayed its sleek exterior. Lights along the walls and ceiling illuminated the passage, their luminance rippling towards the cockpit.  "
     
     "The floor was lined with dark, navy-blue carpet that travelled up the walls for a few inches."
     
     scene cockpithangar
     with dissolve
     
-    "I made my way towards the cockpit, taking a look around. The first I noticed was there were two seats. This confirmed my hunch that this was a re-purposed vessel."
+    "I made my way towards the cockpit, taking a look around. A cursory glance revealed two seats, confirming the hunch that this was a repurposed vessel."
     
     "I remember that, back in the day, every spaceship required human pilots and co-pilots. I guess this was a relic from the old regime."
     
     "There wasn't much room to move around in the cockpit. A horde of buttons, dials, flashing lights, and other mechanisms were scattered around the control console."
     
-    "The cockpit was dominated by the enormous wind-shield that opened up to a commanding view of, at the moment, precisely nothing."
+    "The cockpit was dominated by the enormous windshield that opened up to a commanding view of, at the moment, precisely nothing."
     
     "Nothing but space and an ocean of stars."
     
-    "It was hard to get excited for such a sight any more."
+    "It was hard to get excited from such a sight any more."
     
-    "Within moments, the cockpit became bathed in warm-blue light, and a computerized voice began to speak."
+    "Within moments, the cockpit was bathed in warm blue light, and a computerized voice began to speak."
     
     '"New Passenger detected. Initiating registration sequence."'
     
-    "I held up the ticket between two fingers. Just to make sure the system registered it. The blue-light shifted around the team, and then dissippated suddenly."
+    "I held up the ticket between two fingers, just to make sure the system registered it. The blue light shifted around the small area, and then dissipated suddenly."
+
+    stop music fadeout 1.0
     
     '"Passenger Identification Ticket: code #0992403."'
     
@@ -127,8 +129,12 @@ label scene1:
     '"Intelligent Navigator Persona unlocked: Navigator 21109CBP, copyright Enceladus Intergalactic Transportation, Year 2520."'
     
     '"Unit name: Intelligent Navigator Budapest."'
+
+    "Then suddenly, the voice became... softer. More polite. More feminine."
     
     b "Initializing. One moment, please."
+
+    "Slowly it became more and more human."
     
     b "..."
     
@@ -140,18 +146,19 @@ label scene1:
     
     "Inside it, some mechanism whirred to life, and the lenses began to twist, oscillate, and extend."
     
-    "And then they focused on a single point. The pilot's seat to the right. It was a holographic projector, and it was creating an image."
+    "They focused on a single point, the pilot's seat to the left."
     
     scene initialization with fade
+    play music "music/Ambivalence.ogg"
     
-    "Slowly, a human figure formed itself. Its form was translucent, accompanied by a dress as white as ivory. For a second it seemed that it had caught fire as brilliant red hair flowed from its head down to its back and shoulders."
+    "Slowly, a human figure coalesced. Its form was translucent, accompanied by a dress white as ivory. For a second it seemed that it had caught fire, as brilliant red hair flowed from its head down to its back and shoulders."
     
     "Delicate, feminine features emerged as one - ears, a nose, the eyes, and a mouth curled in a polite, neutral grin. Two long and slender arms trailed to two small and slender hands, clasping each other in front of the flowing dress."
     
     scene cockpithangar
     show bud neutralsquint
     
-    "And then its eyes opened, revealing irises of striking sapphire. They looked like planets, glowing against the backdrop of deep space."
+    "The projection’s eyes opened, revealing irises of striking sapphire. They looked like planets, glowing against the backdrop of deep space."
     
     show bud neutral
     
@@ -163,7 +170,7 @@ label scene1:
     
     show bud smiletalk
     
-    b "Greetings, passenger-sir. Are you doing well today?"
+    b "Greetings, Passenger-sir. Are you doing well today?"
     
     show bud smile
     
@@ -197,13 +204,13 @@ label scene1:
     show console smile
     with dissolve
     
-    "The Navigator turned its back to me, bringing up electronic windows of records and data like it was conjuring magic barriers. People loved AI's for stuff like this."
+    "The Navigator turned its back to me, bringing up electronic windows of records and data like it was conjuring magic barriers. People loved AI for stuff like this."
     
     "They brought all the efficiency of a personal planner, calculator, and computer, and stuffed it all into a pretty-looking package with flair and style."
     
     "By all stretches of the imagination, they were wonderful workers. They worked tirelessly, they were quick thinkers, and you could customize anything about them to meet your own needs."
     
-    "It seems this Navigator was left with its default settings, though. Just as well, I didn't plan to see much of it from the cabin. The pilot seat had been retooled to fit its hologram generator, so I'm not much use here anyway."
+    "It seems this Navigator was left with its default settings, though. Just as well, I didn't plan to see much of it from the cabin. The pilot seat had been retooled to fit its hologram generator, so I wasn’t much use here anyway."
     
     show console talk
     
@@ -225,15 +232,15 @@ label scene1:
     
     "Some people ended up getting... too 'attached' to their AI's. Personally, I tended to keep my distance."
     
-    "At the end of the day, they were basically programs, lines of code assembled into the visage of a person."
+    "At the end of the day, they were basically programs, lines of code assembled to execute tasks behind the artificial visage of a ‘living’ person."
     
-    "Whatever niceties it uttered came from the mouth of some programmer, or some psychologist in a clinic, or at least, from a dialogue-construction engine designed by one."
+    "Whatever niceties they uttered came from the mouth of some programmer, or some psychologist in a clinic—or at least, from a dialogue-construction engine designed by such."
     
-    "I was content to confirm my present and leave the piloting to the Navigator. I nodded in affirmation."
+    "Content to confirm my presence and leave the piloting to the Navigator, I nodded in affirmation."
     
     show console talklook
     
-    b "We'll be launching from the station now. Please remain seated and harnessed for this proceeding."
+    b "We'll be launching from the station now. Please remain seated and harnessed until instructed otherwise."
     
     p "Roger that, loud and clear."
     
@@ -243,9 +250,9 @@ label scene1:
     
     "It was surprisingly plushy."
     
-    "As usual, I threaded my arms through the safety harnesses and then clicked the connectors together. Leaning back, I turned my head to look out the window to my right."
+    "As usual, I threaded my arms through the safety harnesses and then clicked the connectors together. Leaning back, I turned my head to look through the window to my right."
     
-    "I heard the electronic sputtering and whirring of the shuttle disengaging from the hangar restraints. I felt movement stirring up in my stomach, and suddenly, the shuttle lurched forwards."
+    "I heard the electronic sputtering and whirring of the shuttle disengaging from the hangar restraints. My stomach twisted with anticipation, and suddenly the shuttle lurched forwards."
     
     "After a few moments of throttle, we reached open space and cruised our way out of the Station."
     
@@ -257,7 +264,7 @@ label scene1:
     
     b "..."
     
-    b "So, passenger-sir, do you travel often?"
+    b "So, Passenger-sir, do you travel often?"
     
     p "Yes, very."
     
@@ -273,13 +280,13 @@ label scene1:
     
     b "Hmph! Teasing your Navigator is against regulations, you know. I ought to have you reported!"
     
-    p "Oh, dear, I do apologize so."
+    p "Oh dear, I do apologize."
     
     b "I thought you said you weren't a novice to travel."
     
     p "I'm not."
     
-    b "Seem like a greenhorn to me. Which of the other Navigators have you even met?"
+    b "You seem like a greenhorn to me. Which of the other Navigators have you even met?"
     
     "Hm... collecting survey data for the company, I see?"
     
@@ -291,9 +298,9 @@ label scene1:
     
     p "You make it sound so indecent when you put it like that."
     
-    b "Oh, is that so, passenger-sir?"
+    b "Oh, is that so, Passenger-sir?"
     
-    "I gave a small, polite chuckle, out of respect. Though it's not like I was particularly obligated to show such social courtesy to a machine."
+    "I gave a small, polite chuckle, out of respect. Though it's not as-if I was particularly obligated to show such social courtesy to a machine."
     
     "It was just a peculiar, personal habit of mine; which I'd obtained from spending so much time in transit."
     
@@ -301,13 +308,13 @@ label scene1:
     
     p "Mm?"
     
-    b "What'll you be doing once we arrive in Alpha Centauri? It better be something worthwhile, after such a long trip."
+    b "What'll you be doing once we arrive in Alpha Centauri? It’d better be something worthwhile, after such a long trip."
     
     p "Is this how you screen for potential troublemakers? I wasn't planning anything shady, now."
     
-    "The Navigator giggles a short, pre-programmed giggle."
+    "The Navigator lets out a short, pre-programmed giggle."
     
-    b "Haha, goodness no! Just curious, is all. I ask the same question to all of my passengers."
+    b "Haha, goodness no! Just curious, is all. I ask the same question of all my passengers."
     
     "Just... curious?"
     
@@ -345,11 +352,11 @@ label scene1:
     
     b "All that for a meal? Pardon me for saying so, passenger-sir, but... that sounds a little reckless."
     
-    p "You suppose so. Me, I'm not bothered by it. It's hard to scrape up credits in this economy."
+    p "Might be. Me, I'm not bothered by it. It's hard to scrape up credits in this economy."
     
     p "Besides, it's bound to be a pretty view... and who knows, maybe some other lunatics had the same idea I did."
     
-    b "Sounds like fun. If only I could..."
+    b "Sounds like a wonderful adventure!"
     
     b "Haha, you're quite the character, sir. I'll be rooting for you to hit it big!"
     
@@ -357,7 +364,7 @@ label scene1:
     
     "Coming from an AI, I didn't think much of it... but it was nice to hear aloud all the same."
     
-    b "You're kindly welcome."
+    b "You're quite welcome."
     
     b "Now, we'll be serving a complimentary drink and beverage momentarily..."
     
@@ -369,13 +376,15 @@ label scene1:
     
     "Snuggled into the cabin chair, I slept lightly, but well. I didn't dream of anything, but I didn't want to either."
     
+    stop music
+    
     "After some time asleep, however, I was awakened with a start."
     
     b "Sir!"
     
     b "Passenger-sir, please come to the cockpit!"
     
-    "I bolt up, startled. Something seemed to have gone wrong."
+    "I bolt upright, startled. Something must have gone wrong."
     
     b "Something seems to have, er, gone wrong!"
     
@@ -384,7 +393,7 @@ label scene1:
     scene cockpitemergency
     with dissolve
     
-    "As I stepped into the cockpit, warning lights and alerts began to blare, bathing the cockpit in frantic lights; the Navigator set to work."
+    "As I stepped into the cockpit, warning lights and alerts began to blare, bathing the cockpit in a frantic kaleidoscope of colors; the Navigator had set to work." 
     
     scene cockpitsideemergency
     show console warning
@@ -402,7 +411,7 @@ label scene1:
     
     show console warningtalk
     
-    b "Mm, not to cause you any alarm, passenger-sir, but there's been an occurrence."
+    b "Mm, not to cause you any alarm, Passenger-sir, but there's been an incident."
     
     b "The shuttle's short-range radar has detected an incoming debris storm."
     
@@ -429,3 +438,4 @@ label scene1:
     b "But you might want to brace for impact."
     
     jump scene2
+

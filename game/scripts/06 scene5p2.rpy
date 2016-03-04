@@ -27,7 +27,7 @@ label scene5p2:
     
     show bud bigsmile
     
-    b "If you need breakfast, our on-flight replicator would be sure to assist you!"
+    b "If you need breakfast, our inflight replicator would surely assist you!"
     
     p "Ah, the replicator..."
     
@@ -39,7 +39,7 @@ label scene5p2:
     
     "Weird place to keep a replicator. I would suppose it was the human pilot's responsibility to provide for their own meals on a flight."
     
-    "I punched in some numbers... what was it? 2424, I think?"
+    "I punched in some numbers... what was it? 2424?"
     
     "The machine hummed and then filled with a bright white light. I opened the door, and once the steam faded away, I saw a small paper cup standing in the center of the contraption."
     
@@ -69,7 +69,7 @@ label scene5p2:
     
     scene cockpit2
     
-    "I gulped down the foul, infernal, black concoction, and then crushed the cup in my hand. It seemed to give way too easily, like if tissue paper could crack."
+    "I gulped down the foul, infernal, black concoction, and then crushed the cup in my hand. It seemed to give way too easily, almost as if tissue paper could crack."
     
     "Well... that was a nice little jolt of energy."
     
@@ -87,7 +87,7 @@ label scene5p2:
     
     p "I see you're still infatuated with them. How goes the hunt for knowledge?"
     
-    b "Ah, you see, that's the thing. As soon as I see a document, I just... spring for it."
+    b "Ah, you see, that's the thing. As soon as I see a document, I just... go for it."
     
     show console loretalk
     
@@ -103,7 +103,7 @@ label scene5p2:
     
     show console loretalklook
     
-    "Before I could read into it too much, she swiped at the display elegantly. So too, the girl had disappeared."
+    "Before I could read into it too much, she swiped at the display elegantly. The girl disappeared."
     
     show console lorechat
     
@@ -169,7 +169,7 @@ label scene5p2:
     
     show bud neutraltalk
     
-    b "It was written in the United States. The first one, on the Old Earth."
+    b "It was written in the United States. The first one, on Old Earth."
     
     b "It's a fictional work, but it's rooted in the history of the sweeping American Midwest."
     
@@ -193,7 +193,7 @@ label scene5p2:
     
     show bud smallsmile
     
-    b "When they gathered as a family, and, well, enjoyed supper, the fruits of their labour, it felt it was... doubly meaningful."
+    b "When they gathered as a family, and, well, enjoyed supper, the fruits of their labor, it felt it was... doubly meaningful."
     
     show bud smallsmileclosed
     
@@ -289,7 +289,7 @@ label scene5p2:
     
     b "In the first book, I'd gotten so enamored with how they described the beautiful landscapes and the sweeping fields, and then..."
     
-    b "When they moved into town, it was about business, economics, trade, it was like, the characters were defined by the work they did."
+    b "When they moved into town, it was about business, economics, trade, it was as if the characters were defined by the work they did."
     
     show bud worrytalkx
     
@@ -443,7 +443,7 @@ label scene5p2:
     
     "I mean, this was just supposed to be a favor."
     
-    "Tensed, I rubbed the back of my neck."
+    "Tense, I rubbed the back of my neck."
     
     show bud weaksmile
     
@@ -473,7 +473,7 @@ label scene5p2:
     
     show bud awkwardchuckle
     
-    b "Hee hee, sorry! Force of habit, I suppose."
+    b "Hehe, sorry! Force of habit, I suppose."
     
     show bud neutralsmalltalk
     
@@ -495,6 +495,7 @@ label scene5p2:
     
     "I muttered, then chuckled. Admittedly, I was having too, spending my time chatting with Budapest, drifting with her through space."
     
-    "Accompanying her on the voyage through the ocean of stars."
+    "Accompanying her on our voyage through the ocean of stars."
     
     jump scene5p3
+

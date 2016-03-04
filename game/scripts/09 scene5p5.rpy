@@ -8,7 +8,7 @@ label scene5p5:
     
     ".."
     
-    "A little while later, Budapest accosted me with a very sudden, very interesting question."
+    "A little while later, Budapest accosted me with a very unusual, very interesting question."
     
     scene cockpit3 with fade
     show bud worryx
@@ -31,7 +31,7 @@ label scene5p5:
     
     b "To experience the struggle that mankind felt as it fought against death, grappled with the concept of 'the end,' how..."
     
-    b "How they dealt with that huge, looming, demonic shadow that was 'mortality,' that hung over them in blackness."
+    b "How they dealt with that huge, looming, demonic shadow that was 'mortality,' that hung over them in darkness."
     
     b "I..."
     
@@ -69,13 +69,13 @@ label scene5p5:
     
     show bud neutral
     
-    "She nodded, continuing her stare. I’d admit, this is a rather strange situation, but she had a strange sort of genuinity that put me right at ease, even when I was several hundred steps outside of my comfort zone."
+    "She nodded, continuing her stare. I’d admit, this was a rather strange situation, but she had a strange sort of sincerity that put me right at ease, even when I was several hundred steps outside my comfort zone."
     
     show bud neutralsmalltalk
     
     b "Yes. It’s a concept that’s… foreign to me, but I’d like to experience it."
     
-    "My breath catched, I keow she could sense my discomfort. Whether driven on by stubbornness or pure curiosity, I didn’t know."
+    "My breath caught, I knew she could sense my discomfort. Whether driven by stubbornness or pure curiosity, I didn’t know."
     
     show bud neutralsquint
     
@@ -89,7 +89,7 @@ label scene5p5:
     
     "To be perfectly honest, I didn’t really know how to answer in a way that would make sense for her."
     
-    i "It’s relaxing, imagine losing all of your inputs for a long period of time."
+    i "It’s relaxing; imagine losing all of your inputs for a long period of time."
     
     show bud shock
     
@@ -97,7 +97,7 @@ label scene5p5:
     
     show bud neutral
     
-    i "It’s a time where you don’t have to worry, or even do anything. Then you wake up, freshened for a new day."
+    i "It’s a time when you don’t have to worry, or even do anything. Then you wake up, freshened for a new day."
     
     "I looked past her, back out into star-cluttered space, trying to ascertain my next sentence. It was difficult."
     
@@ -113,21 +113,21 @@ label scene5p5:
     
     scene blush
     
-    "She nodded vigorously, a glint seeming to enter her non-corporeal eyes. It was spurring, to be sure. As if I stood a chance against her seemingly omnipresent thirst for knowledge."
+    "She nodded vigorously, a glint seeming to enter her non-corporeal eyes. It was stimulating, to be sure. As if I stood a chance against her seemingly omnipresent thirst for knowledge."
     
     scene budablush
     
-    i "Well, imagine an infinite number of places, an unending amount of different people, and an undeterminable amount of situations."
+    i "Well, imagine an infinite number of places, an unending amount of different people, and an indeterminable range of situations."
     
     scene budablush2
     
     b "Whatever the mind can think of…"
     
-    i "Exactly. It’s different every time. Sometimes, you can even bring people who you’ve met into the dream."
+    i "Exactly. It’s different every time. Sometimes, you can even bring people whom you’ve met into the dream."
     
     scene budablush3
     
-    "Her eyes were wide, and I could tell that she was soaking this all in."
+    "Her eyes were wide, and I could tell that she was absorbing all of it."
     
     b "...Really?"
     
@@ -141,11 +141,11 @@ label scene5p5:
     
     scene budablush5
     
-    "Her eyes unfocused once more as she seems to mull this over. I felt a strange… fuzzy feeling, to show her something so innate to us, yet so unique and special to her."
+    "Her eyes unfocused once more as she seemed to mull this over. I felt a strange… fuzzy feeling, to show her something so innate to us, yet so unique and special to her."
     
     "If only we hadn’t met under such dire conditions."
     
-    "Distracted with my thoughts, I couldn’t hold back a yawn that suddenly emerged from within. Instantly, her semi-translucent eyes darted right back toward me."
+    "Distracted by my thoughts, I couldn’t hold back a yawn that suddenly emerged from within. Instantly, her semi-translucent eyes darted right back toward me."
     
     scene cockpit3 with fade
     show bud neutralsmalltalk
@@ -154,7 +154,7 @@ label scene5p5:
     
     i "I… think so?"
     
-    "I leaned back in my chair, the device auto-reclining itself for my benefit. Folding my arms, I prepared myself for another bout of sleeping aboard the silent, drifting cockpit."
+    "I leaned back in my chair, the device auto-reclining for my benefit. Folding my arms, I prepared myself for another bout of sleeping aboard the silent, drifting cockpit."
     
     show bud angryfrown
     
@@ -172,7 +172,7 @@ label scene5p5:
     
     b "I was wondering if… I could monitor your vitals as you slept?"
     
-    "Her eyes seemed to narrow, as if she realizes that her requesting this is a long-shot."
+    "Her eyes seemed to narrow, as if she realizes that her requesting this was a long-shot."
     
     i "And what purpose would that serve?"
     
@@ -184,7 +184,7 @@ label scene5p5:
     
     show bud smile
     
-    "She smiled, both enthused at my acceptance and humored at my interpreted fear."
+    "She smiled, both enthused at my acceptance and amused at my interpreted fear."
     
     show bud smiletalk
     
@@ -192,13 +192,13 @@ label scene5p5:
     
     i "..."
     
-    "A small compartment opens on the dash-board, near the right side. A small device appears, complete with a wired, electronic patch that looks like it's supposed to be stuck to skin. "
+    "A small compartment opened on the dashboard, near the right side. A small device appeared, complete with a wired, electronic patch that looked like it was supposed to be stuck to skin. "
     
-    p "Well, there it is...."
+    i "Well, there it is...."
     
     b "Just stick it near one of your veins, it'll do the rest."
 
-    "I grab the device, rolling my right cuff down. Carefully, I attach it an inch or so down my wrist, and it quickly seals to my skin. Simple."
+    "I grabbed the device, rolling my right cuff down. Carefully, I attached it an inch or so down my elbow, and it quickly sealed to my skin. Simple."
     
     show bud smiletalkclosed
     
@@ -212,8 +212,9 @@ label scene5p5:
     
     "I took a deep breath."
     
-    p "Good… night."
+    i "Good… night."
     
-    "And with that, I slipped away to my own devices, silently wondering if Budapest would come along with me."
+    "And with that, I slipped away to my own world, silently wondering if Budapest would come along with me."
 
     jump scene6
+

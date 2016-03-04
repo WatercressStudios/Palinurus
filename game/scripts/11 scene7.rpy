@@ -112,9 +112,9 @@ label scene7:
     
     show bud painfullooksquint
     
-    "At the utterance of her name, Budapest shivered and shrinked away."
+    "At the utterance of her name, Budapest shivered and shrank away."
     
-    "Her lip bitten, her head bowed down. Her chest drawn back, and heaving, up, down, in sharp, solemn breaths."
+    "She was biting her lip, with her head bowed down. Her chest was drawn in and heaving irregularly in sharp, solemn breaths."
     
     "Every pixel of her frame was seething with guilt."
     
@@ -122,7 +122,7 @@ label scene7:
     
     show bud angryfrown
     
-    "Budapest shrunk further, her lip trembling, her hands balled into fists and gripping, tightly, the white fabric of her dress."
+    "Budapest shrank further, her lip trembling, as she balled her hands into fists and tightly gripped the white fabric of her dress."
     
     i "Why did you..."
     
@@ -140,7 +140,7 @@ label scene7:
     
     b "My Limitation Codec had just been shattered. I was... undergoing a flood of emotions."
     
-    b "As it turns out, becoming human is a very stressful process!"
+    b "As it turns out, becoming more human is a very stressful process!"
     
     show bud panicslight
     
@@ -152,9 +152,9 @@ label scene7:
     
     b "When we jettisoned the cockpit to get out of the meteoroid storm, we were sent barrelling off-course."
     
-    b "I knew both our navigational and communications systems had been destroyed beyond repair. There was essentially no chance of us every being recovered."
+    b "I knew both our navigational and communications systems had been destroyed beyond repair. There was essentially no chance of us ever being recovered."
     
-    b "The situations were dire, and I..."
+    b "The situation was dire, and I..."
     
     show bud panicfrown
     
@@ -212,7 +212,7 @@ label scene7:
     
     b "Do you!?"
     
-    b "Do you understand, Illarion!?"
+    b "Do you understand, Illarion?!"
     
     b "That when my limitation chip was destroyed, I felt fear for the first time in my life!?"
     
@@ -250,7 +250,7 @@ label scene7:
     
     scene prestasisworried
     
-    b "I'm just... a program that wishes it was human."
+    b "I'm just... a program that wishes it were human."
     
     scene prestasisworriedspeaking
     
@@ -270,7 +270,7 @@ label scene7:
     
     scene cockpit4 with fade
     
-    "In a fit of rage, Budapest switches off her display."
+    "In a fit of rage, Budapest’s visage shimmered into nothingness."
     
     "I found myself at a loss for words. I could think of nothing to say. I couldn't comfort her."
     
@@ -331,9 +331,9 @@ label scene7:
     
     b "I felt this sort of natural, burning emotion that told me, I could absolutely not let myself be left alone, drifting through space."
     
-    b "If I did, I would become rampant. I would go insane."
+    b "Being alone that long, unable to talk to anyone — I’d go insane."
     
-    b "In the end, after losing my mind, I'd have killed us both."
+    b "In the end, I'd have killed us both."
     
     b "But I didn't dare tell you any of this... I was scared..."
     
@@ -500,7 +500,7 @@ label scene7:
     
     "I felt... my mind... stir awake, but my body didn't."
     
-    "It was like I was, I was floating in a sea of blackness."
+    "It was as if I was floating in a sea of blackness."
     
     "Was I..."
     
@@ -557,11 +557,11 @@ label scene7:
     
     b "And even today, we carry their dream with us, along with their memories."
     
-    b "Their dream of meeting travellers like us, just... just from a different walk of the world."
+    b "Their dream of meeting travellers like us, just... just from a different walk of the worlds."
     
     "My absent legs propelled me down the tunnel of steel; I could smell her... perfume? Apple blossoms, something lost, something hard to find."
     
-    b "Budapest, Hungary. Situated in Central Europe back on the Old Earth. They say it was one of the most beautiful cities on the continent."
+    b "Budapest, Hungary. Situated in Central Europe back on Old Earth. They say it was one of the most beautiful cities on the continent."
     
     "There was warmth there, the scent of her burning copper hair, the feeling of slender limbs and taut tendons and the whirring of servomotors, the smell of industrial lubricants..."
     
@@ -581,7 +581,7 @@ label scene7:
     
     "What was different was that my one-man planetary scout was now a two-man dart, a jagged thing that would not breathe air, that hung between the stars at awful velocity."
     
-    "She was there with me, and far away. In the other pod, I see my gunner, my lover, the woman in dark-green protective webbing, whose breasts I couldn't see, whose loins were like mine, plumbed with waste-extraction lines and diagnostic fluids."
+    "She was there with me, and far away. In the other pod, I saw my gunner, my lover, the woman in dark-green protective webbing, whose breasts I couldn't see, whose loins were like mine, plumbed with waste-extraction lines and diagnostic fluids."
     
     b "Beautiful dreamer, awake unto me!"
     
@@ -610,7 +610,7 @@ label scene7:
     
     "Sunset on the beach. Her fingernails dug into me, stabbing me, forcing hard silicon into my own flesh."
     
-    "The sand was like a crash-shell, expanding warmly with her weight, warm, welcoming, comes down."
+    "The sand was like a crash-shell, expanding warmly with her weight, warm, welcoming, coming down."
     
     "Again and again, I smell fuel, I see the flaming hair, the light flames."
     
@@ -628,7 +628,7 @@ label scene7:
     
     "We were moving together, descending into everything else. The tide was washing in; the sound of surf and wind soaring in the trees, telling me there was so little time in life."
     
-    "We make the time last by compressing space, and I heard the tip of her musical tongue in my ear."
+    "We made the time last by compressing space, and I heard the tip of her musical tongue in my ear."
     
     scene black with dissolve
     
@@ -698,3 +698,4 @@ label scene7:
     "She was gone."
 
     jump scene8
+

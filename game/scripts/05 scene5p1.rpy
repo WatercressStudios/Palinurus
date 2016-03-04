@@ -6,7 +6,7 @@ label scene5p1:
     
     "It took a while to get used to, but eventually, aided by the tranquility of space and its ocean of stars..."
     
-    "We were able to find a small sense of peace."
+    "We were able to find a small measure of peace."
     
     "The jettisoning of the cockpit was a stressful time for both of us, between the screaming, the close scrape with untimely death..."
     
@@ -49,11 +49,11 @@ label scene5p1:
     
     show bud neutral
     
-    "I did a real job at contorting myself in my seat. Un-knotting my pretzel legs, I peeled myself from my seat. Extending my arms to the ceiling, I stretched to get all the kinks out of my back."
+    "I did a real job of contorting myself in my seat. Unknotting my pretzel legs, I peeled myself from my seat. Extending my arms toward the ceiling, I stretched to get all the kinks out of my back."
     
-    "Drowsily, I looked ahead, to the stars drifting out in the cosmos across a black expanse."
+    "Drowsily, I looked ahead, at the stars drifting out in the cosmos, across a black expanse."
     
-    p "You didn't wake me up just to star gaze, did you? There are enough of those out there to last us the whole trip."
+    p "You didn't wake me up just to stargaze, did you? There are enough of those out there to last us the whole trip."
     
     show bud neutral
     
@@ -114,7 +114,7 @@ label scene5p1:
     
     "I sighed, getting settled into my chair."
     
-    p "You always give your passengers this much trouble? Not like everyone can get nine square hours of sleep at night."
+    p "You always give your passengers this much trouble? Not everyone can get nine square hours of sleep at night."
     
     show bud smiletalkclosed
     
@@ -150,7 +150,7 @@ label scene5p1:
     
     "She was insistent on the point. I didn't know artificial intelligences could... blush."
     
-    "She was getting so embarassingly squirmy, so visibly flustered; I laughed in her face."
+    "She was getting so embarrassingly squirmy, so visibly flustered; I laughed in her face."
     
     show bud shock
     
@@ -176,15 +176,15 @@ label scene5p1:
     
     b "Yes. They're standard in all outgoing Titan Transportation systems. Trillions of archival documents stored electronically inside the holographic layers of each vessel."
     
-    b "The database is intended for the purposes of, ah... 'extraterrestrial ambassadorship.' It's a compilation of digitally-preserved artifacts, dating back to the times of the Old Earth."
+    b "The database is intended for the purposes of, ah... 'extraterrestrial ambassadorship.' It's a compilation of digitally-preserved artifacts, dating back to the times of Old Earth."
     
     show bud neutraltalk
     
-    p "Huh, wow. They go that far back, do they?"
+    p "Huh. They go that far back, do they?"
     
-    p "Hard to believe that every dingy little spaceship like this one carries the breadth of humanity's cultural footprint."
+    p "Hard to believe that every dingy little spaceship like this one carries the full extent of humanity's cultural footprint."
     
-    p "It's a wonder they manage to fit it all."
+    p "It's a wonder they manage to fit it all in."
     
     show bud neutral
     
@@ -200,11 +200,11 @@ label scene5p1:
     
     b "No, no, nothing like that, like... idyllic."
     
-    p "I don't quite follow, er... it's incredibly they fit so much together and all, but..."
+    p "I don't quite follow, er... it's incredible they fit so much together and all, but..."
     
     show bud smiletalkclosed
     
-    b "It's like... well, you know when mankind first landed on the moon orbiting the Old Earth?"
+    b "It's like... well, you know when mankind first landed on the moon orbiting Old Earth?"
     
     p "Of course. It's a galactic civil holiday. Built a museum over their footprints; it's a hard thing to not learn about."
     
@@ -216,7 +216,7 @@ label scene5p1:
     
     b "Of course. And the lunar plaque that's preserved there, too?"
     
-    b "'Here men from the planet Earth first set foot upon the moon. July 1969, A.D."
+    b "'Here men from the planet Earth first set foot upon the moon. July 1969 AD"
     
     b "'We came in peace for all mankind.'"
     
@@ -246,7 +246,7 @@ label scene5p1:
     
     "... It didn't help that I was buying into her wistful prose a little myself. It was whimsical and saccharine, but I couldn't think of a better reason a public transit fleet for commuters would be outfitted with all known human knowledge..."
     
-    "I'd opened my mouth to respond and try to shoot her down, but I honestly couldn't. I didn't have a better idea, and... well, I don't think I'd be able to live with myself."
+    "I'd opened my mouth to respond and try to shoot her down, but I honestly couldn't. I didn't have a better idea, and... well, I’d not have been able to live with myself."
     
     "Kind of lousy to trample on the imagination of a naive, innocent girl. Artificial intelligence or otherwise."
     
@@ -265,7 +265,7 @@ label scene5p1:
     
     show bud neutraltalk
     
-    b "... Sadly, not. But, there are maybe fifty million spacefaring vessels from Titan Transport alone currently making their rounds across mapped space."
+    b "... Sadly, no. But, there are maybe fifty million spacefaring vessels from Titan Transport alone currently making their rounds across mapped space."
     
     b "If any travellers encountered one of us, I'm sure they'd be well met with a generous gift."
     
@@ -297,7 +297,7 @@ label scene5p1:
     
     "A straight-laced answer, as expected."
     
-    "What wasn't expected, though, was the way her eyes focused hungrily, lustingly at the console."
+    "What wasn't expected, though, was the way her eyes focused hungrily, lustfully at the console."
     
     show bud neutralsmalltalk
     
@@ -339,7 +339,7 @@ label scene5p1:
     
     show bud neutraltalk
     
-    b "Budapest, Hungary. Situated in Central Europe back on the Old Earth. They saw it was one of the most beautiful cities on the continent."
+    b "Budapest, Hungary. Situated in Central Europe back on Old Earth. They said it was one of the most beautiful cities on the continent."
     
     p "Huh."
     
@@ -371,9 +371,9 @@ label scene5p1:
     
     show bud neutral
     
-    "I catch a look at what she was reacting to. It was a sprawling series of buildings, with spires extending up and above the rest of the city. It was imposing, and yet, oddly regal and cultured at the same time."
+    "I caught a look at what she was reacting to. It was a sprawling series of buildings, with spires extending up and above the rest of the city. It was imposing, and yet, oddly regal and cultured at the same time."
     
-    "I squint my eyes to read the caption beneath it."
+    "I squinted to read the caption beneath it."
     
     show bud neutraltalk
     
@@ -387,7 +387,7 @@ label scene5p1:
     
     b "Hehe... according to this, Budapest was remarkably artistic and cultured... oh, look at this!"
     
-    "She brought up the image of another building. An Opera House, the caption said. It already looked ancient by the time the photograph was taken... odds are it was nothing but dust in this day and age."
+    "She brought up the image of another building. An Opera House, the caption said. It already looked ancient by the time the photograph was taken... odds were that it was nothing but dust in this day and age."
     
     "I grimaced."
     
@@ -399,15 +399,14 @@ label scene5p1:
     
     p "Says here that the namesakes come from... Slavic words. 'Buda' was for water, 'pest' for... 'oven?'"
     
-    "I glance over to her. She didn't seem to get it either."
+    "I glanced over to her. She didn't seem to get it either."
     
-    p "I guess it would fit your perfectly, wouldn't it."
+    p "I guess it would fit you perfectly, wouldn't it?"
     
     show bud neutralhalf
     
     b "Huh? I beg your pardon?"
-    
-    "I glance over to her. She didn't seem to get it either."
+
     
     show bud neutralsquint
     
@@ -425,9 +424,9 @@ label scene5p1:
     
     b "..."
     
-    p "But at the same time, you're also warm, and passionate, and you get excited easily. Like there's a spark of something in your eyes."
+    p "But at the same time, you're also warm, and passionate, and you get excited easily. As if there's a spark of something in your eyes."
     
-    p "Like, you've got both water and fire with you."
+    p "Like, you've got both water and fire within you."
     
     p "..."
     
@@ -449,7 +448,7 @@ label scene5p1:
     
     show bud smiletalk
     
-    b "I didn't know you could be so smooth of a flatterer."
+    b "I didn't know you could be such a sweet-talker."
     
     p "Heh, really? I just felt like being a little poetic."
     
@@ -479,7 +478,7 @@ label scene5p1:
     
     show bud weaksmile
     
-    "After a moment of awkward pausing, she chuckled a little too loudly, perhaps in a poorly-veiled attempt to dissipate the tension."
+    "After a brief and awkward moment, she chuckled a little too loudly, perhaps in a poorly-veiled attempt to dissipate the tension."
     
     show bud painfullook
     
@@ -491,11 +490,11 @@ label scene5p1:
     
     show bud neutraltalk
     
-    b "Would you like me to read you any interesting passages in the data-banks? It'd make for good on-flight entertainment!"
+    b "Would you like me to read you any interesting passages in the databanks? It'd make for good inflight entertainment!"
     
     b "And that's another responsibility of a good stewardess! A-at least, in this case, it, it would, uh..."
     
-    "She approached this proposal with such vigor, only to stumble near the end. I waved my hand. I knew this was less about me, and more about letting her sate her own curiousity, so..."
+    "She approached this proposal with such vigor, only to stumble near the end. I waved my hand. I knew this was less about me, and more about letting her sate her own curiosity, so..."
     
     show bud neutral
     
@@ -511,15 +510,15 @@ label scene5p1:
     
     "What I wasn't counting on was how much sheer data she'd flip through in a single day."
     
-    "She didn't stop at Hungary. We ended up taking a whirlwind tour through the rest of mainland Europe. Berlin, Bucharest, Vienna, London, Bruges, the list went on and on."
+    "She didn't stop at Hungary. We ended up taking a whirlwind tour through the rest of mainland Europe. Berlin, Bucharest, Vienna, Florence, Bruges, the list went on and on."
     
-    "She was feverish, insaitable in her search for knowledge. It was an information overload."
+    "She was feverish, insatiable in her search for knowledge. It was an information overload."
     
     "Damn it, she was enamored by a COOKBOOK now!"
     
     show bud smiletalk
     
-    b "Parisian cuisine, hm? Oh! Ooh! Maybe we can try making French crepes with the replicator, passenger-sir!"
+    b "Parisian cuisine, hm? Oh! Ooh! Maybe we can try making French crêpes with the replicator, passenger-sir!"
     
     show bud smile
     
@@ -527,7 +526,7 @@ label scene5p1:
     
     show bud smiletalk
     
-    b "Ooh, ooh! Or Castilian paella!"
+    b "Ooh, ooh! Or Castillian paella!"
     
     p "Really, it's-"
     
@@ -562,3 +561,4 @@ label scene5p1:
     "........."
     
     jump scene5p2
+

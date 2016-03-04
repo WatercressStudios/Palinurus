@@ -13,7 +13,7 @@ init -1 python hide:
     ## set to False before the game is released, so the user can't
     ## cheat using developer tools.
 
-    config.developer = False
+    config.developer = True
 
     ## These control the width and height of the screen.
 
@@ -97,7 +97,7 @@ init -1 python hide:
 
     style.window.background = Frame("ui/newframe2.png", 12, 12)
 
-    style.say_who_window.background = Frame("ui/namebox2.png", 5, 5)
+    style.say_who_window.background = Frame("ui/namebox2.png", 23, 23)
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
@@ -110,9 +110,9 @@ init -1 python hide:
     ## Padding is space inside the window, where the background is
     ## drawn.
 
-    style.window.left_padding = 12
+    style.window.left_padding = 24
     style.window.right_padding = 75
-    style.window.top_padding = 6
+    style.window.top_padding = 16
     style.window.bottom_padding = 12
 
     ## This is the minimum height of the window, including the margins
@@ -147,7 +147,8 @@ init -1 python hide:
     ## The file containing the default font.
     ## The default font is DejaVuSans.ttf
 
-    style.default.font = "font/SourceSansPro-Regular.otf"
+    #style.default.font = "font/SourceSansPro-Regular.otf"
+    style.default.font = "font/UbuntuMono-R.ttf"
 
     ## The default size of text.
 

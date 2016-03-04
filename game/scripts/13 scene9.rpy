@@ -10,7 +10,7 @@ label scene9:
     
     b "You... don't have much time left."
     
-    b "It turns out, back when were knocked off-course in the debris storm, a small scrab of metallic debris managed to collide with the cockpit, leaving a microscopic crack."
+    b "It turns out, back when were knocked off-course in the debris storm, a small scrap of metallic debris managed to collide with the cockpit, leaving a microscopic crack."
     
     show bud panicfrown
     
@@ -18,15 +18,15 @@ label scene9:
     
     b "The cockpit windshield's integrity is currently at two percent. It's going to be breached very soon."
     
-    b "And then that window is breached, it will shatter, and the cockpit will be exposed to open space."
+    b "And when that window is breached, it will shatter, and the cockpit will be exposed to open space."
     
     show bud neutraltalk
     
     b "Your hard-suit should seal and protect you from the elements for some time, but... it's not going to last forevor."
     
-    i "The wind-shield is... cracking?"
+    i "The windshield is... cracking?"
     
-    p "And it's been happening this whole time?"
+    i "And it's been happening this whole time?"
     
     show bud panicslight
     
@@ -84,9 +84,9 @@ label scene9:
     
     show bud weaksmile
     
-    "A light smile returns to her face; I think it's the first real smile I've seen since I woke up."
+    "A light smile returned to her face; I think it was the first real smile I'd seen since I woke up."
 
-    "She looks a little like she used to. Just a little bit happy, even in the severity of the situation."
+    "She looked a little like she used to. Just a little bit happy, even in the severity of the situation."
     
     show bud neutraltalk
     
@@ -94,7 +94,7 @@ label scene9:
 
     b "Exactly two hours ago, the shuttle's short-range radar detected a manned vessel within communications range."
 
-    b "Now, it's been more than a half a century, so our equipment has become quite severely outdated, but we should still be able to make contact with them."
+    b "Now, it's been more than a half a millennium, so our equipment has become quite severely outdated, but we should still be able to make contact with them."
 
     b "Analyzing their signals and registration codes, they're definitely human, but... different."
     
@@ -110,7 +110,7 @@ label scene9:
     
     b "As of now, my battery's running on fumes; the power is barely enough to keep my display lit."
 
-    b "But I should be able to siphon what power is left in it to send out a distress beacon."
+    b "But I should be able to siphon what power is left in it to activate a distress beacon."
 
     b "I managed to make some repairs to our comms equipment while you were in stasis. It's a crude job, and the energy source won't be very clean..."
 
@@ -184,11 +184,11 @@ label scene9:
     
     b "It's not pretty, but... but it's the way things have to be."
     
-    "I can feel tears beginning to well up."
+    "I could feel tears beginning to well up."
 
-    "I can't help myself."
+    "I couldn’t help myself."
 
-    "I feel the collection of cold, soft tears, swelling under my eyes."
+    "I felt the collection of cold, soft tears, swelling under my eyes."
     
     show bud smiletalk
     
@@ -216,10 +216,11 @@ label scene9:
     
     show bud weaksmile
     
-    "Budapest smiles a weak, pained smile."
+    "Budapest smiled a weak, pained smile."
     
     show bud neutral
     
-    "And then, she sighs."
+    "And then, she sighed."
 
     jump scene10
+

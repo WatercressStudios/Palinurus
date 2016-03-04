@@ -11,26 +11,26 @@ label scene2:
     
     "I could make out a few sparkling lights... reflections? Yeah. Reflections."
     
-    "The ship itself had bright, powerful lights attached to its wings, tail and under the cockpit, and every time they flashed I got a peek at some some sort of approaching mass."
+    "The ship itself had bright, powerful lights attached to its wings, tail and under the cockpit, and every time they flashed I got a peek at some sort of approaching mass."
     
     scene meteoroids
     with dissolve
     
     "Meteoroids. Hundreds, maybe thousands of meteoroids, drifting aimlessly through space, clustered together in a school."
     
-    "They encroached closer, unrelenting, a soaring landslide of steel, on a direct collision course with the shuttle."
+    "A relentless, soaring landslide of steel, on a direct collision course with the shuttle."
     
     p "..."
     
-    "I felt my heart sank deep down my stomach. Actually, no, it went past that."
+    "My heart sank deep down my stomach. Actually, no, it went past that."
     
     "Plummeted straight down to my bowels."
     
-    b "No cause for alarm, alright? I've got it under my control."
+    b "No cause for alarm, alright? I've got it under control."
     
-    "No cause for alarm."
+    p "No cause for alarm."
     
-    "No cause for alarm."
+    b "No cause for alarm."
     
     scene black
     with dissolve
@@ -45,17 +45,17 @@ label scene2:
     
     "'Tap tap tap tap.'"
     
-    "I could hear the sound of particles hitting against the hull, the pressure of metal ringing."
+    "I could hear the sound of particles impacting the hull, the constant whine of ringing metal."
     
     "They started sparse, spread out..."
     
     "'Tap tap tap TAP TAP TAP TAP!'"
     
-    "Only a few minutes ago, the cabin had been eerily silent. And now a constant stream of sound filled it, like we'd flown into the midst of a typhoon."
+    "Only a few minutes ago, the cabin had been eerily silent, and now a constant stream of sound filled it, like we'd flown into the midst of a typhoon."
     
-    "I could imagine the cold wind hitting my face; the fury of the Old Earth."
+    "I could imagine the cold wind hitting my face; the fury of Old Earth."
     
-    "I think it was a better coping mechanism. I'd rather be lost in a storm on a terrestrial surface than weathering a debris storm in a dingy old shuttle in one of the most remote parts of charted space."
+    "I think it was a better coping mechanism. I'd rather be lost in a thunderstorm on a terrestrial surface than weathering a debris storm in a dingy old shuttle in one of the most remote parts of charted space."
     
     "I winced, popping an eye open. A heavier rock pounded against the hull, and the ship lurched to one side."
     
@@ -78,7 +78,7 @@ label scene2:
     
     b "Way, way worse than this."
     
-    b "I'm a veteran of the trade; an unsung hero in the artificial intelligence world, you know?"
+    b "I'm a veteran of the trade; an unsung hero in the artificial intelligence community, you know?"
     
     b "This is nothing that I can't handle, so-"
     
@@ -95,7 +95,7 @@ label scene2:
     
     "They came into sight. I saw enormous meteoroids, the heavy hitters of the storm, hurling themselves directly in our path. Even the awe-inspiring, holy light of the distant stars cowered in the shadow of the meteoroids."
     
-    "One was on a due course for the cabin. It was a wretched, gray-jagged mass that glistened devilishly, its iron deposits reflecting the flashing emergency lights of our ship."
+    "One was on a due course for the cabin. It was a monstrous, gray, jagged mass that glistened devilishly, its iron deposits reflecting the flashing emergency lights of our ship."
     
     "It was going to impact, and it was going to impact very soon."
     
@@ -103,13 +103,13 @@ label scene2:
     scene black
     with dissolve
     
-    "I swallowed hard and lowered my hands to undo my harnesses. My hands shook thunderously, I couldn't get at the switches and belts."
+    "I swallowed hard and lowered my hands to undo my harness. My hands shook thunderously; I couldn't get at the switches and belts."
     
-    "I tugged away at the straps, but they only seemed to tighten."
+    "I tugged at the straps, but they only seemed to tighten."
     
     p "Come on... come on, God damn it!"
     
-    "Before all the strength had been drained from my arms, the harnesses and belts miraculously disengaged."
+    "Before all the strength had been drained from my arms, the belts miraculously disengaged."
     
     b "Passenger-sir, you need to get into the cockpit."
     
@@ -137,7 +137,7 @@ label scene2:
     
     "Scrambling over to the console, I sealed the cockpit door and engaged all the airlocks."
     
-    "My breathing was frantic, my breathing blurred." 
+    "My breathing was frantic, my vision blurred." 
     
     scene cockpitsideemergency
     show console warning
@@ -159,7 +159,7 @@ label scene2:
     
     show console warning
     
-    "I paused; I felt an odd sensation where my hand was resting on the wind-shield. I drifted my eyes down to take a look..."
+    "I paused; I felt an odd sensation where my hand was resting on the windshield. I drifted my eyes down to take a look..."
     
     "A hairline fracture along the window pane. My finger ran along the thin, narrow line formed in the ultra-hardened glass. The splintered patterns it formed were remarkable, but..."
     
@@ -180,7 +180,7 @@ label scene2:
     
     "Receptive to the machine's goading, I staggered to my feet, watching my footing in the lopsided cockpit."
     
-    "Eventually, I sunk into the plushy co-pilot's seat to the the Navigator's right. I glance over to her."
+    "Eventually, I sank into the plushy co-pilot's seat to the the Navigator's right. I glanced over to her."
     
     show bud closedworryx
     
@@ -202,7 +202,7 @@ label scene2:
     
     show bud panicslight
     
-    b "Are you alright, passenger-sir? Are you hurt? That was a nasty beating you took..."
+    b "Are you alright, Passenger-sir? Are you hurt? That was a nasty beating you took..."
     
     show bud panicfrown
     
@@ -212,7 +212,7 @@ label scene2:
     
     show bud panicsquintx
     
-    b "Well, our vessel's sustained critical damage, and we've been knocked considerably off-course."
+    b "Well, our vessel's sustained critical damage, and we've been knocked considerably off course."
     
     show bud worryclosex
     
@@ -244,17 +244,17 @@ label scene2:
     
     b "This transit shuttle is of an older model, sir, previously designed for two human pilots. In the case of emergency, the ship-maker installed a simple mechanism to eject the cockpit, which contains a lavatory and necessary supplies for emergency survival."
     
-    b "It was essentially a primitive form of an escape pod, except roomier, and not as guaranteed to work..."
+    b "It was essentially a primitive form of an escape pod, except roomier and less reliable."
     
     show bud normaltalkeyebrows
     
-    b "Although I believe the jettison system of this craft is still in working order. I do take care of it, after all."
+    b "Although I believe the jettison system of this craft is still in working order. I do maintain it, after all."
     
     "... What?"
     
     "Well, when I thought about it... it wasn't such a strange thing to phase out, now that pilots were almost always Navigators."
     
-    "Even then, I was glad it wasn't phased out entirely. The age of the ship may very well have been what saved us in that moment."
+    "Even then, I was glad it wasn't phased out entirely. The age of the ship may very well have been what saved me in that moment."
     
     p "Okay, well, that sounds... doable."
     
@@ -268,7 +268,7 @@ label scene2:
     
     show bud worrytalkx
     
-    b "It's not a sure thing, but... I'll have to navigate our subsystems to see if it's still in working order."
+    b "It's not a sure thing, but... I'll have to inspect our subsystems to see if it's still in working order."
     
     show bud worryx
     
@@ -316,7 +316,7 @@ label scene2:
     
     show bud weaksmile
     
-    "The program bowed stiffly with a weak smile. That sinking feeling in my gut stirred up again."
+    "The program bowed stiffly with a weak smile. That sinking feeling in my gut stirred again."
     
     p "H-hey! Don't talk like that! You're a Personal Navigator, aren't you?"
     
@@ -336,7 +336,7 @@ label scene2:
     
     show bud srsfaectalk
     
-    b "Understood. I'm going in. Make sure you harnesses are correctly secured, and I'll be back soon."
+    b "Understood. I'm going in. Make sure your harness is correctly secured, and I'll be back soon."
     
     show bud srsfaec
     
@@ -349,7 +349,7 @@ label scene2:
     scene white
     with dissolve
     
-    "The AI's holographic display switched off in a flash of white light, and its cameras retracted down in to the inner workings of the console."
+    "The AI's holographic display switched off in a flash of white light, and its cameras retracted back into the inner workings of the console."
     
     scene cockpitemergency
     with dissolve
@@ -360,7 +360,7 @@ label scene2:
     
     "'Boom!'"
     
-    "I felt the ship rumble past the impact of another massive meteoroid. I shivered. Was I going to die here? Alone? In the infinite vastness of space..."
+    "I felt the ship rumble with the impact of another massive meteoroid. I shivered. Was I going to die here? Alone? In the infinite vastness of space..."
     
     "No one would care."
     
@@ -390,7 +390,7 @@ label scene2:
     
     p "... The cockpit is...!?"
     
-    "Small pebbles pelted the wind-shield, but I didn't care."
+    "Small pebbles pelted the windshield, but I didn't care."
     
     "I was ecstatic, laughing to myself in giddy joy. The way was clearing up! The program had managed it! We were going to make it! We-"
     
@@ -401,3 +401,4 @@ label scene2:
     "'SLAM!'"
     
     jump scene3
+
