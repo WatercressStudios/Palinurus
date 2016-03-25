@@ -84,10 +84,12 @@ label scene3:
     b "I'm here! I'm here."
     
     show bud panic
+    with dissolve
     
     b "My deepest apologies for taking so long, ah..."
     
     show bud weaksmile
+    with dissolve
     
     "A soft chime, too soft given the pressing circumstances, signaled the return of the Intelligent Navigator."
     
@@ -100,10 +102,12 @@ label scene3:
     p "The hell's going on?"
     
     show bud worrytalkx
+    with dissolve
     
     b "Ah, er, the stabilizing subsystems have to be recalibrated, the emergency thrusters, remain seated, we'll be undergoing a little turbulence until-"
     
     show bud panic
+    with dissolve
     
     "Before the AI could provide me with an estimate, the cockpit lurched forward."
     
@@ -121,38 +125,46 @@ label scene3:
     b "Just one moment!"
     
     show console warningworry
+    with dissolve
     
     "It seemed to yell its response. I opened my jaw to respond, but in this state it was pointless to yell at it."
     
     show console warningneutral
+    with dissolve
     
     "The cockpit still felt like it was swirling, and the schematics and sheets upon sheets of code only made my scrambled mind ache even more."
     
     p "Ugh... I'm not feeling so hot."
     
     show console warningshout
+    with dissolve
     
     b "It'll be fine! Please remain seated!"
     
     show console warning
+    with dissolve
     
     p "Mm... hey... there's no need to sho-"
     
     show console warningangryshout
+    with dissolve
     
     b "I'M NOT SHOUTING!"
     
     show console warningpause
+    with dissolve
     
     "That piercing cry made me jump a good two feet. Or at least, it would've, had I not been strapped in."
     
     show console worrylook
+    with dissolve
     
     b "I mean, er..."
     
     b "I'm not shouting."
     
     show console warningworry
+    with dissolve
     
     "There was something... different about the program."
     
@@ -182,10 +194,12 @@ label scene3:
     "The stars beyond stopped their fluttery spinning. It seemed our course was finally..."
     
     show bud excitedclosed
+    with dissolve
     
     b "Stability subsystem has returned to partial effectiveness!"
     
     show bud excitedsmileclosed
+    with dissolve
     
     "The AI next to me beamed proudly. The worst seemed to have passed."
     
@@ -194,6 +208,7 @@ label scene3:
     "I was aching all over."
     
     show bud smile
+    with dissolve
     
     "As I cracked my neck, I found myself face-to-face with the program at the helm."
     
@@ -202,6 +217,7 @@ label scene3:
     "Emotional."
     
     show bud neutral
+    with dissolve
     
     "...The girl was staring at me."
     
@@ -212,48 +228,59 @@ label scene3:
     p "So, we're good now?"
     
     show bud normaltalkeyebrows
+    with dissolve
     
     "I wasn't quite sure what her eyes seemed to be asking. It was still a machine, wasn't it? A construct. It felt all kinds of weird, being stared at so closely like that."
     
     "The AI continued gazing at me for a moment, and then nodded."
     
     show bud neutralx
+    with dissolve
     
     b "Yes, the stabilizing subsystem is functioning at this point, as well as the artificial gravity, but I'm still unable to re-plot our course."
     
     show bud worryclosex
+    with dissolve
     
     b "I'm not quite sure how far we spiralled away. I think we might even be in uncharted space."
     
     show bud closedworryx
+    with dissolve
     
     b "..."
     
     show bud neutralx
+    with dissolve
     
     b "But regardless, as soon as the stabilizing subsystem returns to full strength, we should be able to regain situational awareness and head off on our way."
     
     show bud neutraleyebrowsx
+    with dissolve
     
     "The AI explained all this, concisely, as it continued to study me closely. I raised my eyebrows in response."
     
     show bud normaltalkeyebrows
+    with dissolve
     
     p "... Er, is something wrong? Something on my face?"
     
     show bud panic
+    with dissolve
     
     b "Ah? Ah..."
     
     show bud panicslight
+    with dissolve
     
     b "I, I was just concerned if you..."
     
     show bud blushstammer
+    with dissolve
     
     b "How do you, mm, feel? After all that?"
     
     show bud panicquiet
+    with dissolve
     
     b "It seemed like you were put through... considerable stress..."
     
@@ -266,16 +293,19 @@ label scene3:
     p "Me? I feel like I just spent 10 minutes in a blender."
     
     show bud panicx
+    with dissolve
     
     b "...Huh?"
     
     show bud neutral
+    with dissolve
     
     "The program tilted her head. Apparently, it was unable to comprehend similes."
     
     p "Haha, never mind. I'm fine! Just a little sore, is all."
     
     show bud neutralsilentx
+    with dissolve
     
     "..."
     
@@ -286,16 +316,19 @@ label scene3:
     "In time, it smiled, seemingly satisfied. What was it thinking...?"
     
     show bud bigsmile
+    with dissolve
     
     b "Stretching!"
     
     p "What?"
     
     show bud excitedclosed
+    with dissolve
     
     b "Stretching is a good way to relieve aches and pains."
     
     show bud bigsmileneutral
+    with dissolve
     
     b "We aren't anticipating any more turbulence, so if you like, undo your belts and-"
     
@@ -306,14 +339,17 @@ label scene3:
     b "... walk around a bit..."
     
     show bud panic
+    with dissolve
     
     b "Or... that's perfectly fine!"
     
     show bud weaksmile    
+    with dissolve
     
     b "...Excuse me, I have, to, er, make some... calibrations..."
     
     hide bud weaksmile
+    with dissolve
     
     "I wasn't quite sure where that came from. This AI seemed so cheery now, eager to please."
     
@@ -342,24 +378,28 @@ label scene3:
     p "Hey, uh..."
     
     show console worrylook
+    with dissolve
     
     "I spoke up, but stopped mid-sentence. Shoot, what was... its name?"
     
     "I hadn't committed it to memory at all. She turned to me, with those curious blue eyes."
     
     show console worryyell
+    with dissolve
     
     b "Yes, sir?"
     
     p "Bu... Budapest."
     
     show console warningsoftsmilelook
+    with dissolve
     
     "That was it, I thought. The unchanged expression on her face meant I'd hit the mark. At least my brain was still in one piece."
     
     p "I just wanted to say, uh... thanks. For... you know... saving me, and all that."
     
     show console warningsoftsmiletalk
+    with dissolve
     
     b "Mm? Oh, I only did what any other Personal Navigator would've done. It was my pleasure to-"
     
@@ -378,14 +418,17 @@ label scene3:
     b "..."
     
     show bud weaksmile
+    with dissolve
     
     b "..."
     
     show bud weaksmiletalksquint
+    with dissolve
     
     b "It was my pleasure. I'm..."
     
     show bud excitedclosed
+    with dissolve
     
     b "I'm just happy that you're safe."
     
@@ -408,10 +451,12 @@ label scene3:
     b "I'm looking into the matter right now... mm..."
     
     show console warningeyebrow
+    with dissolve
     
     "She frowned, visibly, while she worked. That wasn't good."
     
     show console warningneutral
+    with dissolve
     
     b "According to the diagnostics I've in front of me, while the cockpit should have been equipped with an operating thruster subsystem..."
     
@@ -420,18 +465,22 @@ label scene3:
     p "So, what you're saying is... we're stuck in a lifeboat without a paddle right now?"
     
     show console warninglook
+    with dissolve
     
     "She turned to me quizzically for a few moments, before nodding slowly."
     
     show console warningsmilelook
+    with dissolve
     
     b "That is... correct. I think?"
     
     show console warningeyebrow
+    with dissolve
     
     b "If I am understanding the figure of speech in the correct, er..."
     
     show console warningsmile
+    with dissolve
     
     b "That is correct."
     
@@ -442,12 +491,14 @@ label scene3:
     "Artificially manufactured, cold chemical-paste called 'food' wasn't exactly something out of a dream, but at least I wasn't going to starve."
     
     show console warningshout
+    with dissolve
     
     b "... Ah, and our solar panels are in working order as well. I'm confident we won't be running out of power for any length of our journey."
     
     p "Well hey, that all sounds great. Aside from the thrusters, that is."
     
     show console warningworry
+    with dissolve
     
     b "..."
     
@@ -456,6 +507,7 @@ label scene3:
     "Budapest went silent, her eyes locked on the schematics and diagrams hovering around her."
     
     show console warningworrytalk
+    with dissolve
     
     b "There was... one other thing."
     

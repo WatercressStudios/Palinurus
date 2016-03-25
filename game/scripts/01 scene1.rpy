@@ -157,22 +157,27 @@ label scene1:
     
     scene cockpithangar
     show bud neutralsquint
+    with dissolve
     
     "The projection’s eyes opened, revealing irises of striking sapphire. They looked like planets, glowing against the backdrop of deep space."
     
     show bud neutral
+    with dissolve
     
     "It took all the appearance of a woman, but I recognized the emulation at work."
     
     show bud smile
+    with dissolve
     
     "This would be the Personal Navigator assigned to this shuttle. An artificial intelligence designed to serve humanity."
     
     show bud smiletalk
+    with dissolve
     
     b "Greetings, Passenger-sir. Are you doing well today?"
     
     show bud smile
+    with dissolve
     
     p "Yeah. Yes."
     
@@ -191,10 +196,12 @@ label scene1:
     "But programs didn't need food or water, and they certainly didn't ask for remuneration. It was a convenient cost-cutting measure for the mega-corps, and the switch was welcomed by consumers with open arms."
     
     show bud smiletalkclosed
+    with dissolve
     
     b "I am glad you are feeling well."
     
     show bud smiletalk
+    with dissolve
     
     b "I am the Intelligent Navigator Budapest, and I will be accompanying you on this voyage."
     
@@ -213,22 +220,26 @@ label scene1:
     "It seems this Navigator was left with its default settings, though. Just as well, I didn't plan to see much of it from the cabin. The pilot seat had been retooled to fit its hologram generator, so I wasn’t much use here anyway."
     
     show console talk
+    with dissolve
     
     b "Departing from Mirabelle Station at 0400, Imperial Standard Time."
     
     b "Destination, Galactic Grand Central Station in the Alpha Centauri system."
     
     show console smileeyebrowslook
+    with dissolve
     
     b "Mm, this is going to be quite the lengthy journey, isn't it?"
     
     show console talklook
+    with dissolve
     
     b "Not to worry, passenger-sir. You have my word:"
     
     b "I'll get you to Grand Central safe and sound."
     
     show console smile
+    with dissolve
     
     "Some people ended up getting... too 'attached' to their AI's. Personally, I tended to keep my distance."
     
@@ -239,6 +250,7 @@ label scene1:
     "Content to confirm my presence and leave the piloting to the Navigator, I nodded in affirmation."
     
     show console talklook
+    with dissolve
     
     b "We'll be launching from the station now. Please remain seated and harnessed until instructed otherwise."
     
@@ -410,30 +422,36 @@ label scene1:
     p "Did something happen?"
     
     show console warningtalk
+    with dissolve
     
     b "Mm, not to cause you any alarm, Passenger-sir, but there's been an incident."
     
     b "The shuttle's short-range radar has detected an incoming debris storm."
     
     show console warninglook
+    with dissolve
     
     p "That... doesn't sound good."
     
     p "Actually, in fact, that's a very bad thing, isn't it?"
     
     show console warningeyebrow
+    with dissolve
     
     b "Well, I wouldn't say 'very bad,' but you might want to..."
     
     show console warningworry
+    with dissolve
     
     b "Now, like I said, there's no cause for alarm or anything."
     
     show console warningsmile
+    with dissolve
     
     b "Of course not."
     
     show console warningsmilelook
+    with dissolve
     
     b "But you might want to brace for impact."
     

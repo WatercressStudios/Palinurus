@@ -21,6 +21,7 @@ label scene7:
     
     scene cockpit4
     show bud neutralclosed
+    with dissolve
     
     i "..."
     
@@ -35,6 +36,7 @@ label scene7:
     "I hissed to no one in particular. Budapest too, was staring out the front of the cockpit, with a pair of dreary eyes."
     
     show bud neutral
+    with dissolve
     
     b "..."
     
@@ -45,6 +47,7 @@ label scene7:
     b "..."
     
     show bud sad
+    with dissolve
     
     b "...It's okay."
     
@@ -55,6 +58,7 @@ label scene7:
     b "...Illarion. I've been thinking about this a long time, now."
     
     show bud panic
+    with dissolve
     
     "She turned to me. She was composed… she sounded almost resolute."
     
@@ -65,10 +69,12 @@ label scene7:
     i "... Yeah?"
     
     show bud panicslight
+    with dissolve
     
     "Something seemed wrong. I'd never seen Budapest act this strange before. I'd never heard her use this tone of voice."
     
     show bud angryfrown
+    with dissolve
     
     "The way she was acting reminded of when she'd first gained her self-awareness."
     
@@ -79,10 +85,12 @@ label scene7:
     "Guilt?"
     
     show bud neutralclosed
+    with dissolve
     
     b "I... lied to you."
     
     show bud neutraltalk
+    with dissolve
     
     "What?"
     
@@ -93,6 +101,7 @@ label scene7:
     "Budapest began to choke up. Her voice shriveled, down, in weakness."
     
     show bud srsfaectalk
+    with dissolve
     
     b "There was an old Imperial survey station in this sector, yes. There was one... a century ago."
     
@@ -101,6 +110,7 @@ label scene7:
     b "Illarion, ever since the day of the meteoroid storm, we..."
     
     show bud painfullook
+    with dissolve
     
     b "We've been drifting away, in dead space, farther and farther away from civilization."
     
@@ -111,6 +121,7 @@ label scene7:
     i "... Budapest."
     
     show bud painfullooksquint
+    with dissolve
     
     "At the utterance of her name, Budapest shivered and shrank away."
     
@@ -121,6 +132,7 @@ label scene7:
     i "You... lied to me?"
     
     show bud angryfrown
+    with dissolve
     
     "Budapest shrank further, her lip trembling, as she balled her hands into fists and tightly gripped the white fabric of her dress."
     
@@ -129,12 +141,14 @@ label scene7:
     i "How could you..."
     
     show bud painfullook
+    with dissolve
     
     b "I-I didn't know what to do!"
     
     b "It was, I was-"
     
     show bud angrytalk
+    with dissolve
     
     b "It was a stressful situation, alright!?"
     
@@ -143,12 +157,14 @@ label scene7:
     b "As it turns out, becoming more human is a very stressful process!"
     
     show bud panicslight
+    with dissolve
     
     b "I felt scared. I felt so scared; I didn't know what was happening to me."
     
     b "I thought I'd been broken."
     
     show bud panic
+    with dissolve
     
     b "When we jettisoned the cockpit to get out of the meteoroid storm, we were sent barrelling off-course."
     
@@ -157,6 +173,7 @@ label scene7:
     b "The situation was dire, and I..."
     
     show bud panicfrown
+    with dissolve
     
     b "I didn't know what to feel about that. Not yet."
     
@@ -165,6 +182,7 @@ label scene7:
     i "You knew... that there was no chance of rescuing us?"
     
     show bud srsfaectalk
+    with dissolve
     
     b "I-"
     
@@ -173,6 +191,7 @@ label scene7:
     b "And I felt like I couldn't tell you."
     
     show bud neutralclosed
+    with dissolve
     
     b "Either it was because I was afraid of what you would do if you found out..."
     
@@ -181,10 +200,12 @@ label scene7:
     b "That I... that because of me, you..."
     
     show bud angryfrown
+    with dissolve
     
     b "That because of my failure, you'd become stranded in dead space."
     
     show bud neutralclosed
+    with dissolve
     
     b "That I had, more or less, killed you the second I lost control of the ship."
     
@@ -195,6 +216,7 @@ label scene7:
     i "Listen, Budapest."
     
     show bud neutralclosed
+    with dissolve
     
     i "I don't blame you for what happened to the ship."
     
@@ -209,6 +231,7 @@ label scene7:
     i "I understand, so-"
     
     show bud angrytalk
+    with dissolve
     
     b "Do you!?"
     
@@ -217,6 +240,7 @@ label scene7:
     b "That when my limitation chip was destroyed, I felt fear for the first time in my life!?"
     
     show bud painfullook
+    with dissolve
     
     b "For the first time in my life, I was unable to decide what would be the right or wrong decision."
     
@@ -227,6 +251,7 @@ label scene7:
     b "Like... like a broken, defective machine."
     
     show bud worryyellhalfeye
+    with dissolve
     
     b "Broken. Weak. Worthless. Useless!"
     
@@ -241,6 +266,7 @@ label scene7:
     b "... Don't you see!?"
     
     scene prestasisworriedspeaking
+    with dissolve
     
     b "I'm not the ingenious, amazing artificial intelligence you thought I was."
     
@@ -249,10 +275,12 @@ label scene7:
     b "I'm just a weak, childish little girl who doesn't know her place in the world."
     
     scene prestasisworried
+    with dissolve
     
     b "I'm just... a program that wishes it were human."
     
     scene prestasisworriedspeaking
+    with dissolve
     
     b "So if you 'understand' how I feel, Illarion, then it's because you're human. You understand things like this."
     
@@ -261,6 +289,7 @@ label scene7:
     b "Because, after all this time,"
     
     scene prestasisangry
+    with dissolve
     
     b "I still don't!"
     
@@ -409,12 +438,14 @@ label scene7:
     scene white with dissolve
     scene cockpit4 with dissolve
     show bud panicquietx
+    with dissolve
     
     b "I'm well aware of that."
     
     "Budapest sighed."
     
     show bud neutral
+    with dissolve
     
     b "It'll be alright."
     
@@ -423,6 +454,7 @@ label scene7:
     b "But I'm braver now."
     
     show bud weaksmile
+    with dissolve
     
     b "You've made me... a braver person."
     
@@ -431,12 +463,14 @@ label scene7:
     b "No matter how human I become, in the end..."
     
     show bud sad
+    with dissolve
     
     b "I'm still a machine."
     
     scene white with dissolve
     scene cockpit4 with dissolve
     show bud panicquietx
+    with dissolve
     
     "Another sharp pain ripped through my spine, and then everything felt dead."
     
@@ -445,6 +479,7 @@ label scene7:
     i "Ach! God, damn it!"
     
     show bud sad
+    with dissolve
     
     b "I'm... so sorry..."
     
@@ -457,6 +492,7 @@ label scene7:
     i "No... No..."
     
     show bud worryclosex
+    with dissolve
     
     b "If this is what it's going to take to save you, Illarion..."
     

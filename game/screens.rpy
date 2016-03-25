@@ -645,7 +645,7 @@ init -2:
 init python:
     # Each gallery item should be arranged in a list and assigned to a variable.
     # The files listed here should only be the pictures seen in the gallery, NO VARIANTS
-    gallery_cg_items = ["initialization", "budablush", "budaproud", "budasmile1", "hug", "prestasisangry", "prestasisworried", "joy1", "sing1", "surprised"]
+    gallery_cg_items = ["initialization", "blush", "budablush", "budaproud", "budasmile1", "dream", "hours", "hug", "prestasisangry", "joy1", "surprised", "end1"]
     gallery_art_items = ["art1", "art2", "art3", "art4", "art5", "art6", "art7", "art8", "art9", "art10", "art11", "art12", "art13", "art14", "art15", 
     "art16", "art17", "art18", "art19", "art20", "art21", "art22", "art23", "art24", "art25"]
     # The number of rows and columns for all galleries.
@@ -664,9 +664,46 @@ init python:
         g_cg.image(gal_item)
         g_cg.unlock(gal_item) # Uncommenting this makes the picture locked until viewed in the game.
         #Code for multiple variants of the same still
-        #if gal_item == "bg kitchen":
-            #g_cg.image("bg kitchen dining")
-            #g_cg.unlock("bg kitchen dining")
+        if gal_item == "initialization":
+            g_cg.image("sing1")
+            g_cg.unlock("sing1")
+        if gal_item == "budablush":
+            g_cg.image("budablush2")
+            g_cg.unlock("budablush2")
+            g_cg.image("budablush3")
+            g_cg.unlock("budablush3")
+            g_cg.image("budablush4")
+            g_cg.unlock("budablush4")
+            g_cg.image("budablush5")
+            g_cg.unlock("budablush5")
+        if gal_item == "budasmile1":
+            g_cg.image("budasmile2")
+            g_cg.unlock("budasmile2")
+        if gal_item == "end1":
+            g_cg.image("end2")
+            g_cg.unlock("end2")
+            g_cg.image("end3")
+            g_cg.unlock("end3")
+            g_cg.image("end4")
+            g_cg.unlock("end4")
+            g_cg.image("end5")
+            g_cg.unlock("end5")
+            g_cg.image("end6")
+            g_cg.unlock("end6")
+        if gal_item == "prestasisangry":
+            g_cg.image("prestasisworried")
+            g_cg.unlock("prestasisworried")
+            g_cg.image("prestasisworriedspeaking")
+            g_cg.unlock("prestasisworriedspeaking")
+        if gal_item == "joy1":
+            g_cg.image("joy2")
+            g_cg.unlock("joy2")
+            g_cg.image("joy3")
+            g_cg.unlock("joy3")
+            g_cg.image("joy4")
+            g_cg.unlock("joy4")
+            g_cg.image("joy5")
+            g_cg.unlock("joy5")
     g_cg.transition = fade
     cg_page=0
 

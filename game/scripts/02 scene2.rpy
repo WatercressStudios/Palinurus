@@ -150,14 +150,17 @@ label scene2:
     p "That one was... especially bad. Damage report?"
     
     show console warningtalk
+    with dissolve
     
     b "The hull's been breached. You're lucky you got here in time, sir."
     
     show console warninglook
+    with dissolve
     
     "I took some time so settle in, trying to find my footing in the cockpit as the shuttle rumbled in the midst of the storm."
     
     show console warning
+    with dissolve
     
     "I paused; I felt an odd sensation where my hand was resting on the windshield. I drifted my eyes down to take a look..."
     
@@ -168,10 +171,12 @@ label scene2:
     "Suddenly, another lurch forwards. Another large collision."
     
     show console worrylook
+    with dissolve
     
     p "Ack! Damn it!"
     
     show console worryyell
+    with dissolve
     
     b "Please sir, take the co-pilot's seat and strap in! It's dangerous to remain standing at this time!"
     
@@ -183,54 +188,66 @@ label scene2:
     "Eventually, I sank into the plushy co-pilot's seat to the the Navigator's right. I glanced over to her."
     
     show bud closedworryx
+    with dissolve
     
     p "Hey, Navigator. Quick question."
     
     show bud worryx
+    with dissolve
     
     p "How in the HELL did you not notice that mess of meteoroid bullshit heading our way?"
     
     show bud panic
+    with dissolve
     
     b "They didn't show up on the short-range radar! Their iron compound deposits absorbed the signals, is what I'm thinking. The storm came in too fast to be traced."
     
     show bud panicfrown
+    with dissolve
     
     "I paused. So there was nothing we could have done about it? The storm had just been drifting through space and had just... decided to ravage us in its wake?"
     
     "What the hell kind of freak accident..."
     
     show bud panicslight
+    with dissolve
     
     b "Are you alright, Passenger-sir? Are you hurt? That was a nasty beating you took..."
     
     show bud panicfrown
+    with dissolve
     
     "The program looked so concerned for me. Still rubbing my forehead, I waved its concerns off, groaning to myself."
     
     p "Yeah, I ought to be fine... nothing I can't handle. What are we going to do now?"
     
     show bud panicsquintx
+    with dissolve
     
     b "Well, our vessel's sustained critical damage, and we've been knocked considerably off course."
     
     show bud worryclosex
+    with dissolve
     
     b "Both the navigational and communications systems are completely off-line, and I haven't been able to find a way to repair them..."
     
     show bud neutralx
+    with dissolve
     
     b "But for now, we need to do something about the damage."
     
     show bud angrytalkx
+    with dissolve
     
     b "Right now, the rest of the ship is nothing but sheared, hulking mass, adding unnecessary weight."
     
     show bud angrytalk
+    with dissolve
     
     b "Preparations for jettisoning the cockpit are under way. We should be far removed from the storm in due time."
     
     show bud srsfaec
+    with dissolve
     
     p "Understood. Proceed as you should, Navigator."
     
@@ -241,12 +258,14 @@ label scene2:
     p "Jettisoning the cockpit!?"
     
     show bud neutraltalk
+    with dissolve
     
     b "This transit shuttle is of an older model, sir, previously designed for two human pilots. In the case of emergency, the ship-maker installed a simple mechanism to eject the cockpit, which contains a lavatory and necessary supplies for emergency survival."
     
     b "It was essentially a primitive form of an escape pod, except roomier and less reliable."
     
     show bud normaltalkeyebrows
+    with dissolve
     
     b "Although I believe the jettison system of this craft is still in working order. I do maintain it, after all."
     
@@ -261,66 +280,80 @@ label scene2:
     p "When are we going to be performing that jettison, exactly?"
     
     show bud closedworryx
+    with dissolve
     
     b "..."
     
     "H-hey! Don't clam up on me now..."
     
     show bud worrytalkx
+    with dissolve
     
     b "It's not a sure thing, but... I'll have to inspect our subsystems to see if it's still in working order."
     
     show bud worryx
+    with dissolve
     
     p "I thought you said it was still in working order?"
     
     show bud panicx
+    with dissolve
     
     b "It is!" 
     
     show bud panicsquintx
+    with dissolve
     
     b "..."
     
     show bud worryyellhalfeye
+    with dissolve
     
     b "Probably."
     
     show bud worryneutralhalfeye
+    with dissolve
     
     "The machine... lied to me?"
     
     p "'Probably' doesn't really-"
     
     show bud neutraltalk
+    with dissolve
     
     b "I'm going to need to inspect the circuitry in order to fire up the launch mechanism."
     
     b "This system was hard-wired in, before the time of Navigators, so it hasn't been restructured in software like most everything else has."
     
     show bud worrysquintx
+    with dissolve
     
     "The AI turned to me, an apprehensive look in its soft eyes."
     
     show bud worrysquinttalkx
+    with dissolve
     
     b "It's, ah, pretty scary down there, so..."
     
     show bud panictalkx
+    with dissolve
     
     b "Watch out for me, passenger-sir?"
     
     show bud panicquietx
+    with dissolve
     
     "It doesn't sound particularly confident right now..."
     
     show bud weaksmile
+    with dissolve
     
     "The program bowed stiffly with a weak smile. That sinking feeling in my gut stirred again."
     
     p "H-hey! Don't talk like that! You're a Personal Navigator, aren't you?"
     
     show bud painfullook
+    with dissolve
     
     "The AI's eyes drifted up to mine, wide like a child peeking at a scolding parent."
     
@@ -329,16 +362,19 @@ label scene2:
     p "Er... I mean... do your best down there... I'm counting on you?"
     
     show bud painfullooksquint
+    with dissolve
     
     b "..."
     
     "The program stared back at me for a few painful moments, as if figuring something out in its mind. Its eyes were piercing, serious... in time, its eyebrows furrowed, a fiery look bursting into its irises."
     
     show bud srsfaectalk
+    with dissolve
     
     b "Understood. I'm going in. Make sure your harness is correctly secured, and I'll be back soon."
     
     show bud srsfaec
+    with dissolve
     
     "I nodded."
     

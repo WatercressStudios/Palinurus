@@ -28,6 +28,7 @@ label scene5p1:
     
     scene cockpit2 with fade
     show bud smile
+    with dissolve
     
     "I stirred in my seat."
     
@@ -36,18 +37,21 @@ label scene5p1:
     "Budapest must've been programmed to make periodic announcements such as these."
     
     show bud smiletalk
+    with dissolve
     
     b "Oh, Mr. Passenger, sir!"
     
     "That was a lot of titles."
     
     show bud smile
+    with dissolve
     
     p "..."
     
     p "... Mm, yeah, I'm up, what..."
     
     show bud neutral
+    with dissolve
     
     "I did a real job of contorting myself in my seat. Unknotting my pretzel legs, I peeled myself from my seat. Extending my arms toward the ceiling, I stretched to get all the kinks out of my back."
     
@@ -56,32 +60,38 @@ label scene5p1:
     p "You didn't wake me up just to stargaze, did you? There are enough of those out there to last us the whole trip."
     
     show bud neutral
+    with dissolve
     
     b "No, no, it's just..."
     
     show bud neutraltalk
+    with dissolve
     
     b "Well, you were snoring, I wanted to check up on you."
     
     show bud neutral
+    with dissolve
     
     p "What kind of cause and effect relationship is that?"
     
     p "And also, I don't snore."
     
     show bud neutraltalk
+    with dissolve
     
     b "I beg to differ, sir. I was just concerned, because, well... perhaps you have allergies, or-"
     
     p "I don't have any allergies. Also, while we're on the matter, I don't snore."
     
     show bud neutralsquint
+    with dissolve
     
     b "..."
     
     p "What?"
     
     show bud devious
+    with dissolve
     
     b "One second..."
     
@@ -101,22 +111,26 @@ label scene5p1:
     
     scene cockpit2
     show bud smiletalk
+    with dissolve
     
     "She giggled at the expression of anger on my face."
     
     show bud devious
+    with dissolve
     
     b "See? We should get you on a more regular sleep cycle! It's bad for your heart, and could lead to hypertension."
     
     p "Yeah, because I'm tense enough as it is..."
     
     show bud smile
+    with dissolve
     
     "I sighed, getting settled into my chair."
     
     p "You always give your passengers this much trouble? Not everyone can get nine square hours of sleep at night."
     
     show bud smiletalkclosed
+    with dissolve
     
     b "Haha, well... not really. Given the circumstances, though, you could bear to make an exception. For once."
     
@@ -125,22 +139,26 @@ label scene5p1:
     p "..."
     
     show bud smile
+    with dissolve
     
     "She had a point. Still, I wasn't ready to concede. Not yet."
     
     p "Well, you're an artificial intelligence, right? Can't you just, like, turn off your audio receptors, or something? Don't think it'd bother you then."
     
     show bud neutralsmalltalk
+    with dissolve
     
     b "... I could..."
     
     p "Kind of creepy to record all that, in any case. Not gonna lie."
     
     show bud shock
+    with dissolve
     
     p "I thought you said you didn't watch me sleep?"
     
     show bud blush
+    with dissolve
     
     b "I-I-I don't! Not at all! It's for-"
     
@@ -153,32 +171,38 @@ label scene5p1:
     "She was getting so embarrassingly squirmy, so visibly flustered; I laughed in her face."
     
     show bud shock
+    with dissolve
     
     p "Alright, alright. Fine! I get it. I'll try to get some more sleep."
     
     show bud weaksmile
+    with dissolve
     
     "That seemed to satisfy her. A small, warm smile crept across her face."
     
     show bud neutral
+    with dissolve
     
     p "So, what have you been up to, then? I'd hope you've been doing more than watching me sleep."
     
     b "V-very funny... Actually..."
     
     show bud neutralclosed
+    with dissolve
     
     b "Well, I've been combing through our database registries. It's funny, they've always been here, but I hadn't really ever engaged with them in the past."
     
     p "Mm? Databases?"
     
     show bud neutraltalk
+    with dissolve
     
     b "Yes. They're standard in all outgoing Titan Transportation systems. Trillions of archival documents stored electronically inside the holographic layers of each vessel."
     
     b "The database is intended for the purposes of, ah... 'extraterrestrial ambassadorship.' It's a compilation of digitally-preserved artifacts, dating back to the times of Old Earth."
     
     show bud neutraltalk
+    with dissolve
     
     p "Huh. They go that far back, do they?"
     
@@ -187,32 +211,38 @@ label scene5p1:
     p "It's a wonder they manage to fit it all in."
     
     show bud neutral
+    with dissolve
     
     b "Mm... heh..."
     
     show bud smile
+    with dissolve
     
     b "It's... a little romantic, don't you think?"
     
     p "What? Er, like, candlelit dinner romantic?"
     
     show bud smiletalk
+    with dissolve
     
     b "No, no, nothing like that, like... idyllic."
     
     p "I don't quite follow, er... it's incredible they fit so much together and all, but..."
     
     show bud smiletalkclosed
+    with dissolve
     
     b "It's like... well, you know when mankind first landed on the moon orbiting Old Earth?"
     
     p "Of course. It's a galactic civil holiday. Built a museum over their footprints; it's a hard thing to not learn about."
     
     show bud neutralclosed
+    with dissolve
     
     "She nodded."
     
     show bud smiletalk
+    with dissolve
     
     b "Of course. And the lunar plaque that's preserved there, too?"
     
@@ -223,10 +253,12 @@ label scene5p1:
     b "It was a message for visitors from abroad. Even when man first broke through the skies to the stars, they looked beyond the veil to find others like them."
     
     show bud smiletalkclosed
+    with dissolve
     
     "Budapest placed a hand on the console, silently, delicately patting it. She looked down and examined her pale, dainty fingers as she spoke on."
     
     show bud neutralclosed
+    with dissolve
     
     b "And even today, we carry their dream with us, along with their memories."
     
@@ -235,12 +267,14 @@ label scene5p1:
     b "I think that's really incredible."
     
     show bud smiletalk
+    with dissolve
     
     b "That's the sort of romantic I was thinking about."
     
     p "..."
     
     scene budasmile1
+    with dissolve
     
     "The dreamy look in her eyes was dissonant. She stared out the front of the cockpit. How long had she been staring out into the stars like that?"
     
@@ -256,14 +290,17 @@ label scene5p1:
     
     scene cockpit2
     show bud smiletalk
+    with dissolve
     
     b "Who, other than you?"
     
     show bud smile
+    with dissolve
     
     "Budapest giggled warmly. I rolled my eyes a little."
     
     show bud neutraltalk
+    with dissolve
     
     b "... Sadly, no. But, there are maybe fifty million spacefaring vessels from Titan Transport alone currently making their rounds across mapped space."
     
@@ -272,6 +309,7 @@ label scene5p1:
     p "I wouldn't terribly mind if one of those millions swung by to pick us up, too."
     
     show bud neutralclosed
+    with dissolve
     
     b "...Mmph."
     
@@ -284,6 +322,7 @@ label scene5p1:
     p "..."
     
     show bud neutral
+    with dissolve
     
     "She had a starry look in her eyes."
     
@@ -292,6 +331,7 @@ label scene5p1:
     p "The databases."
     
     show bud neutraltalk
+    with dissolve
     
     b "No, actually. Reading through them was never part of my duties. That suited me fine, there was always enough for me to do to ensure a safe and pleasant voyage."
     
@@ -300,6 +340,7 @@ label scene5p1:
     "What wasn't expected, though, was the way her eyes focused hungrily, lustfully at the console."
     
     show bud neutralsmalltalk
+    with dissolve
     
     b "But now that you mention it..."
     
@@ -308,6 +349,7 @@ label scene5p1:
     p "Mm. We've got a month to kill. No objections here, I suppose."
     
     show bud smiletalk
+    with dissolve
     
     b "Oh come on, smile a little! This could be fun! Aren't you excited?"
     
@@ -316,6 +358,7 @@ label scene5p1:
     b "... Hmph!"
     
     show bud smile
+    with dissolve
     
     "Actually, I was a lot more interested than I was letting on, but seeing her pout like that was a treat. I let out a chuckle as she pecked angrily away at the displays."
     
@@ -324,6 +367,7 @@ label scene5p1:
     p "So... what'cha looking up first?"
     
     show bud devious
+    with dissolve
     
     b "Wouldn't you like to know."
     
@@ -332,22 +376,26 @@ label scene5p1:
     "Budapest snickered."
     
     show bud smiletalk
+    with dissolve
     
     b "Hehe, hold on, one second... and..."
     
     "It took a second for the display to refresh, and then there it was."
     
     show bud neutraltalk
+    with dissolve
     
     b "Budapest, Hungary. Situated in Central Europe back on Old Earth. They said it was one of the most beautiful cities on the continent."
     
     p "Huh."
     
     show bud neutral
+    with dissolve
     
     b "Mm?"
     
     show bud neutralhalf
+    with dissolve
     
     p "Didn't take you for an actual child."
     
@@ -356,12 +404,14 @@ label scene5p1:
     b "..."
     
     show bud angryfrown
+    with dissolve
     
     b "Stop bullying me."
     
     "I chuckled again. It was fun to get on her case about it. Shaking her head, she refocused her attention."
     
     show bud neutraltalk
+    with dissolve
     
     b "Budapest was a union of three cities. The two cities of Buda and Óbuda were on the hilly western side of the Danube River; the city of Pest on the flat eastern side."
     
@@ -370,12 +420,14 @@ label scene5p1:
     p "What is it?"
     
     show bud neutral
+    with dissolve
     
     "I caught a look at what she was reacting to. It was a sprawling series of buildings, with spires extending up and above the rest of the city. It was imposing, and yet, oddly regal and cultured at the same time."
     
     "I squinted to read the caption beneath it."
     
     show bud neutraltalk
+    with dissolve
     
     p "Budapest's Parliament Building. Its grounds extend across 18,000 square meters, mm... What? Forty kilos of gold?"
     
@@ -384,6 +436,7 @@ label scene5p1:
     p "Nah, guess not. Damn."
     
     show bud neutralsmalltalk
+    with dissolve
     
     b "Hehe... according to this, Budapest was remarkably artistic and cultured... oh, look at this!"
     
@@ -394,6 +447,7 @@ label scene5p1:
     p "Ain't that something... oh, look at this..."
     
     show bud neutral
+    with dissolve
     
     b "Ah? What's that?"
     
@@ -404,11 +458,12 @@ label scene5p1:
     p "I guess it would fit you perfectly, wouldn't it?"
     
     show bud neutralhalf
+    with dissolve
     
     b "Huh? I beg your pardon?"
 
-    
     show bud neutralsquint
+    with dissolve
     
     b "Are you saying I look like a water oven?"
     
@@ -421,6 +476,7 @@ label scene5p1:
     p "And you've this, like, pure innocence about you, since... well, you know."
     
     show bud neutral
+    with dissolve
     
     b "..."
     
@@ -437,22 +493,26 @@ label scene5p1:
     p "I, er, I'm just rambling at this point..."
     
     show bud neutralhalf
+    with dissolve
     
     b "Mm-"
     
     p "It was a stupid analogy, so-"
     
     show bud neutraltalk
+    with dissolve
     
     b "No, no! It's alright. I just-"
     
     show bud smiletalk
+    with dissolve
     
     b "I didn't know you could be such a sweet-talker."
     
     p "Heh, really? I just felt like being a little poetic."
     
     show bud smile
+    with dissolve
     
     "She'd really taken to that comparison. I'm not sure why, exactly, she was programmed to have a blushing animation, but..."
     
@@ -463,6 +523,7 @@ label scene5p1:
     "Warm."
     
     show bud neutral
+    with dissolve
     
     b "Uh... passenger, sir..."
     
@@ -473,22 +534,27 @@ label scene5p1:
     p "...?"
     
     show bud neutralclosed
+    with dissolve
     
     "She was acting awfully strange now, fidgeting with herself."
     
     show bud weaksmile
+    with dissolve
     
     "After a brief and awkward moment, she chuckled a little too loudly, perhaps in a poorly-veiled attempt to dissipate the tension."
     
     show bud painfullook
+    with dissolve
     
     b "N-nevermind about that. It's a frivolous thought. What I was wondering, was if..."
     
     show bud neutral
+    with dissolve
     
     p "If...?"
     
     show bud neutraltalk
+    with dissolve
     
     b "Would you like me to read you any interesting passages in the databanks? It'd make for good inflight entertainment!"
     
@@ -497,14 +563,17 @@ label scene5p1:
     "She approached this proposal with such vigor, only to stumble near the end. I waved my hand. I knew this was less about me, and more about letting her sate her own curiosity, so..."
     
     show bud neutral
+    with dissolve
     
     p "Think I'd be up for that. Maybe less on the architecture, though. It's depressing to think everything in those photos is probably dust or in ruins now."
     
     show bud smiletalk
+    with dissolve
     
     b "Ah! Noted! Yes, your request is duly received!"
     
     show bud smiletalkclosed
+    with dissolve
     
     "And right then and there, Budapest and I had something of a contract. This was a way of getting through the day, and it wasn't necessarily a disagreeable one."
     
@@ -517,20 +586,24 @@ label scene5p1:
     "Damn it, she was enamored by a COOKBOOK now!"
     
     show bud smiletalk
+    with dissolve
     
     b "Parisian cuisine, hm? Oh! Ooh! Maybe we can try making French crêpes with the replicator, passenger-sir!"
     
     show bud smile
+    with dissolve
     
     p "Yeah, I'm good..."
     
     show bud smiletalk
+    with dissolve
     
     b "Ooh, ooh! Or Castillian paella!"
     
     p "Really, it's-"
     
     show bud smiletalkclosed
+    with dissolve
     
     b "Atlantic cod-"
     
