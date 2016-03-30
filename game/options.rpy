@@ -13,7 +13,7 @@ init -1 python hide:
     ## set to False before the game is released, so the user can't
     ## cheat using developer tools.
 
-    config.developer = True
+    config.developer = False
 
     ## These control the width and height of the screen.
 
@@ -22,12 +22,12 @@ init -1 python hide:
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"Palinurus Anniversary Edition"
+    config.window_title = u"Palinurus: Anniversary Edition"
 
     ## These control the name and version of the game, that are reported
     ## with tracebacks and other debugging logs.
     config.name = "Palinurus"
-    config.version = "2.1"
+    config.version = "2.0"
 
     #########################################
     # Themes
@@ -347,6 +347,7 @@ init python:
 
     build.classify('game/**.png', 'archive')
     build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.webm', 'archive')
     build.classify('game/**.rpy', 'None')
     build.classify('game/**.rpyc', 'archive')
     build.classify('game/**.mp3', 'archive')
