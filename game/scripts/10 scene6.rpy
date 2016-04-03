@@ -129,7 +129,7 @@ label scene6:
     
     "She was prepared to return to her creators, to face termination… just to ensure my survival."
     
-    scene budasmile2
+    scene budaspeak
     
     b "Illarion… when I'm gone, you'll remember me, right?"
     

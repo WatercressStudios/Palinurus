@@ -254,7 +254,6 @@ init:
     image budasmile1               = "cg/budasmile.png" #Added
     image budasmile2               = "cg/budasmile2.png" #Added
     image budaspeak                = "cg/budaspeak.png" #Added
-    image budastand                = "cg/budastand.png" #Added
     image dream                    = "cg/dream.png" #Added
     image end1                     = "cg/end1.png" #Added
     image end2                     = "cg/end2.png" #Added

@@ -104,7 +104,7 @@ label scene4:
     
     b "I can't go back now."
     
-    scene budastand
+    scene budasmile1
     
     "Budapest hugged herself, tightly."
     

@@ -645,7 +645,7 @@ init -2:
 init python:
     # Each gallery item should be arranged in a list and assigned to a variable.
     # The files listed here should only be the pictures seen in the gallery, NO VARIANTS
-    gallery_cg_items = ["initialization", "blush", "budablush", "budaproud", "budasmile1", "dream", "hours", "hug", "prestasisangry", "joy1", "surprised", "end1"]
+    gallery_cg_items = ["initialization", "budasmile1", "budaproud", "hours", "surprised", "hug", "blush", "budablush", "prestasisangry", "dream", "joy1", "end1"]
     gallery_art_items = ["art1", "art2", "art3", "art4", "art5", "art6", "art7", "art8", "art9", "art10", "art11", "art12", "art13", "art14", "art15", 
     "art16", "art17", "art18", "art19", "art20", "art21", "art22", "art23", "art24", "art25"]
     # The number of rows and columns for all galleries.
@@ -679,6 +679,8 @@ init python:
         if gal_item == "budasmile1":
             g_cg.image("budasmile2")
             g_cg.unlock("budasmile2")
+            g_cg.image("budaspeak")
+            g_cg.unlock("budaspeak")
         if gal_item == "end1":
             g_cg.image("end2")
             g_cg.unlock("end2")
@@ -704,7 +706,7 @@ init python:
             g_cg.unlock("joy4")
             g_cg.image("joy5")
             g_cg.unlock("joy5")
-    g_cg.transition = fade
+    g_cg.transition = dissolve
     cg_page=0
 
     g_art = Gallery()
