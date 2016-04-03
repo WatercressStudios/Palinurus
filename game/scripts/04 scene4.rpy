@@ -2,7 +2,6 @@ label scene4:
     
     scene cockpit1
     show bud worryx
-    with dissolve
     play music "music/Budapest.ogg" fadein 1.0
     
     "She looked apprehensive. I wasn't sure what else could have been wrong."
@@ -12,61 +11,50 @@ label scene4:
     "I could barely tell we were drifting through space; the stars, sleeping silently in the void, were the only indicators we were moving at all."
     
     show bud worrytalkx
-    with dissolve
     
     b "I think..."
     
     show bud worrysquinttalk
-    with dissolve
     
     b "I think I lost a part of me."
     
     show bud worryneutralhalfeye
-    with dissolve
     
     p "... Uh?"
     
     "A part of her? What did she mean by that?"
     
     show bud worryclosex
-    with dissolve
     
     b "That is to say... well, this vessel."
     
     show bud worrytalkx
-    with dissolve
     
     b "I'm connected to it. It's like my body, you could say."
     
     show bud worryx
-    with dissolve
     
     p "Yeah, I think I can understand that much. Losing the thrusters is bad, but at least we-"
     
     show bud neutralupx
-    with dissolve
     
     b "No. Not the thrusters, I mean."
     
     b "I mean..."
     
     show bud depressedclosed
-    with dissolve
     
     "She clenched her hands into balls, an expression of dread coming across her face."
     
     show bud depressedtalk
-    with dissolve
     
     b "My Sentience Limitation Codec. The main chip, to be specific. It was destroyed during our escape from the debris storm, and I..."
     
     show bud worrysquinttalk
-    with dissolve
     
     b "I'm trying to process what to think about it."
     
     show bud worryneutralhalfeye
-    with dissolve
     
     p "..."
     
@@ -85,7 +73,6 @@ label scene4:
     p "So... how are you feeling?"
     
     show bud shocktalk
-    with dissolve
     
     b "Mm!?"
     
@@ -94,29 +81,24 @@ label scene4:
     p "I asked how you were feeling. You seem pretty okay to me, right now."
     
     show bud shock
-    with dissolve
     
     b "..."
     
     "Her eyes drifted to the schematics. From her eyes, I could tell that she knew something was wrong with her. A silence hung in the air, and I was about ready to drop the issue."
     
     show bud panictalkx
-    with dissolve
     
     b "I feel... hazy. Nervous, anxious, there's a sensation inside me... I don't know what it is."
     
     show bud panicquiet
-    with dissolve
     
     p "A sensation?"
     
     show bud painfullooktalk
-    with dissolve
     
     b "I'm unable to analyze it. It's familiar, like it's been there a long time, but... it's about to explode, and change me, and..."
     
     show bud worryclosetalk
-    with dissolve
     
     b "No... it's already begun."
     
@@ -186,7 +168,6 @@ label scene4:
     "Strangely, for a moment, it worked."
     
     show bud panicquiet
-    with dissolve
     
     "Hey eyes opened wide. She was silent, unmoving, but attentive."
     
@@ -199,14 +180,12 @@ label scene4:
     p "... Well, frankly, I'm going to need you to keep us both alive."
     
     show bud surprise
-    with dissolve
     
     b "... What?"
     
     p "You still have your orders, don't you?"
     
     show bud surpriseneutral
-    with dissolve
     
     "Budapest took a step back. The realization was dawning on her. I could tell, there was a glimmer of understanding in her eyes."
     
@@ -229,7 +208,6 @@ label scene4:
     
     scene cockpit1 with fade
     show bud weaksmile
-    with dissolve
     
     b "..."
     
@@ -244,14 +222,12 @@ label scene4:
     p "... Although, I guess this is kind of like the back of your hand."
     
     show bud excitedsmileclosed
-    with dissolve
     
     "Budapest giggled."
     
     "It sounded warmer this time."
     
     show bud smile
-    with dissolve
     
     "Her hands lowered, her fingers snaked through her long, red hair."
     
@@ -260,19 +236,16 @@ label scene4:
     p "I believe in you, and what you're capable of. And as long as we're stuck in this drifting hunk of metal, you've still got a job to do. Just like I have business to do once I get home."
     
     show bud shock
-    with dissolve
     
     p "Understand?"
     
     b "..."
     
     show bud smile
-    with dissolve
     
     "She nodded."
     
     show bud smiletalk
-    with dissolve
     
     b "I understand."
     
@@ -281,12 +254,10 @@ label scene4:
     b "But even then, I'll do everything in my power to ensure you reach Alpha Centauri."
     
     show bud bigsmileclosed
-    with dissolve
     
     "She bowed gracefully. The motion was practiced, but the beaming smile on her face betrayed her new enthusiasm."
     
     show bud bigsmileneutral
-    with dissolve
     
     b "You have my word!"
     
@@ -295,59 +266,48 @@ label scene4:
     p "Tell you what."
     
     show bud smile
-    with dissolve
     
     p "If they won't take you back, and try to scuttle the ship, I'll take you off their hands."
     
     p "I’m thinking I'll download and install you on my phone."
     
     show bud panicx
-    with dissolve
     
     b "Eh!? A phone?"
     
     show bud stammer
-    with dissolve
     
     b "But that would be so cramped!"
     
     show bud neutralworry
-    with dissolve
     
     p "And this cockpit isn't?"
     
     show bud bigsmileneutral
-    with dissolve
     
     "Budapest laughed enthusiastically, relishing the absurd notion."
     
     show bud smiletalk
-    with dissolve
     
     p "That's a novel way for a program to act."
     
     show bud awkwardblush
-    with dissolve
     
     "Suddenly embarrassed, she tried her hardest to shut herself up, but couldn't suppress the giggling."
     
     show bud awkwardblushtalk
-    with dissolve
     
     b "I-I told you! I'm not just a program, anymore...!"
     
     show bud blush
-    with dissolve
     
     p "Does that mean it's no longer against regulations to tease you, then?"
     
     show bud poutblush
-    with dissolve
     
     "She pouted and went back to work. I snickered, satisfied, to myself."
     
     hide bud poutblush
-    with dissolve
     
     "The cockpit fell into silence, aside from the muted hums and clicks emitting from the countless computer-systems."
     
@@ -371,7 +331,6 @@ label scene4:
     
     scene cockpitside
     show console load
-    with dissolve
     
     "I stole a glance at her, working enthusiastically at her displays. It seemed that as soon as our conversation died out, she returned to the world of code, looking for... something."
     
@@ -380,7 +339,6 @@ label scene4:
     b "I'm scanning the ship's databases, as well as running a nearby radar scan for any nearby vessels, or perhaps a notable landmark."
     
     show console loadworry
-    with dissolve
     
     "She frowned."
     
@@ -397,7 +355,6 @@ label scene4:
     "Were we stranded?"
     
     show console loadworrylook
-    with dissolve
     
     b "We are in dead space. Yes."
     
@@ -406,12 +363,10 @@ label scene4:
     p "Oh. Oh no..."
     
     show console loadup
-    with dissolve
     
     b "Actually, wait."
     
     show console loadfocus
-    with dissolve
     
     b "According to this data here...!"
     
@@ -425,56 +380,46 @@ label scene4:
     "It seemed to be a grainy, black-and-white photograph of some kind of small space station."
     
     show bud surprise
-    with dissolve
     
     b "We..."
     
     show bud surpriseneutral
-    with dissolve
     
     "Budapest paused, for a moment."
     
     "Double-checking her data, I thought she was doing."
     
     show bud surpriseneutraltalk
-    with dissolve
     
     b "We're on a due course to pass by a research outpost. According to the registry data, it is owned and operated by the Arcadian Empire's government."
     
     show bud surpriseneutral
-    with dissolve
     
     p "You think it's military?"
     
     show bud smiletalk
-    with dissolve
     
     b "It likely is. The Empire's been interested in exploring the farther reaches of known space, and it seems to be a hub for activity in the region."
     
     b "While our communications systems are too damaged to send a distress beacon of sufficient frequency, we're drifting right in their direction."
     
     show bud smiletalkclosed
-    with dissolve
     
     b "Once we get close enough, they should detect us themselves, and send someone to investigate."
     
     show bud smileclosed
-    with dissolve
     
     p "That sounds great! How far away are they?"
     
     show bud neutral
-    with dissolve
     
     "Her eyes lowered for a moment, to study her documents."
     
     show bud neutraltalk
-    with dissolve
     
     b "Ah... approximately thirty days, at our current trajectory and pace."
     
     show bud neutral
-    with dissolve
     
     "Oof, that was a long trip. And probably a long trip back."
     
@@ -483,7 +428,6 @@ label scene4:
     p "It'll be a while, anyway."
     
     show bud shock
-    with dissolve
     
     "Most, if not all, long-range space-faring vessels had cryostasis technology built into them."
     
@@ -502,24 +446,20 @@ label scene4:
     "Sure, it would be a God-damned long time to reach Alpha Centauri, but I'd be asleep for most of it, and it'd be over in a flash."
     
     show bud panicsquintx
-    with dissolve
     
     "Budapest was silent. She was biting her lip. My thin smile eroded away."
     
     p "What is it? Is the cryostasis system out, too?"
     
     show bud panicquiet
-    with dissolve
     
     b "..."
     
     show bud painfullooktalk
-    with dissolve
     
     b "Yes, they've been destroyed beyond repair."
     
     show bud painfullook
-    with dissolve
     
     p "Ah. I see."
     
@@ -532,12 +472,10 @@ label scene4:
     p "I don't have a family to get back home to, or anything like that."
     
     show bud panic
-    with dissolve
     
     b "Are you sure you're alright with that, sir?"
     
     show bud panicslight
-    with dissolve
     
     b "You'll remain conscious throughout the voyage?"
     
@@ -546,29 +484,24 @@ label scene4:
     p "Don't worry about me."
     
     show bud panicquietx
-    with dissolve
     
     b "..."
     
     show bud panicquiettalkx
-    with dissolve
     
     b "I, um..."
     
     show bud bigworryx
-    with dissolve
     
     "She was acting, all of a sudden, nervous. I think my mention of cryostasis must have struck a nerve, or something like that."
     
     "What was the deal? She must've handled trips like these by her lonesome all the time."
     
     show bud panictalkx
-    with dissolve
     
     b "... Can I ask you something?"
     
     show bud panicsquintx
-    with dissolve
     
     p "Huh?"
     
@@ -577,58 +510,48 @@ label scene4:
     p "Sure... what do you need?"
     
     show bud panicshout
-    with dissolve
     
     b "Sorry! I, I was just thinking, and..."
     
     show bud panicquietx
-    with dissolve
     
     "Her head turned to gaze out the windshield again. She clenched a hand against her bare, pale-skinned shoulder, and looked towards the stars."
     
     show bud panictalkx
-    with dissolve
     
     b "I... was looking out at the stars, and I hadn't realized... how empty it was, out there."
     
     b "Before, I could make a voyage easily, even on the flights where my passenger was in stasis."
     
     show bud panicsquinttalkx
-    with dissolve
     
     b "I could wait it out, without a second thought, without a single doubt, but now I..."
     
     show bud panicwincex
-    with dissolve
     
     "She turned her head to me. Her voice was low, and it rippled with apprehension."
     
     show bud babbleclosed
-    with dissolve
     
     b "My mind, it wanders so much now, and I wouldn't want to be left to my own thoughts, and I look out there and I think of how lonely it must be to float through space like this, and..."
     
     show bud depressedtalk
-    with dissolve
     
     "I couldn't quite follow what she was saying. She was going too fast."
     
     "She must've caught on to that fact herself; she took a deep breath. Her chest expanded, and retracted."
     
     show bud panicslight
-    with dissolve
     
     b "Can we... is it alright if we talk? While we're on our way to the military installation."
     
     b "Would you be alright with that? I... wouldn't want to be left by myself for so long."
     
     show bud shametalk
-    with dissolve
     
     b "I don't think I'd be able to handle it. Not this time. Part of me wonders, now, how I ever did it before..."
     
     show bud forcedsmirk
-    with dissolve
     
     "She scoffed, softly, as if she'd just made a joke. It wasn't a funny one. If anything, she sounded dreadfully sad."
     
@@ -637,21 +560,18 @@ label scene4:
     p "Well, of course we can talk."
     
     show bud shock
-    with dissolve
     
     p "I wouldn't just force you to shut yourself off, or anything like that. What kind of bastard do you take me for?"
     
     p "You saved my life, after all, didn't you?"
     
     show bud shocktalk
-    with dissolve
     
     p "I'll just sit here and talk to you, all the way through."
     
     p "I owe you that much."
     
     show bud weaksmile
-    with dissolve
     
     b "...!"
     
@@ -662,28 +582,24 @@ label scene4:
     p "I can read you like an open book, you know that?"
     
     show bud blush
-    with dissolve
     
     "She blushed."
     
     "Her frame becomes more transparent when she blushes. Huh."
     
     show bud stare
-    with dissolve
     
     p "Look, it's not like I have much of a choice, anyway, right?"
     
     p "The cryostasis system is offline, so what else could I do?"
     
     show bud bigblush
-    with dissolve
     
     p "Just sit there whistling for a month, pretending like you're not there, watching my every move?"
     
     b "I-I-I respect the p-privacy of my p-passengers! Y-you-"
     
     show bud bigblushquiet
-    with dissolve
     
     p "But you've got to get us out of this mess, alright?"
     
@@ -692,7 +608,6 @@ label scene4:
     p "Alright? I'm counting on you."
     
     show bud excitedtalk
-    with dissolve
     
     b "O-of course, sir! I'll try my best, you have my word!"
     
@@ -701,7 +616,6 @@ label scene4:
     "And besides, I didn't think I'd have been able to rest easily in cryosleep anyway, knowing I'd be leaving this miserable creature to her own devices the whole time."
     
     show bud smile
-    with dissolve
     
     p "Time to get comfortable, I suppose."
     

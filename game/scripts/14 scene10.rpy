@@ -7,7 +7,6 @@ label scene10:
     b "We better get started. We don't have the time to waste, and I don't want you to get me crying again."
     
     show bud neutralx
-    with dissolve
     
     "She cleared her throat and batted her eyelids one last time."
 
@@ -16,7 +15,6 @@ label scene10:
     i "Wait."
     
     show bud neutralclosed
-    with dissolve
     
     b "Spooling distress beacon encoder."
 
@@ -27,24 +25,20 @@ label scene10:
     i "Stop right now."
     
     show bud angrytalk
-    with dissolve
     
     b "I can't stop!"
     
     show bud cryyell
-    with dissolve
     
     b "I can't!"
     
     show bud crysad
-    with dissolve
     
     b "I can't. Alright?"
 
     b "Don't you get it?"
     
     show bud cryclosedneutral
-    with dissolve
     
     b "From the moment you stepped onboard my shuttle, it became my prime directive to ensure you made it off my shuttle safely."
 
@@ -55,7 +49,6 @@ label scene10:
     b "I was born to give my life for my passenger, if need be."
     
     show bud cryclosed
-    with dissolve
     
     b "And I wouldn't even have any reservations about it, you know? If my Sentience Limitation Codec hadn't been destroyed."
 
@@ -64,7 +57,6 @@ label scene10:
     b "But now... now that I'm sentient..."
     
     show bud crysad
-    with dissolve
     
     b "I've become afraid of death."
 
@@ -77,7 +69,6 @@ label scene10:
     b "To the emotions you taught me to understand..."
     
     show bud crysmile
-    with dissolve
     
     b "I got to live."
 
@@ -86,42 +77,36 @@ label scene10:
     b "I had feelings. I felt happy. I felt sad. I laughed, I cried, I got scared, I got hopeful. I felt love, I felt curiosity."
     
     show bud cryslight
-    with dissolve
     
     b "I felt human."
 
     b "I felt so human."
     
     show bud cryclosed
-    with dissolve
     
     b "But everything has to end at some point, you know?"
 
     b "That's what being human means."
     
     show bud crysmile
-    with dissolve
     
     b "It's time for this to end now."
 
     i "..."
     
     show bud smiletalk
-    with dissolve
     
     b "And in the end, I'm thankful, you know?"
 
     b "To be able to comprehend the idea of death. To be afraid of it, and to not know what to think about it..."
     
     show bud smile
-    with dissolve
     
     b "I'm thankful I am able to feel that way."
 
     b "That I am going to die on my terms, on the basis of my own free will."
     
     show bud smiletalkclosed
-    with dissolve
     
     b "I'll get to say goodbye in my own words. To know what it's like to take my last breath, even if I never truly even breathed."
 
@@ -130,7 +115,6 @@ label scene10:
     i "It doesn't look like I'm going to be stopping you."
 
     show bud neutralhalf
-    with dissolve
     
     b "Not really, no."
 
@@ -143,12 +127,10 @@ label scene10:
     i "That you're a much stronger person than I could ever be."
 
     show bud neutral
-    with dissolve
     
     b "Hmph. That's a nice thought to entertain."
     
     show bud neutralsquint
-    with dissolve
     
     b "Do you think so?"
 
@@ -157,14 +139,12 @@ label scene10:
     b "..."
     
     show bud neutralclosed
-    with dissolve
     
     b "Draining Battery Cell One, now. Reroute power to auxiliary communications systems."
 
     b "... Draining complete."
     
     show bud sad
-    with dissolve
     
     "Budapest shakes her head, as if she's trying to clear her mind."
 
@@ -175,7 +155,6 @@ label scene10:
     i "... Yeah?"
     
     show bud neutraltalk
-    with dissolve
     
     b "I came upon it while you were in cryostasis. It's probably my all-time favorite, out of the ones I've gotten to read."
 
@@ -184,7 +163,6 @@ label scene10:
     b "But this one was special. Real special."
     
     show bud neutralsmalltalk
-    with dissolve
     
     b "It's an old verse, from Old Earth, just like the kind I always liked. I bet I'm the first... person to read it in a millennium."
 
@@ -193,7 +171,6 @@ label scene10:
     i "... Go ahead. Please."
     
     show bud neutral
-    with dissolve
     
     i "I'd love to hear it."
     
@@ -203,7 +180,7 @@ label scene10:
 
     b '"Joy, beautiful sparkle of the Gods,"'
     
-    scene joy2 with fade
+    scene joy2
     
     b '"Daughter of Elysium."'
 
@@ -211,19 +188,19 @@ label scene10:
 
     b '"Heavenly one, your paradise."'
     
-    scene joy3 with fade
+    scene joy3
     
     b '"Your magic once again binds"'
 
     b '"What the sword of custom has divided."'
     
-    scene joy4 with fade
+    scene joy4
     
     b '"Beggars become the brothers of princes"'
 
     b '"Where your gentle wing abides."'
     
-    scene joy5 with fade
+    scene joy5
     
     b '"Be embraced, the millions yonder,"'
 
@@ -233,7 +210,7 @@ label scene10:
     
     play music "music/Stasis.ogg"
     scene cockpit1 with fade
-    show bud smiletalkclosed with dissolve
+    show bud smiletalkclosed
     
     b '...'
 
@@ -244,7 +221,6 @@ label scene10:
     i "That was beautiful, Budapest."
     
     show bud devious
-    with dissolve
     
     b "Mm? Was it?"
 
@@ -255,7 +231,6 @@ label scene10:
     i "Both, I guess."
     
     show bud neutralx
-    with dissolve
     
     b "Both, you guess."
 
@@ -264,14 +239,12 @@ label scene10:
     b "That's my cue."
     
     show bud worrytalkx
-    with dissolve
     
     b "Draining Battery Cell Two, all energy but one percent. Reroute power to auxiliary communications systems."
 
     b "Encoding distress beacon now."
     
     show bud weaksmile
-    with dissolve
     
     "As she worked, I saw Budapest give a smile."
 
@@ -282,7 +255,6 @@ label scene10:
     b "..."
     
     show bud srsfaectalk
-    with dissolve
     
     b "Beacon sent. Waiting for signal feedback."
 
@@ -293,7 +265,6 @@ label scene10:
     b "..."
     
     show bud neutralclosed
-    with dissolve
     
     b "So this is death."
 
@@ -302,7 +273,6 @@ label scene10:
     b "..."
     
     show bud cryclosed
-    with dissolve
     
     b "Ah, it's all so sappy, isn't it?"
 
@@ -311,14 +281,12 @@ label scene10:
     b "Right?"
 
     show bud crysmile
-    with dissolve
 
     "Another small laugh, under more tears."
 
     i "... Right."
     
     show bud cryclosedneutral
-    with dissolve
     
     b "... Huh."
 
@@ -331,7 +299,6 @@ label scene10:
     b "..."
     
     show bud crysmile
-    with dissolve
     
     "As Budapest's display faded out for the last time, she cocked her head, and gave me one last smile."
     

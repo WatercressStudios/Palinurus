@@ -30,19 +30,16 @@ label scene6:
     "I adjusted myself in my seat, grinding my teeth together quietly. Something about this was wrong."
     
     show bud neutralsmalltalk
-    with dissolve
     
     b "Illarion."
     
     "I perked my head up. Her tone was serious, straight-forward… yet underlined with the silent agony of struggle."
     
     show bud neutral
-    with dissolve
     
     "Our eyes met. Her eyebrows relaxed for a moment in response, before she turned again to the ocean of stars ahead of us."
     
     show bud sad
-    with dissolve
     
     b "Did I ever tell you about… the story of Palinurus?"
     
@@ -53,79 +50,66 @@ label scene6:
     i "No. Not that one. I don't recall."
     
     show bud neutralclosed
-    with dissolve
     
     b "...Silly question to ask, isn't it."
     
     show bud weaksmile
-    with dissolve
     
     "She chuckled to herself. It was a low chuckle, a noise that struggled to come out."
     
     b "He was a helmsman, a navigator for the Trojans sailing across the sea, from Sicily to Italy."
     
     show bud sad
-    with dissolve
     
     b "A terrible storm befell them as they sailed. Under his guidance, they did all they could against the tempest, the wind and the sea."
     
     b "But this was fate that had conspired against them. And it was the will of the gods that subjected them to this awful fate."
     
     show bud neutralhalf
-    with dissolve
     
     b "The goddess Venus had come to the god of the sea, Neptune, pleading that the Trojans under Palinurus be granted safe passage across the treacherous waters."
     
     show bud neutralclosed
-    with dissolve
     
     "She closed her eyes intensely. Her voice was quiet, hushed. She lowered her head."
     
     show bud neutraltalk
-    with dissolve
     
     b "Unum pro multis dabitur caput. 'One life shall be offered to save many'. Those were Neptune's terms."  
     
     show bud neutralclosed
-    with dissolve
     
     "She paused, letting that ominous, cryptic message hang in the air. Her hands clenched against the fabric of her dress."
     
     show bud neutralsmalltalk
-    with dissolve
     
     b "And that is how Palinurus met his end in the middle of that storm."
     
     b "A god of sleep descended upon him while he was at the helm and, with a branch, he brushed Palinurus. Falling into a deep sleep, he was swept overboard, and into the churning abyss."
     
     show bud neutral
-    with dissolve
     
     b "The branch had been dipped in the Rivers of Lethe and Styx. The former caused complete forgetfulness; the latter, the promise of immortality."
     
     b "With nothing to save him, he sank deeper, and deeper into the ocean's depths, pulled down by Neptune's power."
     
     show bud srsfaectalk
-    with dissolve
     
     b "It was his power and his faith that allowed the Trojans passage through that storm… through the sacrifice of one."
     
     "She raised her head, to look out to the stars abroad."
     
     show bud neutraltalk
-    with dissolve
     
     b "If there are any gods such as those still out there, among all the stars and planets… they must be a flippant, irrational bunch, huh?"
     
     show bud neutralsquint
-    with dissolve
     
     "She chuckled to herself… but no joy could be heard in that laugh. It was distant, somewhere else entirely."
     
     "She took no joy from sharing this story. Something was very wrong."
     
     show bud panicx
-    with dissolve
     
     b "It's been almost four weeks since we embarked on this journey. I stumbled upon that myth, and…"
     
@@ -157,7 +141,6 @@ label scene6:
     
     scene cockpit3 with fade
     show bud neutral
-    with dissolve
     
     "I felt I had to assure her that we'd make it through this. The military would bail us out in time. I was clinging onto that scrap of hope."
     
@@ -166,12 +149,10 @@ label scene6:
     b "I… it's my directive to-"
     
     show bud worryneutralhalfeye 
-    with dissolve
     
     i "FORGET YOUR DIRECTIVE!"
     
     show bud worryx
-    with dissolve
     
     "I shot up from my machine. I was angry... angry she would ever denigrate herself like that, angry she felt this way… angry because I couldn't do anything about it."
     
@@ -182,14 +163,12 @@ label scene6:
     i "I can't let you go like that…"
     
     show bud worryclosex
-    with dissolve
     
     "I felt tears welling in the corners of my eyes. I couldn't let her talk about herself like that."
     
     "She wasn't a lifeless program. She was real, she had a heart. She had more heart than anyone else I’d known in my life."
     
     show bud worryneutralhalfeye
-    with dissolve
     
     "She stared back into my eyes. Her own wide, glimmering eyes reflected a hope I could only dream of. I never wanted the light to die from those eyes, never wanted her to lose that hope."
     
@@ -202,19 +181,16 @@ label scene6:
     i "I'll protect you, Budapest. I swear on it."
     
     show bud weaksmile
-    with dissolve
     
     "Her cheeks spread as her smile widened, beaming once more. That was the smile I always knew she had. It was unafraid, unrelenting."
     
     b "Illarion…"
     
     show bud smile
-    with dissolve
     
     "I got through to her. I saw it in her eyes. There was nothing else to say. She leaned closer. The emotional weight was there, even if the physical was ethereal."
     
     show bud smiletalkclosed
-    with dissolve
     
     b "I'll protect you too… I won't let anything happen to you. Count on me, and I'll…"
     

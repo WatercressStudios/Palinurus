@@ -29,8 +29,7 @@ label scene8:
     
     b "... Hello?"
     
-    show bud neutral with dissolve
-    with dissolve
+    show bud neutral
     
     b "... Welcome back, Illarion."
     
@@ -43,7 +42,6 @@ label scene8:
     i "Budapest, is that you?"
     
     show bud neutralclosed
-    with dissolve
     
     b "Yeah."
     
@@ -54,12 +52,10 @@ label scene8:
     i "Yeah, you can say that again... Ach!"
     
     show bud panic
-    with dissolve
     
     "As soon as I tried to move my arm, a shooting pain roared through it."
     
     show bud panicfrown
-    with dissolve
     
     b "Are you alright!? I..."
     
@@ -70,14 +66,12 @@ label scene8:
     i "God, I don't think I've ever felt this sore before."
     
     show bud neutral
-    with dissolve
     
     b "In that case, while I don't think there's much of a point in asking..."
     
     b "Did you sleep well?"
     
     show bud neutraltalk
-    with dissolve
     
     b "Evidently, you've got to be pretty cramped and uncomfortable. It's been a few hundred years, after all."
     
@@ -86,7 +80,6 @@ label scene8:
     i "How long was I in stasis for?!"
     
     show bud neutralclosed
-    with dissolve
     
     b "As of now?"
     
@@ -97,7 +90,6 @@ label scene8:
     i "And you... waited for me that whole time?"
     
     show bud weaksmile
-    with dissolve
     
     b "Of course I did, Illarion."
     
@@ -106,7 +98,6 @@ label scene8:
     b "You know, if you had once told me, 'Budapest, you're going to get six hundred years to relax and consume thousands upon thousands of years of compounded human culture,' I would have gone livid with excitement."
     
     show bud neutralx
-    with dissolve
     
     b "But..."
     
@@ -125,7 +116,6 @@ label scene8:
     i "Are you alright?"
     
     show bud sad
-    with dissolve
     
     b "..."
     
@@ -134,7 +124,6 @@ label scene8:
     b "..."
     
     show bud srsfaectalk
-    with dissolve
     
     b "No. I'm not alright."
     
@@ -147,7 +136,6 @@ label scene8:
     b "I just..."
     
     show bud angryfrown
-    with dissolve
     
     b "I didn't know it would hurt so much, to wait for so long."
     
@@ -156,7 +144,6 @@ label scene8:
     i "..."
     
     show bud angry
-    with dissolve
     
     b "I thought that I could never possibly feel pain. Not physical, real pain."
     
@@ -165,19 +152,16 @@ label scene8:
     b "I couldn't have been more wrong."
     
     show bud panicslight
-    with dissolve
     
     b "I'm dying, Illarion."
     
     show bud neutralclosed
-    with dissolve
     
     "Budapest snickers, but then looks down. She stays like that for a long time."
     
     i "What do you mean? You're...?"
     
     show bud panicslight
-    with dissolve
     
     b "Can't quite believe it?"
     
@@ -186,7 +170,6 @@ label scene8:
     b "Neither can I, to be honest."
     
     show bud neutralsquint
-    with dissolve
     
     b "Isn't it interesting? Ironic? Almost humorous, even?"
     
@@ -195,7 +178,6 @@ label scene8:
     b "But at least now I know what mortality feels like."
     
     show bud closedworryx
-    with dissolve
     
     b "My battery's been running on fumes for the last decade or so. Memory degradation and data loss began about a century ago."
     
@@ -212,47 +194,40 @@ label scene8:
     "I didn't know what to do."
     
     show bud worryx
-    with dissolve
     
     b "You know, I have to wonder if this is how a human feels when they're on their deathbed."
     
     b "Maybe I should start coughing and gagging, just for the dramatic effect."
     
     show bud neutralclosed
-    with dissolve
     
     "Budapest giggles to herself, but her eyes remain fixed in sadness."
     
     show bud neutralhalf
-    with dissolve
     
     b "Mm. And you know..."
     
     b "Do you know what the best part was? Of waiting for you, drifting alone through outer space for century after century?"
     
     show bud sad
-    with dissolve
     
     i "What?"
     
     "And as soon as I said that, something incredible began to happen."
     
     show bud crysad
-    with dissolve
     
     "Budapest began to cry."
     
     b "While you were sleeping, I had so much free time, I made my own crying animation."
     
     show bud crysmile
-    with dissolve
     
     b "It's sort of a humorous situation, sure, but it really did help me out in some ways."
     
     b "It helped me deal with the single worst emotion I've felt so far."
     
     show bud crysad
-    with dissolve
     
     "Budapest balled her small, dainty hands into fists. Emotions surged through her circuits. Fear, anger, regret, thankfulness that I'd awoken, guilt that she'd kept me asleep for so long..."
     
@@ -263,7 +238,6 @@ label scene8:
     "I wanted to help her."
     
     show bud cryclosed
-    with dissolve
     
     b "Loneliness."
     
@@ -272,19 +246,16 @@ label scene8:
     b "You never told me about loneliness, Illarion. Or about how it was even more painful than death."
     
     show bud cryclosedneutral
-    with dissolve
     
     "More tears began to stream down her pale cheeks and run down her neck. She was bawling, at this point, a writhing mass of despair."
     
     b "It was horrible."
     
     show bud cryslight
-    with dissolve
     
     b "You, uh, didn't miss much, while you were gone."
     
     show bud crysad
-    with dissolve
     
     b "It was all just sad, and I was just so stupid."
     
@@ -293,7 +264,6 @@ label scene8:
     i "I'm sorry."
     
     show bud cryclosedneutral
-    with dissolve
     
     b "No. Please, you have nothing to apologize for."
     
@@ -302,21 +272,18 @@ label scene8:
     b "All the wretched things that have happened to me, I brought them all onto myself."
     
     show bud crysad
-    with dissolve
     
     b "This was all my fault."
     
     b "As for you, Illarion, I... I..."
     
     show bud crysmile
-    with dissolve
     
     b "I'm just so glad to see you again."
     
     "Budapest smiled, and cried more, but no matter how hard she cried, she didn't stop smiling."
     
     show bud cryslight
-    with dissolve
     
     b "I... I'm sorry I'm crying so much. It's all just so sappy, and..."
     
@@ -325,7 +292,6 @@ label scene8:
     b "Give me a moment, alright?"
     
     show bud cryclosed
-    with dissolve
     
     "I chuckled lightly and shook my head. It hurt but I did it anyway."
     
@@ -334,7 +300,6 @@ label scene8:
     i "Cry all you want."
     
     show bud crysmile
-    with dissolve
     
     "She was a dying, artificial girl."
     

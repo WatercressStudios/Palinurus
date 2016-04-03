@@ -77,80 +77,66 @@ label scene5p3:
     "She finished her performance with a contented sigh and opened her eyes."
     
     show bud surpriseneutral
-    with dissolve
     
     "As she did, I rose to give her a standing ovation."
     
     show bud bigblush
-    with dissolve
     
     b "Ah?! Passenger-sir, you were awake?!"
     
     show bud blushsurprise
-    with dissolve
     
     "Her face blushed crimson red, which elicited a chuckle from me."
     
     p "Heh, why, is that a problem? I can go back to sleep if you’d like."
     
     show bud blushcalming
-    with dissolve
     
     b "Oh no, no, please don’t! I was just… surprised to learn that you had been listening."
     
     p "Why? Would you have actually put some effort into it if you knew I had been?"
     
     show bud shockx
-    with dissolve
     
     b "Mmh!"
     
     show bud angryfrown
-    with dissolve
     
     "She placed her hands on her hips and pouted."
     
     show bud angry
-    with dissolve
     
     b "And what is that supposed to mean?"
     
     show bud angryfrown
-    with dissolve
     
     p "I’m kidding, I’m kidding! That was beautiful, Budapest. There’s a serenity to your voice that’s well-suited for music."
     
     show bud blushsurprise
-    with dissolve
     
     b "R-really?"
     
     "I quickly nod."
     
     show bud blushsmirk
-    with dissolve
     
     p "You ought to sing more often!"
     
     "She was apparently caught off-guard by these sudden compliments: that endearing blush of hers made a return showing, accompanied by a huge smile."
     
     show bud awkwardblushtalk
-    with dissolve
     
     b "Th… thank you, sir. Truthfully, that was only the first song I’d ever sung."
     
     show bud awkwardblush
-    with dissolve
     
     p "Really? So what made you want to give it a shot? Were you digging through Old Earth music on the database?"
     
     show bud smile
-    with dissolve
     
     "She responded with an enthusiastic nod."
     
     show bud bigsmile
-    with dissolve
     
     b "Yes! Specifically, compositions from 19th and 20th centuries AD; The human species had unprecedented bursts of musical creativity in their latter years on Old Earth."
     
@@ -162,18 +148,15 @@ label scene5p3:
     
     "Though I didn’t share her passion for Old Earth history, it was hard not to be won over by her high-spiritedness."
     
-    show bud excitedclosed
-    with dissolve
-    
+    show bud excitedsmileclosed
+
     b "...I think I could listen to that era’s music all night and not grow bored!"
     
     show bud excitedsmileclosed
-    with dissolve
     
     "All night? We’re out in the middle of Nowhere, Space, perhaps light years from the nearest sun — how does she have any concept of night?"
     
     show bud surpriseneutraltalk
-    with dissolve
     
     p "Well, I suppose you won’t be needing my company, then…"
     
@@ -192,59 +175,49 @@ label scene5p3:
     
     scene cockpit2
     show bud angryfrown
-    with dissolve
     
     p "... To catch Budapest pouting angrily at me."
     
     show bud angrytalkx
-    with dissolve
     
     b "You're not very funny, sir."
     
     p "Oh I’m not, am I?"
     
     show bud angryclosedx
-    with dissolve
     
     "She shook her head emphatically."
     
     show bud angryyellclosedx
-    with dissolve
     
     b "I do get bored when you’re asleep; or, to be more accurate, I…"
     
     show bud closeneutralx
-    with dissolve
     
     "She paused and struggled with the next word."
     
     stop music
     show bud panicquietx
-    with dissolve
     
     b "..."
     
     show bud panicx
-    with dissolve
     
     b "Never mind."
     
     show bud panictalkx
-    with dissolve
     
     b "It's nothing important, I..."
     
     b "Protecting you is my primary directive."
     
     show bud worryx
-    with dissolve
     
     b "That's all I need to worry myself about."
     
     p "...Do you think that’s fair, though?"
     
     show bud panicfrown
-    with dissolve
     
     "She cocked her head to the side."
     
@@ -253,24 +226,20 @@ label scene5p3:
     p "What I mean is, do you think it’s fair that my needs must always come before your own?"
     
     show bud neutralclosed
-    with dissolve
     
     "The question seemed to perplex her."
     
     show bud neutralhalf
-    with dissolve
     
     b "But sir, I was programmed to serve humanity. Serving you is my need! Titan spent years developing the deep code that enables us AI to—"
     
     p "No, no — you still don’t understand. I know what you were programmed to do, Budapest. But how do you feel about it?"
     
     show bud neutralclosed
-    with dissolve
     
     "She bit her lower lip, glancing down at the floor as she thought this over."
     
     show bud neutralsquint
-    with dissolve
     
     b "I… I don’t know sir, no one’s ever asked before."
     
@@ -279,7 +248,6 @@ label scene5p3:
     p "Then, let’s look at this from another angle: why shouldn’t you ever think of yourself?"
     
     show bud sad
-    with dissolve
     
     b "But… You’re a human, and I’m…?"
     
@@ -288,7 +256,6 @@ label scene5p3:
     b "..."
     
     show bud panicfrown
-    with dissolve
     
     "She seemed surprised, saddened, and even frightened by this line of questioning, but ultimately, she was confused."
     
@@ -297,31 +264,26 @@ label scene5p3:
     "At that moment I would have given anything in the world to have been able to hug her, or to even just place a comforting hand on her shoulder. But I couldn’t, so I’d have to make do with a smile."
     
     show bud panic
-    with dissolve
     
     p "All I’m saying is… if you want me to stay up with you a little longer, all you have to do is ask."
     
     show bud srsfaec
-    with dissolve
     
     "She looked up from the floor, her sapphire eyes meeting mine in a hopeful gaze. She held them there for some time, staring deep into my eyes as though to ascertain my motives."
     
     "The notion that I could have been making fun of her, if indeed she considered it, was hurtful. But I can’t say I’d have blamed her for doubting me; I’ve done worse things than give false hope to a hologram."
     
     show bud neutralsmalltalk
-    with dissolve
     
     b "...Would you please keep me company a little longer, sir?"
     
     p "Of course. It would be my pleasure."
     
     show bud smiletalk
-    with dissolve
     
     b "Oh, thank you, passenger-sir! Thank you, thank you, thank you!"
     
     show bud smiletalkclosed
-    with dissolve
     
     "She rushed towards me with wide open arms, laughing gleefully…"
     
