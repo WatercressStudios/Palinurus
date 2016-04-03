@@ -53,7 +53,7 @@ label scene3:
     
     "A flashing red light, planted to the control board, indicated that something was amiss."
     
-    "Don’t worry flashing light, I noticed."
+    "Don’t worry, flashing light, I noticed."
     
     "The operating system booted up before my eyes, green code buzzing across a hovering black screen faster than my human eyes could hope to process."
     

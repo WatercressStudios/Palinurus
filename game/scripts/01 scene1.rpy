@@ -86,7 +86,7 @@ label scene1:
     
     "I remember that, back in the day, every spaceship required human pilots and co-pilots. I guess this was a relic from the old regime."
     
-    "There wasn't much room to move around in the cockpit. A horde of buttons, dials, flashing lights, and other mechanisms were scattered around the control console."
+    "There wasn't much room to move around in the cockpit. A hoard of buttons, dials, flashing lights, and other mechanisms were scattered around the control console."
     
     "The cockpit was dominated by the enormous windshield that opened up to a commanding view of, at the moment, precisely nothing."
     
