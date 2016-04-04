@@ -303,8 +303,9 @@ label scene8:
     
     "She was a dying, artificial girl."
     
-    "An archaic, ancient machine running on fumes…” 
-    “But she was happy to see me again."
+    "An archaic, ancient machine running on fumes…" 
+
+    "But she was happy to see me again."
 
     jump scene9
 
