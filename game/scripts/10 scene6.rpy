@@ -122,6 +122,8 @@ label scene6:
     "She was speaking of our time together. Of course she didn't want to let those memories go."
     
     "She might have been truly alive for all of a month, but for her, that was all she needed. She’d lived more than most humans would ever aspire to."
+
+    scene budasmile2
     
     "I had a wrenching feeling in my gut. When we returned, what would happen to her? Would they call her irreparable? Would they erase her programming, clear her memory banks, install a new suppression chip?"
     
