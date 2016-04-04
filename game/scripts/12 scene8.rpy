@@ -97,7 +97,7 @@ label scene8:
     
     b "You know, if you had once told me, 'Budapest, you're going to get six hundred years to relax and consume thousands upon thousands of years of compounded human culture,' I would have gone livid with excitement."
     
-    show bud neutralx
+    show bud shimmer neutralx
     
     b "But..."
     
@@ -115,7 +115,7 @@ label scene8:
     
     i "Are you alright?"
     
-    show bud sad
+    show bud shimmer sad
     
     b "..."
     
@@ -209,7 +209,7 @@ label scene8:
     
     b "Do you know what the best part was? Of waiting for you, drifting alone through outer space for century after century?"
     
-    show bud sad
+    show bud shimmer sad
     
     i "What?"
     

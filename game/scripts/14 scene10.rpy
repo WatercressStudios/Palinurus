@@ -6,7 +6,7 @@ label scene10:
 
     b "We better get started. We don't have the time to waste, and I don't want you to get me crying again."
     
-    show bud neutralx
+    show bud shimmer neutralx
     
     "She cleared her throat and batted her eyelids one last time."
 
@@ -144,7 +144,7 @@ label scene10:
 
     b "... Draining complete."
     
-    show bud sad
+    show bud shimmer sad
     
     "Budapest shakes her head, as if she's trying to clear her mind."
 
@@ -230,7 +230,7 @@ label scene10:
 
     i "Both, I guess."
     
-    show bud neutralx
+    show bud shimmer neutralx
     
     b "Both, you guess."
 

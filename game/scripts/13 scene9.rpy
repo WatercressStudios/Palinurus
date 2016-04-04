@@ -148,7 +148,7 @@ label scene9:
 
     i "I won't. I won't let you leave me again."
     
-    show bud neutralx
+    show bud shimmer neutralx
     
     b "Oh, look at you."
 
@@ -180,7 +180,7 @@ label scene9:
 
     b "I don't have any other choice, alright?"
     
-    show bud sad
+    show bud shimmer sad
     
     b "It's not pretty, but... but it's the way things have to be."
     

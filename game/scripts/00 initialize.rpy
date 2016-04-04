@@ -335,6 +335,8 @@ init:
 # VFX #
 #######
 image watercress = "vfx/watercress.png"
+image bud shimmer sad = Movie(channel="budapest", play="sprites/shimmer/bud_sad.webm", mask="sprites/shimmer/bud_sadmask.webm")
+image bud shimmer neutralx = Movie(channel="budapest", play="sprites/shimmer/bud_neutralx.webm", mask="sprites/shimmer/bud_neutralxmask.webm")
 
 # Splash Screen
 label splashscreen:
