@@ -338,6 +338,7 @@ image watercress = "vfx/watercress.png"
 
 # Splash Screen
 label splashscreen:
+    play music "music/Ode.ogg"
     scene black 
     with Pause(1)
 

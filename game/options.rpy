@@ -27,7 +27,7 @@ init -1 python hide:
     ## These control the name and version of the game, that are reported
     ## with tracebacks and other debugging logs.
     config.name = "Palinurus"
-    config.version = "2.0"
+    config.version = "2.1"
 
     #########################################
     # Themes
@@ -190,7 +190,7 @@ init -1 python hide:
 
     ## Music that is played while the user is at the main menu.
 
-    config.main_menu_music = "music/ode.ogg"
+    config.main_menu_music = True
 
 
     #########################################

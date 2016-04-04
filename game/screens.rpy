@@ -202,7 +202,7 @@ screen main_menu_bonus():
     # The main menu buttons.
     frame:
         style_group "mm"
-        xalign .98
+        xalign .02
         yalign .98
 
 
@@ -233,7 +233,7 @@ screen main_menu_normies():
     # The main menu buttons.
     frame:
         style_group "mm"
-        xalign .98
+        xalign .02
         yalign .98
 
         has vbox
@@ -267,7 +267,7 @@ screen navigation():
     # The various buttons.
     frame:
         style_group "gm_nav"
-        xalign .98
+        xalign .02
         yalign .98
 
         has vbox
