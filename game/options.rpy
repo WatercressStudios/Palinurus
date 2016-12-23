@@ -27,7 +27,7 @@ init -1 python hide:
     ## These control the name and version of the game, that are reported
     ## with tracebacks and other debugging logs.
     config.name = "Palinurus"
-    config.version = "2.1"
+    config.version = "2.2"
 
     #########################################
     # Themes
@@ -70,7 +70,7 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "ui/mainmenu.png",
+        mm_root = "ui/christmasmenu.png",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
@@ -210,10 +210,10 @@ init -1 python hide:
     ## Transitions.
 
     ## Used when entering the game menu from the game.
-    config.enter_transition = dissolve 
+    config.enter_transition = dissolve
 
     ## Used when exiting the game menu to the game.
-    config.exit_transition = dissolve 
+    config.exit_transition = dissolve
 
     ## Used between screens of the game menu.
     config.intra_transition = dissolve
@@ -364,4 +364,3 @@ init python:
 
     build.documentation('*.html')
     build.documentation('*.txt')
-    

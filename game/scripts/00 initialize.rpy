@@ -219,7 +219,7 @@ image console worryyell            = "sprites/console_worryyell.png"
 image black                = "#000"
 image white                = "#FFF"
 image cockpit              = "bg/cockpit.png" # Cockpit with transparent surface
-image cockpithangar        = "bg/cockpithangar.png" 
+image cockpithangar        = "bg/cockpithangar.png"
 image cockpit1             = "bg/cockpit1.png" # Cockpit in Scenes 1-4 and 7-10
 image cockpit2             = "bg/cockpit2.png" # Cockpit in Scene 5 Parts 1-3
 image cockpit3             = "bg/cockpit3.png" # Cockpit in Scene 5 Parts 4-5
@@ -240,7 +240,7 @@ image nebula               = "bg/nebula.jpg"
 ###################
 # Anniversary CGs #
 ###################
-# These are under init so that they are loaded when the game starts, so they can be accessed from 
+# These are under init so that they are loaded when the game starts, so they can be accessed from
 # the gallery
 init:
 
@@ -276,7 +276,7 @@ init:
     image sing2                    = "cg/sing2.png" #Added
     image surprised                = "cg/surprised.png" #Added
 
-    # Art Gallery Images    
+    # Art Gallery Images
     image art1    = "cg/artgal/001.jpg"
     image art2    = "cg/artgal/002.png"
     image art3    = "cg/artgal/003.png"
@@ -338,8 +338,8 @@ image watercress = "vfx/watercress.png"
 
 # Splash Screen
 label splashscreen:
-    play music "music/Ode.ogg"
-    scene black 
+    play music "music/Ode To Joy.ogg"
+    scene black
     with Pause(1)
 
     show watercress with dissolve
@@ -356,8 +356,8 @@ init python:
     def callback_transition(event, interact=True, **kwargs):
         if event == "begin":
             renpy.transition(dissolve, layer="master")
-        
-    config.all_character_callbacks = [callback_transition] 
+
+    config.all_character_callbacks = [callback_transition]
 
 # Game starts here
 # Shortest scene ever
