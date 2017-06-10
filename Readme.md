@@ -12,7 +12,6 @@ Our Entry for NaNoReNo 2015 Visual Novel Jam
 * Run the correct distribution for your operating system.
 
 
-## Cameron Was Here ###
 Check the Releases tab for releases.
 
 Check LICENSE.md for licensing information.
