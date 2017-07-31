@@ -74,13 +74,13 @@ label scene1:
     with dissolve
 
     "I hurried down the main concourse of the hangar bay, checked to make sure the shuttle was marked with my flight number, and slipped inside."
+    
+    scene cockpithangar
+    with dissolve
 
     "The cabin interior betrayed its sleek exterior. Lights along the walls and ceiling illuminated the passage, their luminance rippling towards the cockpit.  "
 
     "The floor was lined with dark, navy-blue carpet that travelled up the walls for a few inches."
-
-    scene cockpithangar
-    with dissolve
 
     "I made my way towards the cockpit, taking a look around. A cursory glance revealed two seats, confirming the hunch that this was a repurposed vessel."
 

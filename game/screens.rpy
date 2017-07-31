@@ -213,6 +213,7 @@ screen main_menu_bonus():
         textbutton _("CG Gallery") action ShowMenu("cg_gallery")
         textbutton _("Art Gallery") action ShowMenu("art_gallery")
         textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Credits") action Start("credits")
         textbutton _("Quit") action Quit(confirm=False)
 
 init -2:
@@ -242,6 +243,7 @@ screen main_menu_normies():
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("CG Gallery") action ShowMenu("cg_gallery")
         textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Credits") action Start("credits")
         textbutton _("Quit") action Quit(confirm=False)
 
 init -2:
