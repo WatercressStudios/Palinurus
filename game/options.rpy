@@ -29,6 +29,8 @@ init -1 python hide:
     config.name = "Palinurus"
     config.version = "2.2"
 
+    config.rollback_enabled = False
+
     #########################################
     # Themes
 

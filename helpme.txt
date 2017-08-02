@@ -1,0 +1,63 @@
+[code]
+I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00action_file.rpy", line 427, in __call__
+    renpy.load(fn)
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\python.py", line 1695, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 30, in <module>
+    ui.interact()
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\ui.py", line 285, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\core.py", line 2492, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\core.py", line 3166, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\transition.py", line 45, in event
+    return self.new_widget.event(ev, x, y, st)  # E1101
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\screen.py", line 651, in event
+    rv = self.child.event(ev, x, y, st)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 952, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\layout.py", line 224, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 889, in event
+    return handle_click(self.clicked)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 824, in handle_click
+    rv = run(action)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\display\behavior.py", line 306, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 427, in __call__
+    renpy.load(fn)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\loadsave.py", line 594, in load
+    log.unfreeze(roots, label="_after_load")
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\python.py", line 1650, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "C:\Users\Brad\Desktop\renpy-6.99.12.2-sdk\renpy\python.py", line 1509, in rollback
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+Windows-8-6.2.9200
+Ren'Py 6.99.12.2.2029
+Palinurus 2.1
+[/code]

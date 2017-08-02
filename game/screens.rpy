@@ -210,6 +210,7 @@ screen main_menu_bonus():
 
         textbutton _("Start Game") action Start()
         textbutton _("Load Game") action ShowMenu("load")
+        textbutton _("Bonus Scenes") action ShowMenu("bonus")
         textbutton _("CG Gallery") action ShowMenu("cg_gallery")
         textbutton _("Art Gallery") action ShowMenu("art_gallery")
         textbutton _("Preferences") action ShowMenu("preferences")
@@ -241,10 +242,14 @@ screen main_menu_normies():
 
         textbutton _("Start Game") action Start()
         textbutton _("Load Game") action ShowMenu("load")
+        textbutton _("Bonus Scenes") action ShowMenu("bonus")
         textbutton _("CG Gallery") action ShowMenu("cg_gallery")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Credits") action Start("credits")
         textbutton _("Quit") action Quit(confirm=False)
+
+screen the_img(img):
+    add img pos (0, 0)
 
 init -2:
 
@@ -253,6 +258,30 @@ init -2:
         size_group "mm"
 
 
+##############################################################################
+# Bonus Scene Menu
+#
+# Couldn't have said it better myself
+screen bscenes():
+
+    # The bonus scene buttons.
+    frame:
+        style_group "bonus"
+        xalign .98
+        yalign .02
+
+        has vbox
+
+        textbutton _("Blue Pearl") action Start("carnival") hovered ShowTransient("the_img", img="ui/test.jpg") unhovered Hide("the_img")
+
+screen bonus():
+    
+    # This ensures that any other menu screen is replaced.
+    tag menu
+
+    use navigation
+    use bscenes
+    
 
 ##############################################################################
 # Navigation
