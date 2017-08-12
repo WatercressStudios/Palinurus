@@ -272,7 +272,7 @@ screen bscenes():
 
         has vbox
 
-        textbutton _("Blue Pearl") action Start("carnival") hovered ShowTransient("the_img", img="ui/test.jpg") unhovered Hide("the_img")
+        textbutton _("Blue Pearl") action Start("blue_pearl") hovered ShowTransient("the_img", img="Blue_Pearl_Icon_Test_1.png") unhovered Hide("the_img")
 
 screen bonus():
     

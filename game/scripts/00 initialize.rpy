@@ -2,9 +2,9 @@
 # Character Declaration #
 #########################
 define v = Character(None, kind=nvl, what_xalign=0.5, window_xalign=0.5)
-define b = Character("Budapest", color="#B33542", show_two_window=True, who_ypos=-2)
+define b = Character("Budapest", color="#B33542", show_two_window=True, who_ypos=-2, voice_tag="budapest")
 define p = Character("Passenger", color="#3b56c4", show_two_window=True, who_ypos=-2)
-define i = Character("Illarion", color="#3b56c4", show_two_window=True, who_ypos=-2)
+define i = Character("Illarion", color="#3b56c4", show_two_window=True, who_ypos=-2, voice_tag="illarion")
 
 
 # Allows the NVL in the 1st 4 lines to be center aligned without doing it manually.
@@ -17,6 +17,10 @@ init:
 ######################
 # Sprite Declaration #
 ######################
+#Blue Pearl
+image budaconsad = im.Scale("cg/budaconsad.png", 1280, 720) 
+image earth = "cg/venus.png"
+#Additional
 image bud angry                  = "sprites/bud_angry.png"
 image bud angryfrown             = "sprites/bud_angryfrown.png"
 image bud neutral                = "sprites/bud_neutral.png"
