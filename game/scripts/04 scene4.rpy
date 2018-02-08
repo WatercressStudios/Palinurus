@@ -335,6 +335,10 @@ label scene4:
     "I stole a glance at her, working enthusiastically at her displays. It seemed that as soon as our conversation died out, she returned to the world of code, looking for... something."
 
     p "... So, what are you up to now?"
+    
+    show mapchecks at Position (xalign = 1.05, yalign = 0.9):
+        zoom 1.0
+        alpha 0.9
 
     b "I'm scanning the ship's databases, as well as running a nearby radar scan for any nearby vessels, or perhaps a notable landmark."
 
@@ -363,15 +367,30 @@ label scene4:
     p "Oh. Oh no..."
 
     show console loadup
+    
+    hide mapchecks 
+    show map4 at Position (xalign = 1.05, yalign = 0.9):
+        zoom 1.0
+        alpha 0.9
+    
 
     b "Actually, wait."
 
     show console loadfocus
 
-    b "According to this data here...!"
+    b "AccordinSg to this data here...!"
+    
+    show map4 at Position (xalign = 2.0, yalign = 0.7) with MoveTransition(1.0):
+        zoom 1.0 alpha 0.9
+        linear 1.0 zoom 1.5
 
     scene cockpit1
     with dissolve
+    
+    show map zoom1 at Position (xalign = 0.5, yalign = 0.5) with moveinleft:
+        zoom 0.5
+        alpha 0.3
+        linear 3.0 alpha 0.5 zoom 1.0 
 
     "With her index finger and her thumb, Budapest quickly expanded one of the small rectangles on the interface hovering in front of her."
 
@@ -379,7 +398,7 @@ label scene4:
 
     "It seemed to be a grainy, black-and-white photograph of some kind of small space station."
 
-    show bud surprise
+    show bud surprise at Position(xpos = 0.2 ,ypos = 1.0)
 
     b "We..."
 
@@ -392,6 +411,8 @@ label scene4:
     show bud surpriseneutraltalk
 
     b "We're on a due course to pass by a research outpost. According to the registry data, it is owned and operated by the Arcadian Empire's government."
+    
+    show map zoom2
 
     show bud surpriseneutral
 
@@ -406,6 +427,8 @@ label scene4:
     show bud smiletalkclosed
 
     b "Once we get close enough, they should detect us themselves, and send someone to investigate."
+    
+    show map zoom3
 
     show bud smileclosed
 
@@ -438,6 +461,9 @@ label scene4:
     "When installed and activated, the cryogenic sleep systems would send all the craft's carbon-based lifeforms into a sort of trance-induced coma, while the Personal Navigator would typically take it over from there."
 
     "Certain insulatory chemicals slowed down your biological processes to a glacial pace."
+    
+    show map zoom4:
+        alpha 0.4
 
     "To your body, a three month long trip could be over in 10 seconds."
 
@@ -454,7 +480,9 @@ label scene4:
     show bud panicquiet
 
     b "..."
-
+    
+    $ renpy.pause(1.0, hard=False) #Emphasis the lie
+    
     show bud painfullooktalk
 
     b "Yes, they've been destroyed beyond repair."
@@ -478,6 +506,8 @@ label scene4:
     show bud panicslight
 
     b "You'll remain conscious throughout the voyage?"
+    
+    hide map
 
     p "Sure. I'll be fine."
 
@@ -487,7 +517,7 @@ label scene4:
 
     b "..."
 
-    show bud panicquiettalkx
+    show bud panicquiettalkx at center
 
     b "I, um..."
 
@@ -547,7 +577,8 @@ label scene4:
 
     b "Would you be alright with that? I... wouldn't want to be left by myself for so long."
 
-    show bud shametalk
+    show bud shametalk at Position (xalign = 0.5, yalign = 1.0) with MoveTransition(0.2)
+    show bud shametalk at Position (xalign = 0.5, yalign = 1.7) with MoveTransition(0.2) #Budapest dips down to resume normal height during "Suddenly, Budapest sprang up like a supernova. It appeared I'd made her day."
 
     b "I don't think I'd be able to handle it. Not this time. Part of me wonders, now, how I ever did it before..."
 
@@ -571,7 +602,7 @@ label scene4:
 
     p "I owe you that much."
 
-    show bud weaksmile
+    show bud weaksmile at Position (xalign = 0.5, yalign = 1.0) with MoveTransition(0.2)
 
     b "...!"
 
@@ -625,12 +656,27 @@ label scene4:
     "I sighed, stretched out, and turned my head to the stars."
 
     "Budapest turned to look at them too."
+    
+    show black
+    show starslongtrip at Position (xalign = 0.5, yalign = 0.5):
+        zoom 1.3
+        rotate 0
+        linear 40 rotate 90
+        linear 40 rotate 180
+        linear 40 rotate 270
+        linear 40 rotate 360
+        repeat
+    with dissolve
+    
+    pause
 
     p "..."
+    
+    pause
 
     b "..."
 
-    scene black with dissolve
+    scene black with Dissolve(5.0)
 
     "This was going to be one long trip."
 

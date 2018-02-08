@@ -241,6 +241,13 @@ image cabinfire            = "bg/cabinfire.png"
 image cockpitblackout      = "bg/cockpitblackout.png"
 image nebula               = "bg/nebula.jpg"
 
+image blackocean1          = "bg/blackocean1_ad.jpg"   
+image blackocean2          = "bg/blackocean2_ad.jpg"   
+image blackocean3          = "bg/blackocean3_ad.jpg"   
+image blackocean4          = "bg/blackocean4_ad.jpg"   
+image blue                 = "#191970" #used for a split second to ease a fade transition in.
+image offwhite             = "#A9A9A9"
+
 ###################
 # Anniversary CGs #
 ###################
@@ -279,6 +286,11 @@ init:
     image sing1                    = "cg/Sing.png" #Added
     image sing2                    = "cg/sing2.png" #Added
     image surprised                = "cg/surprised.png" #Added
+    
+    image singingdreamgirl         = "cg/singingdreamgirl_ad.png"
+    image starhands                = "cg/handsofstars_ad.png"
+    image silouettebudapest        = "cg/silouettebudapest_ad.png"
+
 
     # Art Gallery Images
     image art1    = "cg/artgal/001.jpg"
@@ -353,8 +365,72 @@ label splashscreen:
     with Pause(1)
 
     return
+    
+image blackoceanlight = "vfx/blackoceanlight_ad.png" #Used during the dream sequence as a blinking white light.
+
+image blackoceanrain1 = "vfx/blackoceanrain1_ad.png" #Black rain for your nightmare oceans    
+image blackrain = SnowBlossom("blackoceanrain1", count=20, border=50, xspeed=(50, -50), yspeed=(1500, 1750), start=0, fast=True, horizontal=False)
+
+image blackoceanrain2 = "vfx/blackoceanrain2_ad.png" #Lighter rain for when the ocean consumes you   
+image lightrain = SnowBlossom("blackoceanrain2", count=20, border=50, xspeed=(250, -250), yspeed=(1400, 1800), start=0, fast=True, horizontal=False)
+
+image bubble1 = "vfx/bubble1_ad.png" #Black rain for your nightmare oceans    
+image bubbles1 = SnowBlossom("bubble1", count=20, border=50, xspeed=(500, -500), yspeed=(-1400, -1800), start=0, fast=True, horizontal=False)
+image bubbles2 = SnowBlossom("bubble1", count=10, border=50, xspeed=(500, -500), yspeed=(-900, -1200), start=0, fast=True, horizontal=False)
+
+image spray = "vfx/spray_ad.png" #Easiest Animation ever.
+image sprayeffect = SnowBlossom("spray", count=20, border=50, xspeed=(1500, -1500), yspeed=(-900, -1000), start=0, fast=True, horizontal=False)
+
+image blink movie = Movie(channel="blink", play="vfx/budapestblinking.m2t")
+
+image freezing1 = "vfx/freezingeffect1_ad.png" #Used for when Budapest administers the cyrostasis on the protagonist
+image freezing2 = "vfx/freezingeffect2_ad.png"
+
+image redlight = "vfx/redlight_ad.png"
+
+image greenlight = "vfx/greenlight_ad.png"
+
+image spotlight = "vfx/spotlight_ad.png"
+
+image redscreens = "vfx/redscreens_ad.png"
+
+image map1 = "vfx/cyclemaps1_ad.png"
+image map2 = "vfx/cyclemaps2_ad.png"
+image map3 = "vfx/cyclemaps3_ad.png"
+image map4 = "vfx/cyclemaps4_ad.png"
+
+image starslongtrip = "vfx/starspalinurus_ad.png"
+
+image blink1 = Image("vfx/blink_ad.png",)
+image blink2 = im.Flip("vfx/blink_ad.png", vertical=True,)
+
+init:
+    image mapchecks = Animation("vfx/cyclemaps1_ad.png", 0.1,                 
+                                "vfx/cyclemaps2_ad.png", 0.1,
+                                "vfx/cyclemaps3_ad.png", 0.1,)
+    
+image firefilmstrip = anim.Filmstrip("vfx/fire.png", (2,2), (1,250), 0.1) 
+image firedown = SnowBlossom("firefilmstrip", count=30, border=30, xspeed=(-150, 150), yspeed=(25, 75), start=10, fast=True, horizontal=True)
+image fireup = SnowBlossom("firefilmstrip", count=70, border=4, xspeed=(-1500, 1500), yspeed=(-250, -500), start=10, fast=True, horizontal=False)
+image firelast = SnowBlossom("firefilmstrip", count=70, border=4, xspeed=(-1500, 1500), yspeed=(250, 500), start=10, fast=True, horizontal=False)
+
+image waterfilmstrip = anim.Filmstrip("vfx/water.png", (2,2), (1,250), 0.1) 
+image waterdown = SnowBlossom("waterfilmstrip", count=10, border=4, xspeed=(-150, 150), yspeed=(25, 75), start=10, fast=True, horizontal=True)
+image waterup = SnowBlossom("waterfilmstrip", count=70, border=4, xspeed=(-1500, 1500), yspeed=(-250, -500), start=10, fast=True, horizontal=False)
+image waterlast = SnowBlossom("waterfilmstrip", count=70, border=4, xspeed=(-1500, 1500), yspeed=(250, 500), start=10, fast=True, horizontal=False)
+
+image cockpit1blurry = "vfx/cockpit1blurry.png" #Used during the final scenes when the protagonist wakes from his slumber
+
+image finalspotlight = "vfx/finalspotlight_ad.png"
 
 # Applies transitions to all characters
+
+image map zoom1 = "vfx/zoommaps1_ ad.png"
+image map zoom2 = "vfx/zoommaps2_ ad.png"
+image map zoom3 = "vfx/zoommaps3_ ad.png"
+image map zoom4 = "vfx/zoommaps4_ ad.png"
+
+image airescaping = "vfx/airescaping_ad.png"
 
 init python:
     def callback_transition(event, interact=True, **kwargs):

@@ -1,4 +1,6 @@
 label scene5p1:
+    
+    scene black
 
     play music "music/Ambivalence.ogg"
 
@@ -15,21 +17,45 @@ label scene5p1:
     "So for much of the time, I just felt tired."
 
     scene cockpit2 with fade
+    
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -1.0
+        linear 3.9 xpos 0.0 ypos -0.1
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 3.9 xpos 0.0 ypos 0.1
+    with dissolve
+        
+    pause
 
     "I was sleeping, having nodded off in the co-pilot's chair, when..."
+    
+    pause
 
-    scene white with dissolve
-    scene cockpit2
-    scene hours with fade
+    show white behind blink1:
+        alpha 1.0
+        linear 1.0 alpha 1.0
+        linear 4.0 alpha 0.0
+        
+    show hours behind white
+    
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 1.0 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 1.0 xpos 0.0 ypos 1.0
+    with dissolve
+    
 
     b "THE TIME IS NOW 1200 HOURS!"
 
     p "...Mmn!"
 
+    "I stirred in my seat."
+    
     scene cockpit2 with fade
     show bud smile
-
-    "I stirred in my seat."
 
     "At least I, er, knew what time it was."
 
@@ -127,22 +153,26 @@ label scene5p1:
     show bud smile
 
     "She had a point. Still, I wasn't ready to concede. Not yet."
+    
 
     p "Well, you're an artificial intelligence, right? Can't you just, like, turn off your audio receptors, or something? Don't think it'd bother you then."
 
-    show bud neutralsmalltalk
+    show bud neutralsmalltalk at Position (xalign = 0.5, yalign = 1.0) with MoveTransition(0.2)
+    show bud neutralsmalltalk at Position (xalign = 0.5, yalign = 1.2) with MoveTransition(0.2)
 
     b "... I could..."
 
     p "Kind of creepy to record all that, in any case. Not gonna lie."
 
-    show bud shock
+    show bud shock at Position  (xalign = 0.5, yalign = 1.4) with MoveTransition(0.2)
 
     p "I thought you said you didn't watch me sleep?"
 
-    show bud blush
+    show bud blush at Position  (xalign = 0.5, yalign = 1.6) with MoveTransition(0.2)
 
     b "I-I-I don't! Not at all! It's for-"
+    
+    show bud blush at Position  (xalign = 0.5, yalign = 1.8) with MoveTransition(0.2)
 
     b "S-s-security!"
 
@@ -152,11 +182,11 @@ label scene5p1:
 
     "She was getting so embarrassingly squirmy, so visibly flustered; I laughed in her face."
 
-    show bud shock
+    show bud shock at Position  (xalign = 0.5, yalign = 1.6) with MoveTransition(0.2)
 
     p "Alright, alright. Fine! I get it. I'll try to get some more sleep."
 
-    show bud weaksmile
+    show bud weaksmile at Position (xalign = 0.5, yalign = 1.0) with MoveTransition(0.2)
 
     "That seemed to satisfy her. A small, warm smile crept across her face."
 

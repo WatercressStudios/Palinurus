@@ -51,6 +51,12 @@ label scene3:
 
     "My eyes shot open as the cockpit rumbled back to life. The cloak of darkness was cut to ribbons by the various displays stuttering back to life."
 
+    show redlight at Position (xalign = 0.5, yalign = 1.7):
+        alpha 0.0 zoom 0.7
+        linear 1.0 alpha 1.0 zoom 1.0
+        linear 1.0 alpha 0.0 zoom 0.7
+        repeat
+
     "A flashing red light, planted to the control board, indicated that something was amiss."
 
     "Don’t worry, flashing light, I noticed."
@@ -74,10 +80,13 @@ label scene3:
     '"mig_table_max_disp1 == 95"'
 
     "Did this... mean the ship was coming back online? I didn't know what was going on..."
+    
+    show spotlight with dissolve
 
     scene white with dissolve
     scene cockpit1
-    show bud excitedclosed with dissolve
+    show bud excitedclosed 
+    with dissolve
 
     "Suddenly, a flash of white light."
 
@@ -103,11 +112,23 @@ label scene3:
 
     b "Ah, er, the stabilizing subsystems have to be recalibrated, the emergency thrusters, remain seated, we'll be undergoing a little turbulence until-"
 
+    show redlight at Position (xalign = 0.5, yalign = -1.2):
+        alpha 0.0 zoom 0.7
+        linear 0.5 alpha 1.0 zoom 1.0
+        linear 0.5 alpha 0.0 zoom 0.7
+        repeat
     show bud panic
+    with hpunch
 
     "Before the AI could provide me with an estimate, the cockpit lurched forward."
 
     p "Ack!"
+    
+    show redscreens at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.4 zoom 0.7
+        linear 0.5 alpha 1.0
+        linear 0.5 alpha 0.4
+        repeat
 
     hide bud
 
@@ -117,6 +138,12 @@ label scene3:
 
     scene cockpitside
     show console worrylook
+    show redlight at Position (xalign = 1.3, yalign = -0.2):
+        alpha 0.0 zoom 0.7
+        linear 0.5 alpha 1.0 zoom 1.0
+        linear 0.5 alpha 0.0 zoom 0.7
+        repeat
+    with Fade(0.25, 1.0, 0.25, color='#FF0000')
 
     b "Just one moment!"
 
@@ -137,8 +164,8 @@ label scene3:
     show console warning
 
     p "Mm... hey... there's no need to sho-"
-
-    show console warningangryshout
+    
+    show console warningangryshout with vpunch
 
     b "I'M NOT SHOUTING!"
 
@@ -169,8 +196,17 @@ label scene3:
     "Maybe this was just some sort of scenario... the Personal Navigators had never been programmed for?"
 
     "'Ping!'"
+    
+    hide redlight with dissolve
+    show greenlight at Position (xalign = 1.3, yalign = -0.2):
+        alpha 0.0 zoom 0.7
+        linear 0.5 alpha 1.0 zoom 1.0
+        linear 0.5 alpha 0.0 zoom 0.7
+        repeat
 
     "Another chime rang out. The obnoxious red light turned green."
+    
+
 
     "... Did she pull it off?"
 

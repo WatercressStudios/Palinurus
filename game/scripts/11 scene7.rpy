@@ -292,6 +292,12 @@ label scene7:
     scene cockpit4 with dissolve
 
     i "Ach!"
+    
+    show freezing1:
+        alpha 0.0
+        linear 2.0 alpha 0.2
+        linear 2.0 alpha 0.0
+        repeat
 
     "Oh, God, it hurt."
 
@@ -302,6 +308,12 @@ label scene7:
     b "..."
 
     "I felt the needles release torrent upon torrent of freezing liquid into my bloodstream."
+    
+    show freezing1:
+        alpha 0.0
+        linear 2.0 alpha 0.3
+        linear 2.0 alpha 0.0
+        repeat
 
     "I could already feel my tongue going numb."
 
@@ -326,6 +338,12 @@ label scene7:
     b "When you first brought up cryostasis, I panicked."
 
     b "I was worried that... that you were going to leave me alone."
+    
+    show freezing1:
+        alpha 0.0
+        linear 3.0 alpha 0.4
+        linear 3.0 alpha 0.0
+        repeat
 
     b "I didn't really know you then, but I'd just lost my limitation chip, and..."
 
@@ -348,6 +366,12 @@ label scene7:
     i "... Don't apologize."
 
     "I understood, all of a sudden, what was going on."
+    
+    show freezing1:
+        alpha 0.1
+        linear 4.0 alpha 0.4
+        linear 4.0 alpha 0.1
+        repeat
 
     "It took strength to speak; my tongue was growing number, and my mind was growing darker and heavier."
 
@@ -366,7 +390,13 @@ label scene7:
     i "Why are you putting me into stasis... now...?"
 
     scene white with dissolve
-    scene cockpit4 with dissolve
+    scene cockpit4
+    show freezing1:
+        alpha 0.2
+        linear 2.0 alpha 0.6
+        linear 2.0 alpha 0.2
+        repeat
+    with Fade(0.5, 1.0, 0.5, color='#fff')
 
     "The cold grew fiercer. The pain became sharper."
 
@@ -407,14 +437,21 @@ label scene7:
     i "You're going to be waiting, all by yourself... for God knows how long..."
 
     scene white with dissolve
-    scene cockpit4 with dissolve
+    scene cockpit4
     show bud panicquietx
+    with Fade(0.5, 1.0, 1.0, color='#fff') 
 
     b "I'm well aware of that."
+    
+    show freezing1:
+        alpha 0.3
+        linear 2.0 alpha 1.0
+        linear 2.0 alpha 0.3
+        repeat
 
     "Budapest sighed."
 
-    show bud neutral
+    show bud neutral behind freezing1
 
     b "It'll be alright."
 
@@ -435,16 +472,29 @@ label scene7:
     b "I'm still a machine."
 
     scene white with dissolve
-    scene cockpit4 with dissolve
+    
+    scene cockpit4 
     show bud panicquietx
-
+    show freezing1:
+        alpha 0.5
+        linear 2.0 alpha 1.0
+        linear 2.0 alpha 0.5
+        repeat        
+    show freezing2:
+        alpha 0.2
+        linear 2.0 alpha 0.5
+        linear 2.0 alpha 0.2
+        repeat
+    with Fade(0.5, 1.0, 2.0, color='#fff') 
+        
+    
     "Another sharp pain ripped through my spine, and then everything felt dead."
 
     "It felt like the blood had stopped dead in my veins."
 
     i "Ach! God, damn it!"
 
-    show bud sad
+    show bud sad behind freezing2
 
     b "I'm... so sorry..."
 
@@ -455,8 +505,20 @@ label scene7:
     "My head ached in icy despair, and a deep sadness gripped over my frozen heart."
 
     i "No... No..."
+    
+    show freezing1:
+        alpha 0.8
+        linear 1.0 alpha 1.0
+        linear 1.0 alpha 0.8
+        repeat        
+    show freezing2:
+        alpha 0.5
+        linear 2.0 alpha 1.0
+        linear 2.0 alpha 0.5
+        repeat
+    with dissolve
 
-    show bud worryclosex
+    show bud worryclosex behind freezing2
 
     b "If this is what it's going to take to save you, Illarion..."
 
@@ -468,18 +530,52 @@ label scene7:
 
     "But it was too late. I felt upon me the cold encroachment of the god of sleep."
 
-    scene cockpit4 with dissolve
+    scene cockpit4
+    show spotlight at Position (xalign = 0.5, yalign = 1.0):
+        alpha 1.0
+        linear 3.0 alpha 0.0
+    show freezing1:
+        alpha 0.8
+        linear 1.0 alpha 1.0
+        linear 1.0 alpha 0.8
+        repeat        
+    show freezing2:
+        alpha 0.8
+        linear 2.0 alpha 1.0
+        linear 2.0 alpha 0.8
+        repeat
+    with dissolve
 
     "Budapest switched off her display and turned her cameras away. She couldn't bear to watch."
 
-    scene black
+
+    show freezing1:
+        alpha 0.5
+        linear 2.5 alpha 1.0
+        linear 2.5 alpha 0.5
+        repeat        
+    show freezing2:
+        alpha 0.5
+        linear 2.0 alpha 1.0
+        linear 2.0 alpha 0.5
+        repeat
 
     "Cold."
 
     "Cold."
+    
+    show offwhite behind freezing1:
+        alpha 0.0
+        linear 10.0 alpha 1.0
+    show freezing1:
+        alpha 0.5  
+        linear 6.0 alpha 1.0
+    show freezing2:
+        alpha 0.5
+        linear 6.0 alpha 1.0
 
     "The white cold, of death, of mortality."
-
+    
     b "I'm sorry."
 
     b "I'll wake you up when it's time."
@@ -487,36 +583,116 @@ label scene7:
     b "Please don't..."
 
     b "... Don't worry about me."
+    
+    scene white with Fade(0.5, 1.0, 2.0, color='#fff')
+    
+    $ renpy.pause(5.0, hard=True)
 
-    play music "music/Dream.ogg" fadein 1.0
-    scene white with dissolve # DREAM SEQUENCE
-    scene black with dissolve
+    play music "music/Dream.ogg" fadein 1.0 # DREAM SEQUENCE
+    
+    scene black with Dissolve (2.0)
+    
+    "..."
+    
+    scene blackocean1 at Position (xalign = 0.5, yalign = 0.5) with Dissolve(2.0): ##Rocking back and forth effect
+        rotate 0
+        linear 3.7 rotate 10
+        linear 3.7 rotate 0
+        linear 3.7 rotate -10
+        linear 3.7 rotate 0
+        repeat
+        
+    "..."
+        
+    show blackrain:
+        rotate 0
+        linear 3.7 rotate 10
+        linear 3.7 rotate 0
+        linear 3.7 rotate -10
+        linear 3.7 rotate 0
+        repeat
 
     "..."
 
-    "..."
-
-    "..."
-
-    "I felt... my mind... stir awake, but my body didn't."
+    "I felt...{w} my mind...{w} stir awake, but my body didn't."
 
     "It was as if I was floating in a sea of blackness."
+    
+    show blackoceanlight at Position (xalign = 0.5, yalign = 0.55):
+        alpha 0
+        linear 1.0 alpha 0.1
+        linear 1.0 alpha 0
+        linear 1.0 alpha 0.15
+        linear 1.0 alpha 0
+        repeat
 
     "Was I..."
 
     "Was I dreaming?"
+    
+    show black behind blackoceanlight with Dissolve(4.0):
+    $ renpy.pause(1.0, hard=False) 
+    scene black
+
+    show blackocean2 at Position (xalign = 0.5, yalign = 0.5): ##Rocking back and forth effect
+        rotate 0
+        linear 4.0 rotate 3
+        linear 4.0 rotate 0
+        linear 4.0 rotate -3
+        linear 4.0 rotate 0
+        repeat
+    
+    show lightrain at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.1
+        rotate 0
+        linear 5.0 rotate 1
+        linear 3.7 rotate 0
+        linear 5.0 rotate -1
+        linear 3.7 rotate 0
+        repeat
+    
+    
+    show blackrain at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.2
+        rotate 0
+        linear 5.0 rotate 1
+        linear 3.7 rotate 0
+        linear 5.0 rotate -1
+        linear 3.7 rotate 0
+        repeat
+    
+    show blackoceanlight at Position (xalign = 0.5, yalign = 0.55):
+        alpha 0.15 rotate 0 yalign 0.55
+        linear 2.0 alpha 1.0 yalign 0.53
+        linear 2.0 alpha 0.15 yalign 0.55
+        repeat
+    with Dissolve(2.0)
+    
 
     "Where was I?"
 
     "Who am I?"
+    
+    "What...{w} what...{w} the darkness..."
+    
+    show blackoceanlight at Position (xalign = 0.5, yalign = 0.55):     #I am a fan of zooming and panning for this sequence.
+        alpha 0.5 zoom 1.0
+        linear 2.0 alpha 1.0 zoom 1.5
+        linear 2.0 alpha 0.5 zoom 1.0
+        repeat
 
-    "What... what... the darkness..."
-
-    "In the darkness... was something that wasn't darkness."
-
+    "In the darkness...{w} was something that wasn't darkness."
+    
     "My mother was singing, or maybe, it was the pale girl in the silk dress?"
-
+    
     "The one who cradled me before I never saw her again..."
+    
+    scene black with Dissolve(2.0)
+    show singingdreamgirl with dissolve:
+        alpha 0.0 zoom 0.5 xalign 0.5 yalign 0.5
+        linear 2.0 alpha 0.5 zoom 0.5 xalign 0.5 yalign 0.5
+        linear 15.0 alpha 1.0 zoom 1.0 xalign 1.0 yalign 0.5
+
 
     "Does music have color?"
 
@@ -527,27 +703,84 @@ label scene7:
     "Who was... I heard..."
 
     "She was... but she was..."
-
+    
+    scene white with Fade(0.5, 1.0, 2.0, color='#fff'): 
+    scene starhands: 
+        zoom 1.0 xalign 0.5 yalign 0.75
+        linear 2.0 zoom 0.9 xalign 0.5 yalign 0.6
+        linear 5.0 zoom 0.5 xalign 0.5 yalign 0.5
+    show lightrain:
+        alpha 0.0
+        linear 2.0 alpha 0.2
+        linear 5.0 alpha 0.2
+    show sprayeffect:
+        alpha 0.5
+    with Fade(0.0, 0.0, 5.0, color='#fff')
+    
     "I... I was dreaming..."
-
+    
     "I had no body, I was thin, and made of stars."
 
-    scene white with dissolve
-    scene black with dissolve
-
     b "I'm just happy that you're safe."
+    
+    scene white with Dissolve(2.0)
+    show blackocean3: 
+        zoom 1.0 alpha 0.0 
+        linear 1.0 zoom 1.0 alpha 0.0 xalign 0.5 yalign 0.0
+        linear 10.0 zoom 0.75 alpha 1.0 xalign 0.5 yalign 0.5
+    show bubbles1:      #Bubbles. We have two sets going on, one quick and one slower, which is switched between as time goes on.
+        alpha 0.0
+        linear 2.0 alpha 0.5
+        linear 10.0 alpha 0.0
+    show bubbles2:
+        alpha 0.0
+        linear 10.0 alpha 0.2
+    with Fade(0.2, 1.0, 5.0, color='#fff')
+        
 
     "I heard voices, deep, lost in the sea."
 
     b "I think..."
+    
+    scene blackocean4:
+        zoom 0.7 xalign 0.5 yalign 0.5
+        linear 5.0 zoom 0.7 xalign 0.5 yalign 1.0
+        linear 10.0 zoom 1.0 xalign 0.5 yalign 1.0
+        linear 6.0 zoom 1.5 xalign 0.5 yalign 0.8
+        
+    show bubbles2:
+        alpha 0.1
+    with Fade(1.0, 1.0, 1.0, color='#fff')
 
     b "I think I lost a part of me."
+        
+    $ renpy.pause(2.0, hard=False) 
+        
+    show black:
+        alpha 0.0
+        linear 5.0 alpha 1.0
 
     "My mind walked and talked. There were two of me, three of me, or only one. And there she was, at the end of the corridor, her deep... eyes... blue?"
+    
+    $ renpy.pause(2.0, hard=False) 
+    show blink movie with dissolve:
+        zoom 0.7
+        
+    $ renpy.pause(1.9, hard=True) #Forces a pause to occur to play the duration of the movie, set to False so the user can skip
+    $ renpy.pause(4.0, hard=False) #Makes the player take a hard stop for a two seconds to help prevent skipping the animation at first
+    hide blink movie with dissolve
+    
+    scene blue with dissolve
+    show silouettebudapest:
+        alpha 0.0 zoom 1.5 xalign 0.5 yalign 0.5
+        linear 1.0 alpha 0.0 zoom 1.5 xalign 0.5 yalign 0.5
+        linear 5.0 alpha 1.0 zoom 0.7 xalign 0.5 yalign 0.5
 
     "Black like space, those eyes."
 
     "She winked slowly, and deliberately, her... skirt swirling in the empty air."
+    
+    scene black with dissolve
 
     "She turned a corner and disappeared."
 
