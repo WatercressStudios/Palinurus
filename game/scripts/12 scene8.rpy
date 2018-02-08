@@ -5,31 +5,99 @@ label scene8:
     scene black with dissolve
     scene white with dissolve
     scene black with dissolve
-    scene cockpit1 with dissolve
+    
+    scene cockpit1
+    show cockpit1blurry
+    show spotlight at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.1
+        linear 0.7 alpha 0.0
+        linear 1.0 alpha 0.1
+        linear 1.1 alpha 0.0
+        linear 0.8 alpha 0.1
+        linear 1.5 alpha 0.0
+        linear 0.1 alpha 0.1
+        linear 0.1 alpha 0.0
+        linear 0.6 alpha 0.1
+        repeat
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 6.0 xpos 0.0 ypos -0.5
+        linear 1.0 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 6.0 xpos 0.0 ypos 0.5
+        linear 1.0 xpos 0.0 ypos 1.0
+    with dissolve
+        
+    
 
     "My eyes stirred open. First slowly, and then bolting open all at once."
+    
+    
 
     "I grasped for air."
+    
+    show cockpit1blurry:
+        alpha 1.0
+        linear 12.0 alpha 0.0
 
     "I was awake."
 
     "I was finally awake."
 
     "I was awake, my senses flooding to the brim with suddenly-revived biochemical emotion, but I couldn't move my body."
+    
+    hide spotlight
+    hide blink1
+    hide blink2
+    hide cockpit1blurry
 
     "I felt so cold. Every single fiber of my being, the blood in my veins, my sore bones, my swelling, pounding head, ached."
 
     "I felt the sting of restraints and harnesses strapping me to my seat, still horridly right after only God knows how many years."
 
     "The whirring of biomedical equipment and the gruesome piercing of several needles along the back of my head and spine reminded me, somberly, of the cryostasis I'd just awakened from."
+    
+    show spotlight at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.2
+        linear 0.3 alpha 0.3
+        linear 0.5 alpha 0.2
+        linear 0.5 alpha 0.3
+        linear 0.4 alpha 0.2
+        linear 1.0 alpha 0.3
+        linear 0.1 alpha 0.2
+        linear 0.1 alpha 0.3
+        linear 0.3 alpha 0.2
+        repeat
+    show firedown:
+        alpha 0.4
+        linear 1.0 alpha 0.2
+        linear 1.0 alpha 0.4
 
     b "..."
 
     b "..."
-
+    
     b "... Hello?"
+    
+    scene cockpit1
 
-    show bud neutral
+    show bud neutral at center:
+        alpha 0.7
+        linear 3.0 alpha 0.8
+        linear 1.5 alpha 0.7
+    show spotlight behind spotlight at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.2
+        linear 0.7 alpha 0.3
+        linear 1.0 alpha 0.2
+        linear 1.1 alpha 0.3
+        linear 0.8 alpha 0.2
+        linear 1.5 alpha 0.3
+        linear 0.1 alpha 0.2
+        linear 0.1 alpha 0.3
+        linear 0.6 alpha 0.2
+        repeat
+    with Dissolve(2.0)
 
     b "... Welcome back, Illarion."
 
@@ -203,7 +271,11 @@ label scene8:
 
     "Budapest giggles to herself, but her eyes remain fixed in sadness."
 
-    show bud neutralhalf
+    show bud neutralhalf:
+        alpha 0.8
+        linear 1.0 alpha 1.0
+        
+    
 
     b "Mm. And you know..."
 
@@ -216,6 +288,10 @@ label scene8:
     "And as soon as I said that, something incredible began to happen."
 
     show bud crysad
+    show waterdown:
+        alpha 0.2
+        linear 3.0 alpha 0.4
+        linear 3.0 alpha 0.2
 
     "Budapest began to cry."
 

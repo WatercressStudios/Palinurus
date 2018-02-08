@@ -14,7 +14,10 @@ label scene10:
 
     i "Wait."
 
-    show bud neutralclosed
+    show bud neutralclosed:
+        alpha 0.6
+        linear 1.0 alpha 0.8
+        linear 0.5 alpha 0.6
 
     b "Spooling distress beacon encoder."
 
@@ -28,11 +31,17 @@ label scene10:
 
     b "I can't stop!"
 
-    show bud cryyell
+    show bud cryyell:
+        alpha 0.6
+        linear 1.2 alpha 1.0
+        linear 0.5 alpha 0.6
 
     b "I can't!"
 
-    show bud crysad
+    show bud crysad:
+        alpha 0.6
+        linear 1.2 alpha 1.0
+        linear 0.5 alpha 0.6
 
     b "I can't. Alright?"
 
@@ -43,6 +52,12 @@ label scene10:
     b "From the moment you stepped onboard my shuttle, it became my prime directive to ensure you made it off my shuttle safely."
 
     b "From the beginning, my only and highest goal was to ensure your safety."
+    
+    show redlight behind bud at Position (xalign = 0.5, yalign = -0.3):
+        alpha 0.0 zoom 0.8
+        linear 0.5 alpha 0.5 zoom 0.8
+        linear 0.5 alpha 0.0 zoom 0.8
+        repeat
 
     b "That was my purpose. How I was programmed to be, to my very core, since the day of my creation."
 
@@ -56,7 +71,19 @@ label scene10:
 
     b "But now... now that I'm sentient..."
 
-    show bud crysad
+    show bud crysad:
+        alpha 0.6
+        linear 1.5 alpha 1.0
+        linear 3.0 alpha 1.0
+        linear 0.5 alpha 0.5
+        
+    hide firedown
+    hide waterdown
+    show fireup:
+        alpha 1.0
+        linear 1.5 alpha 1.0
+        linear 3.0 alpha 1.0
+        linear 0.5 alpha 0.5
 
     b "I've become afraid of death."
 
@@ -68,7 +95,12 @@ label scene10:
 
     b "To the emotions you taught me to understand..."
 
-    show bud crysmile
+    show bud crysmile:
+        alpha 0.6
+        linear 1.5 alpha 1.0
+        linear 3.0 alpha 1.0
+        linear 0.5 alpha 0.5
+        repeat
 
     b "I got to live."
 
@@ -100,7 +132,15 @@ label scene10:
 
     b "To be able to comprehend the idea of death. To be afraid of it, and to not know what to think about it..."
 
-    show bud smile
+    show bud smile:
+        alpha 0.6
+        linear 0.5 alpha 0.8
+        linear 0.5 alpha 0.5
+        linear 0.5 alpha 0.6
+        linear 2.5 alpha 0.8
+        linear 0.5 alpha 0.5
+        linear 2.5 alpha 0.6
+        repeat
 
     b "I'm thankful I am able to feel that way."
 
@@ -139,10 +179,22 @@ label scene10:
     b "..."
 
     show bud neutralclosed
+    
+    show redlight behind bud at Position (xalign = 0.5, yalign = -0.3):
+        alpha 1.0 zoom 0.8
 
     b "Draining Battery Cell One, now. Reroute power to auxiliary communications systems."
+    
+    show redlight behind bud at Position (xalign = 0.5, yalign = -0.3):
+        alpha 1.0 zoom 0.8
+        linear 2.0 alpha 0.0
 
     b "... Draining complete."
+    
+    hide fireup
+    hide spotlight
+    hide redlight
+    with dissolve
 
     show bud sad
 
@@ -154,7 +206,9 @@ label scene10:
 
     i "... Yeah?"
 
-    show bud neutraltalk
+    show bud neutraltalk:
+        alpha 0.6
+        linear 5.0 alpha 1.0
 
     b "I came upon it while you were in cryostasis. It's probably my all-time favorite, out of the ones I've gotten to read."
 
@@ -175,12 +229,19 @@ label scene10:
     i "I'd love to hear it."
 
     scene joy1 with fade
-
+    show finalspotlight:
+        alpha 0.2
+    show waterup:
+        alpha 0.0
+        linear 10.0 alpha 0.5
+    
     b "Let me see if I can remember... how it goes..."
 
     b '"Joy, beautiful sparkle of the Gods,"'
 
-    scene joy2
+    show joy2 behind finalspotlight
+    show finalspotlight:
+        alpha 0.4
 
     b '"Daughter of Elysium."'
 
@@ -188,19 +249,28 @@ label scene10:
 
     b '"Heavenly one, your paradise."'
 
-    scene joy3
+    show joy3 behind finalspotlight
+    show finalspotlight:
+        alpha 0.6
+    hide joy2
 
     b '"Your magic once again binds"'
 
     b '"What the sword of custom has divided."'
 
-    scene joy4
+    show joy4 behind finalspotlight
+    show finalspotlight:
+        alpha 0.8
+    hide joy3
 
     b '"Beggars become the brothers of princes"'
 
     b '"Where your gentle wing abides."'
 
-    scene joy5
+    show joy5 behind finalspotlight
+    show finalspotlight:
+        alpha 1.0
+    hide joy4
 
     b '"Be embraced, the millions yonder,"'
 
@@ -238,7 +308,11 @@ label scene10:
 
     b "That's my cue."
 
-    show bud worrytalkx
+    show bud worrytalkx:
+        alpha 0.7
+        linear 1.0 alpha 0.8
+        linear 0.5 alpha 0.7
+        repeat
 
     b "Draining Battery Cell Two, all energy but one percent. Reroute power to auxiliary communications systems."
 
@@ -254,7 +328,11 @@ label scene10:
 
     b "..."
 
-    show bud srsfaectalk
+    show bud srsfaectalk:
+        alpha 0.7
+        linear 0.5 alpha 0.8
+        linear 0.3 alpha 0.7
+        repeat
 
     b "Beacon sent. Waiting for signal feedback."
 
@@ -264,7 +342,11 @@ label scene10:
 
     b "..."
 
-    show bud neutralclosed
+    show bud neutralclosed:
+        alpha 0.7
+        linear 0.5 alpha 0.8
+        linear 0.3 alpha 0.7
+        repeat
 
     b "So this is death."
 
@@ -272,7 +354,11 @@ label scene10:
 
     b "..."
 
-    show bud cryclosed
+    show bud cryclosed:
+        alpha 0.7
+        linear 0.3 alpha 0.6
+        linear 0.3 alpha 0.7
+        repeat
 
     b "Ah, it's all so sappy, isn't it?"
 
@@ -280,7 +366,11 @@ label scene10:
 
     b "Right?"
 
-    show bud crysmile
+    show bud crysmile:
+        alpha 0.6
+        linear 0.3 alpha 0.7
+        linear 0.3 alpha 0.6
+        repeat
 
     "Another small laugh, under more tears."
 
@@ -297,12 +387,38 @@ label scene10:
     b "But... there isn't any pain."
 
     b "..."
+    
+    show waterlast:
+        alpha 0.3
+    show firelast:
+        alpha 0.3
 
-    show bud crysmile
+    show bud crysmile:
+        alpha 0.4
+        linear 0.3 alpha 0.5
+        linear 0.3 alpha 0.4
+        repeat
 
     "As Budapest's display faded out for the last time, she cocked her head, and gave me one last smile."
 
-    scene end1 with fade
+    scene end1
+    show spotlight at center:
+        alpha 0.4
+        linear 1.0 alpha 0.4
+        linear 5.0 alpha 0.1
+    show bud crysmile at center:
+        alpha 0.4
+        linear 1.0 alpha 0.4
+        linear 5.0 alpha 0.0
+    show waterlast:
+        alpha 0.8
+        linear 2.0 alpha 0.8
+        linear 7.0 alpha 0.0
+    show firelast:
+        alpha 0.8
+        linear 2.0 alpha 0.8
+        linear 7.0 alpha 0.0
+    with fade
 
     "I heard the trace of one last, faint sigh."
 
@@ -313,6 +429,8 @@ label scene10:
     b "Goodbye now."
 
     b "Be safe, okay?"
+    
+    hide spotlight
 
     b "Thank you for everything."
 
@@ -335,8 +453,21 @@ label scene10:
     i "Goodbye."
 
     scene end6
+    
+    show airescaping at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.5 rotate 0 zoom 0.9
+        linear 0.1 rotate 90
+        linear 0.1 rotate 180
+        linear 0.1 rotate 270
+        linear 0.1 rotate 360
+        repeat
 
     "And in a split second, the glass of the cockpit shattered into billions of shards, and I was launched into the realm of space."
+    
+    scene end6:
+        zoom 1.0 xalign 0.5 yalign 0.5 
+        linear 0.1 xalign 0.5 yalign 0.5 zoom 1.7
+    $ renpy.pause(0.1, hard=False) #Emphasis the lie
 
     scene space with fade
 
@@ -349,14 +480,47 @@ label scene10:
     play music "music/Ode To Joy.ogg"
 
     "The last thing I saw was the world of stars, burning bright."
+    
+    show blink1:                                                                  
+        xpos 0.0 ypos -1.0
+        linear 1.0 xpos 0.0 ypos -0.8
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 1.0 xpos 0.0 ypos 0.8
+    with dissolve
 
     "Drowning me in an ocean of brazen memories."
+    
+    show blink1:                                                                  
+        xpos 0.0 ypos -0.8
+        linear 1.0 xpos 0.0 ypos -0.6
+    show blink2:
+        xpos 0.0 ypos 0.8
+        linear 1.0 xpos 0.0 ypos 0.6
+    with dissolve
 
     "..."
+    
+    show blink1:                                                                  
+        xpos 0.0 ypos -0.6
+        linear 1.0 xpos 0.0 ypos -0.4
+    show blink2:
+        xpos 0.0 ypos 0.6
+        linear 1.0 xpos 0.0 ypos 0.4
+    with dissolve
 
     "..."
+    
+    show blink1:                                                                  
+        xpos 0.0 ypos -0.4
+        linear 1.0 xpos 0.0 ypos -0.2
+    show blink2:
+        xpos 0.0 ypos 0.4
+        linear 1.0 xpos 0.0 ypos 0.2
+    with dissolve
 
     "..."
+    
 
     "The end."
 
