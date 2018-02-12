@@ -213,6 +213,7 @@ screen main_menu_bonus():
         textbutton _("Bonus Scenes") action ShowMenu("bonus")
         textbutton _("CG Gallery") action ShowMenu("cg_gallery")
         textbutton _("Art Gallery") action ShowMenu("art_gallery")
+        textbutton _("Jukebox") action ShowMenu("music_room")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Credits") action Start("credits")
         textbutton _("Quit") action Quit(confirm=False)
@@ -244,6 +245,7 @@ screen main_menu_normies():
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Bonus Scenes") action ShowMenu("bonus")
         textbutton _("CG Gallery") action ShowMenu("cg_gallery")
+        textbutton _("Jukebox") action ShowMenu("music_room")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Credits") action Start("credits")
         textbutton _("Quit") action Quit(confirm=False)
@@ -871,3 +873,111 @@ screen art_gallery:
             vbox:
                 if len(gallery_art_items)>gal_cells:
                     textbutton _("Next Page") action [SetVariable('art_page', next_art_page), ShowMenu("art_gallery")]
+
+##############################################################################
+# Music Jukebox
+#
+# This section handles the creation of the jukebox.
+
+init python:
+
+    mr = MusicRoom(fadeout=1.0)
+
+    mr.add("music/Ambivalence original.ogg", always_unlocked=True)
+    mr.add("music/Ambivalence.ogg", always_unlocked=True)
+    mr.add("music/Beautiful Dreamer.mp3", always_unlocked=True)
+    mr.add("music/Budapest original.ogg", always_unlocked=True)
+    mr.add("music/Budapest.ogg", always_unlocked=True)
+    mr.add("music/Colorless Aura.mp3", always_unlocked=True)
+    mr.add("music/DataCube Loop.ogg", always_unlocked=True)
+    mr.add("music/Digital Virulence.mp3", always_unlocked=True)
+    mr.add("music/Dream.ogg", always_unlocked=True)
+    mr.add("music/Glass Cockpit REDUX.ogg", always_unlocked=True)
+    mr.add("music/Glass Cockpit.ogg", always_unlocked=True)
+    mr.add("music/Glasscockpit.mp3", always_unlocked=True)
+    mr.add("music/Lights.mp3", always_unlocked=True)
+    mr.add("music/Meteor Storm.mp3", always_unlocked=True)
+    mr.add("music/Meteorstorm.mp3", always_unlocked=True)
+    mr.add("music/Ode To Joy.ogg", always_unlocked=True)
+    mr.add("music/Overture.ogg", always_unlocked=True)
+    mr.add("music/Promises to Keep.mp3", always_unlocked=True)
+    mr.add("music/Scene3.mp3", always_unlocked=True)
+    mr.add("music/Scene3.ogg", always_unlocked=True)
+    mr.add("music/Stasis.ogg", always_unlocked=True)
+    
+
+screen music_room:
+
+    tag menu
+
+    # The background of the game menu.
+    window:
+        style "gm_root"
+    
+    frame:
+        style_group "gm_nav"
+        xalign 0.02
+        yalign 0.02
+        
+        has vbox
+
+        # The buttons that play each track.
+        grid 3 7:
+            transpose True
+            xspacing 5
+            yspacing 2
+            
+            textbutton "Ambivalence (Original)" action mr.Play("music/Ambivalence original.ogg")
+            textbutton "Ambivalence" action mr.Play("music/Ambivalence.ogg")
+            textbutton "Beautiful Dreamer" action mr.Play("music/Beautiful Dreamer.mp3")
+            textbutton "Budapest (Original)" action mr.Play("music/Budapest original.ogg")
+            textbutton "Budapest" action mr.Play("music/Budapest.ogg")
+            textbutton "Colorless Aura" action mr.Play("music/Colorless Aura.mp3")
+            textbutton "Datacube Loop" action mr.Play("music/DataCube Loop.ogg")
+            
+            textbutton "Digital Virulence" action mr.Play("music/Digital Virulence.mp3")
+            textbutton "Dream" action mr.Play("music/Dream.ogg")
+            textbutton "Glass Cockpit REDUX" action mr.Play("music/Glass Cockpit REDUX.ogg")
+            textbutton "Glass Cockpit" action mr.Play("music/Glass Cockpit.ogg")
+            textbutton "Glass Cockpit" action mr.Play("music/Glasscockpit.mp3")
+            textbutton "Lights" action mr.Play("music/Lights.mp3")
+            textbutton "Meteor Storm" action mr.Play("music/Meteor Storm.mp3")
+            
+            textbutton "Meteorstorm" action mr.Play("music/Meteorstorm.mp3")
+            textbutton "Ode To Joy" action mr.Play("music/Ode To Joy.ogg")
+            textbutton "Overture" action mr.Play("music/Overture.ogg")
+            textbutton "Promises to Keep" action mr.Play("music/Promises to Keep.mp3")
+            textbutton "Scene3" action mr.Play("music/Scene3.mp3")
+            textbutton "Scene3 (Fast)" action mr.Play("music/Scene3.ogg")
+            textbutton "Stasis" action mr.Play("music/Stasis.ogg")
+
+    # Buttons that let us advance tracks and stop music.
+    frame:
+        style_group "gm_nav"
+        xalign 0.02
+        yalign 0.35
+        
+        has vbox
+        
+        grid 3 1:
+            
+            textbutton "Next" action mr.Next()
+            textbutton "Previous" action mr.Previous()
+            textbutton "Stop" action mr.Stop()
+
+    # The buttons that lets the user enter Preferences and exit the jukebox.
+    frame:
+        style_group "gm_nav"
+        xalign 0.02
+        yalign 0.98
+        
+        has vbox
+        
+        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Return") action Return()
+
+    # Stop main menu music playing upon entry to the jukebox.
+    on "replace" action mr.Stop()
+
+    # Restore the main menu music upon leaving.
+    on "replaced" action Play("music", "music/Ode To Joy.ogg")
