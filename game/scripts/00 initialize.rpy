@@ -357,14 +357,22 @@ label splashscreen:
     play music "music/Ode To Joy.ogg"
     scene black
     with Pause(1)
+    
+    if persistent.ending  == "Complete":
+        show watercresspalinurus with dissolve
+        with Pause(2)
 
-    show watercress with dissolve
-    with Pause(2)
+        scene watercress with dissolve
+        with Pause(1)
 
-    scene black with dissolve
-    with Pause(1)
+        return
+    else:
+        show watercress with dissolve
+        with Pause(2)
 
-    return
+        scene black with dissolve
+        with Pause(1)
+        return
     
 image blackoceanlight = "vfx/blackoceanlight_ad.png" #Used during the dream sequence as a blinking white light.
 
@@ -374,63 +382,103 @@ image blackrain = SnowBlossom("blackoceanrain1", count=20, border=50, xspeed=(50
 image blackoceanrain2 = "vfx/blackoceanrain2_ad.png" #Lighter rain for when the ocean consumes you   
 image lightrain = SnowBlossom("blackoceanrain2", count=20, border=50, xspeed=(250, -250), yspeed=(1400, 1800), start=0, fast=True, horizontal=False)
 
-image bubble1 = "vfx/bubble1_ad.png" #Black rain for your nightmare oceans    
+image bubble1 = "vfx/bubble1_ad.png" #Bubbles used during dream sequence  
 image bubbles1 = SnowBlossom("bubble1", count=20, border=50, xspeed=(500, -500), yspeed=(-1400, -1800), start=0, fast=True, horizontal=False)
 image bubbles2 = SnowBlossom("bubble1", count=10, border=50, xspeed=(500, -500), yspeed=(-900, -1200), start=0, fast=True, horizontal=False)
 
 image spray = "vfx/spray_ad.png" #Easiest Animation ever.
 image sprayeffect = SnowBlossom("spray", count=20, border=50, xspeed=(1500, -1500), yspeed=(-900, -1000), start=0, fast=True, horizontal=False)
 
-image blink movie = Movie(channel="blink", play="vfx/budapestblinking.m2t")
+image blink movie = Movie(channel="blink", play="vfx/budapestblinking.m2t")     #Animation/Movie clip of  Budapest blinking during the protagonist's dream sequence
 
-image freezing1 = "vfx/freezingeffect1_ad.png" #Used for when Budapest administers the cyrostasis on the protagonist
+image freezing1 = "vfx/freezingeffect1_ad.png"                          #Used for when Budapest administers the cyrostasis on the protagonist
 image freezing2 = "vfx/freezingeffect2_ad.png"
 
-image redlight = "vfx/redlight_ad.png"
+image redlight = "vfx/redlight_ad.png"                                  #Annoying red light, used in various scenes as a warning light
 
-image greenlight = "vfx/greenlight_ad.png"
+image greenlight = "vfx/greenlight_ad.png"                              #Used once when Budapest fixes te various errors popping up
 
-image spotlight = "vfx/spotlight_ad.png"
+image spotlight = "vfx/spotlight_ad.png"                                #Used for various scenes of Budapest appearing and reappearing as a subtle effect
 
-image redscreens = "vfx/redscreens_ad.png"
+image redscreens = "vfx/redscreens_ad.png"                              #Red error screens used for after asteroid sequence.
 
-image map1 = "vfx/cyclemaps1_ad.png"
+image map1 = "vfx/cyclemaps1_ad.png"                                    #Maps 1-3 are used for an animation, the 4th one is supposed to be the image with the 'Space Station'
 image map2 = "vfx/cyclemaps2_ad.png"
 image map3 = "vfx/cyclemaps3_ad.png"
 image map4 = "vfx/cyclemaps4_ad.png"
 
-image starslongtrip = "vfx/starspalinurus_ad.png"
+image starslongtrip = "vfx/starspalinurus_ad.png"                       #Upon learning of their perdicament, the protagonist and Budapest look to the stars, this is used during that scene
 
 image blink1 = Image("vfx/blink_ad.png",)
-image blink2 = im.Flip("vfx/blink_ad.png", vertical=True,)
+image blink2 = im.Flip("vfx/blink_ad.png", vertical=True,)              #Used for blinking/eyes closing animations, mirrored to save space
 
 init:
-    image mapchecks = Animation("vfx/cyclemaps1_ad.png", 0.1,                 
+    image mapchecks = Animation("vfx/cyclemaps1_ad.png", 0.1,           #Animation of Budapest flipping through star maps rapidly    
                                 "vfx/cyclemaps2_ad.png", 0.1,
                                 "vfx/cyclemaps3_ad.png", 0.1,)
     
+init:
+    image rebootscreens = Animation("vfx/reboot1_ad.png", 0.05,         #Green flickering screens after the asteroid scene when the computer reboots and before Budapest reappears
+                                    "vfx/reboot2_ad.png", 0.05,
+                                    "vfx/reboot3_ad.png", 0.05,
+                                    "vfx/reboot4_ad.png", 0.05,)
+    
+image blackoceancorner1 = "vfx/blackoceancorner1_ad.png"
+image blackoceancorner2 = "vfx/blackoceancorner2_ad.png"
+
+image darkclouds = "vfx/darkdreamclouds_ad.png"
+
+image budapestcorner = "vfx/budapestcorner_ad.png"
+
+    
 image firefilmstrip = anim.Filmstrip("vfx/fire.png", (2,2), (1,250), 0.1) 
-image firedown = SnowBlossom("firefilmstrip", count=30, border=30, xspeed=(-150, 150), yspeed=(25, 75), start=10, fast=True, horizontal=True)
+image firedown = SnowBlossom("firefilmstrip", count=30, border=30, xspeed=(-150, 150), yspeed=(25, 75), start=10, fast=True, horizontal=True)           #Red Particle effects for Budapest
 image fireup = SnowBlossom("firefilmstrip", count=70, border=4, xspeed=(-1500, 1500), yspeed=(-250, -500), start=10, fast=True, horizontal=False)
 image firelast = SnowBlossom("firefilmstrip", count=70, border=4, xspeed=(-1500, 1500), yspeed=(250, 500), start=10, fast=True, horizontal=False)
 
 image waterfilmstrip = anim.Filmstrip("vfx/water.png", (2,2), (1,250), 0.1) 
-image waterdown = SnowBlossom("waterfilmstrip", count=10, border=4, xspeed=(-150, 150), yspeed=(25, 75), start=10, fast=True, horizontal=True)
+image waterdown = SnowBlossom("waterfilmstrip", count=10, border=4, xspeed=(-150, 150), yspeed=(25, 75), start=10, fast=True, horizontal=True)                 #Blue Particle  effects for Budapest
 image waterup = SnowBlossom("waterfilmstrip", count=70, border=4, xspeed=(-1500, 1500), yspeed=(-250, -500), start=10, fast=True, horizontal=False)
 image waterlast = SnowBlossom("waterfilmstrip", count=70, border=4, xspeed=(-1500, 1500), yspeed=(250, 500), start=10, fast=True, horizontal=False)
 
-image cockpit1blurry = "vfx/cockpit1blurry.png" #Used during the final scenes when the protagonist wakes from his slumber
+image cockpit1blurry = "vfx/cockpit1blurry.png"                            #Used during the final scenes when the protagonist wakes from his slumber
 
 image finalspotlight = "vfx/finalspotlight_ad.png"
 
-# Applies transitions to all characters
-
-image map zoom1 = "vfx/zoommaps1_ ad.png"
+image map zoom1 = "vfx/zoommaps1_ ad.png"                                  #Used for when Budapest shows the protagonist the space maps
 image map zoom2 = "vfx/zoommaps2_ ad.png"
 image map zoom3 = "vfx/zoommaps3_ ad.png"
 image map zoom4 = "vfx/zoommaps4_ ad.png"
 
+image dreamhands = "vfx/starhands_ad.png"
+
 image airescaping = "vfx/airescaping_ad.png"
+
+image osb 1 = "vfx/osreboot1_ad.png"                                       #Used for the scene of the computer rebooting and before Budapest reappears
+image osb 2 = "vfx/osreboot2_ad.png"
+image osb 3 = "vfx/osreboot3_ad.png"
+image osb 4 = "vfx/osreboot4_ad.png"
+image osb 5 = "vfx/osreboot5_ad.png"
+image osb 6 = "vfx/osreboot6_ad.png"
+image osb 7 = "vfx/osreboot7_ad.png"
+image osb 8 = "vfx/osreboot8_ad.png"
+image osb 9 = "vfx/osreboot9_ad.png"
+
+init:
+    image emotionaleyes = Animation("vfx/emoeyes1_ad.png", 0.05,           #Subtle glint when Budapest loses part of herself; her eyes glint upon the mention of "Emotion"
+                                    "vfx/emoeyes2_ad.png", 0.05,
+                                    "vfx/emoeyes3_ad.png", 0.05,
+                                    "vfx/emoeyes4_ad.png", 0.05,
+                                    "vfx/emoeyes5_ad.png", 0.05,
+                                    "vfx/emoeyes6_ad.png", 0.05,
+                                    "vfx/emoeyes7_ad.png", 0.05,)
+    
+image helmet = "vfx/helmet_ad.png"                                         #Used for the final scene when the cockpit breaks.
+
+image watercresspalinurus = "vfx/watercresspalinurus.png"                  #Used as an alternate unlock screen after the game is completed
+
+
+# Applies transitions to all characters
 
 init python:
     def callback_transition(event, interact=True, **kwargs):

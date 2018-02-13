@@ -481,9 +481,11 @@ label scene4:
 
     b "..."
     
+    show bud panicsquinttalkx with dissolve
+    
     $ renpy.pause(1.0, hard=False) #Emphasis the lie
     
-    show bud painfullooktalk
+    show bud painfullooktalk with dissolve
 
     b "Yes, they've been destroyed beyond repair."
 

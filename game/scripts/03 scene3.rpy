@@ -60,24 +60,46 @@ label scene3:
     "A flashing red light, planted to the control board, indicated that something was amiss."
 
     "Don’t worry, flashing light, I noticed."
+    
+    show rebootscreens at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.4
 
     "The operating system booted up before my eyes, green code buzzing across a hovering black screen faster than my human eyes could hope to process."
+    
+    show osb 1 at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.6
 
     '"npvhash=4895"'
+    
+    show osb 2
 
     '"hi mem tramps at 0xffe00000"'
+    
+    show osb 3
 
     '"PRE enabled"'
+    
+    show osb 4
 
     '"enabling database access"'
+    
+    show osb 5
 
     '"Metis Kernel v.12.5.0: mon jun 1 00:12:00 IST 2567; copyright APPLESOFT:xnu-14932/1"'
+    
+    show osb 6
 
     '"standard timeslicing quantum is 10000 us"'
+    
+    show osb 7
 
     '"vm_page_bootstrap: 56.2035T free pages and 84.3821T wired pages"'
+    
+    show osb 8
 
     '"mig_table_max_disp1 == 95"'
+    
+    show osb 9
 
     "Did this... mean the ship was coming back online? I didn't know what was going on..."
     
@@ -234,12 +256,18 @@ label scene3:
     "As I cracked my neck, I found myself face-to-face with the program at the helm."
 
     "There was something... different in her eyes now. I couldn't quite tell what it was, it was abstract, almost..."
+    
+    show emotionaleyes at center:
+        alpha 1.0
+        linear 2.0 alpha 0.0
 
     "Emotional."
 
     show bud neutral
 
     "...The girl was staring at me."
+    
+    hide emotionaleyes
 
     p "... Oh."
 

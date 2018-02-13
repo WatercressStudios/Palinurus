@@ -704,7 +704,7 @@ label scene7:
 
     "She was... but she was..."
     
-    scene white with Fade(0.5, 1.0, 2.0, color='#fff'): 
+    scene white with Fade(0.5, 1.0, 1.0, color='#fff'): 
     scene starhands: 
         zoom 1.0 xalign 0.5 yalign 0.75
         linear 2.0 zoom 0.9 xalign 0.5 yalign 0.6
@@ -717,9 +717,10 @@ label scene7:
         alpha 0.5
     with Fade(0.0, 0.0, 5.0, color='#fff')
     
-    "I... I was dreaming..."
-    
+    "I... {p}I was dreaming..."
+    show dreamhands with dissolve
     "I had no body, I was thin, and made of stars."
+    
 
     b "I'm just happy that you're safe."
     
@@ -736,6 +737,7 @@ label scene7:
         alpha 0.0
         linear 10.0 alpha 0.2
     with Fade(0.2, 1.0, 5.0, color='#fff')
+    
         
 
     "I heard voices, deep, lost in the sea."
@@ -780,8 +782,21 @@ label scene7:
 
     "She winked slowly, and deliberately, her... skirt swirling in the empty air."
     
-    scene black with dissolve
-
+    scene black 
+    show blackoceancorner1
+    show blackoceancorner2
+    show darkclouds:
+        alpha 0.7 rotate 0 xalign 0.5 yalign 0.5 zoom 0.9
+        linear 6.0 rotate 90
+        linear 6.0 rotate 180
+        linear 6.0 rotate 270
+        linear 6.0 rotate 360
+        repeat
+    with dissolve
+    show budapestcorner behind blackoceancorner2:
+        xalign -1.0 yalign 0.5 
+        linear 10.0 xalign 2.0 yalign 0.5
+    
     "She turned a corner and disappeared."
 
     i "Wait!"
@@ -791,6 +806,8 @@ label scene7:
     b "And even today, we carry their dream with us, along with their memories."
 
     b "Their dream of meeting travellers like us, just... just from a different walk of the worlds."
+    
+    scene white with dissolve
 
     "My absent legs propelled me down the tunnel of steel; I could smell her... perfume? Apple blossoms, something lost, something hard to find."
 

@@ -319,6 +319,8 @@ label scene10:
     b "Encoding distress beacon now."
 
     show bud weaksmile
+    
+
 
     "As she worked, I saw Budapest give a smile."
 
@@ -398,6 +400,9 @@ label scene10:
         linear 0.3 alpha 0.5
         linear 0.3 alpha 0.4
         repeat
+        
+    show emotionaleyes at center:
+        alpha 0.5
 
     "As Budapest's display faded out for the last time, she cocked her head, and gave me one last smile."
 
@@ -405,7 +410,7 @@ label scene10:
     show spotlight at center:
         alpha 0.4
         linear 1.0 alpha 0.4
-        linear 5.0 alpha 0.1
+        linear 5.0 alpha 0.2
     show bud crysmile at center:
         alpha 0.4
         linear 1.0 alpha 0.4
@@ -443,10 +448,15 @@ label scene10:
     "Every piece of machinery went dead."
 
     scene end4
+    
+    show helmet at Position (xalign = 0.5, yalign = 2.0) with dissolve
+    $ renpy.pause(1.0, hard=True)
+    show helmet at Position (xalign = 0.5, yalign = 0.0) with MoveTransition(1.0)
 
     "My suit pressurized shut, tight against my skin; a helmet closed over my head."
 
     scene end5
+    show helmet at Position (xalign = 0.5, yalign = 0.0)
 
     "I took a deep breath."
 
@@ -461,6 +471,7 @@ label scene10:
         linear 0.1 rotate 270
         linear 0.1 rotate 360
         repeat
+    show helmet at Position (xalign = 0.5, yalign = 0.0)
 
     "And in a split second, the glass of the cockpit shattered into billions of shards, and I was launched into the realm of space."
     
@@ -470,6 +481,7 @@ label scene10:
     $ renpy.pause(0.1, hard=False) #Emphasis the lie
 
     scene space with fade
+    show helmet at Position (xalign = 0.5, yalign = 0.0)
 
     stop music fadeout 1.0
 
@@ -503,21 +515,23 @@ label scene10:
     
     show blink1:                                                                  
         xpos 0.0 ypos -0.6
-        linear 1.0 xpos 0.0 ypos -0.4
+        linear 2.0 xpos 0.0 ypos -0.4
     show blink2:
         xpos 0.0 ypos 0.6
-        linear 1.0 xpos 0.0 ypos 0.4
+        linear 2.0 xpos 0.0 ypos 0.4
     with dissolve
 
     "..."
     
     show blink1:                                                                  
         xpos 0.0 ypos -0.4
-        linear 1.0 xpos 0.0 ypos -0.2
+        linear 2.0 xpos 0.0 ypos -0.2
     show blink2:
         xpos 0.0 ypos 0.4
-        linear 1.0 xpos 0.0 ypos 0.2
-    with dissolve
+        linear 2.0 xpos 0.0 ypos 0.2
+    show blackoceanlight behind blink1 at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.1 zoom 0.5
+        linear 0.3 alpha 1.0 zoom 2.0
 
     "..."
     
