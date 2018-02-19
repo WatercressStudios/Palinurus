@@ -1,11 +1,20 @@
 label scene5p2:
+    
+    scene hours behind white
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 1.0 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 1.0 xpos 0.0 ypos 1.0
+    show white behind blink1:
+        alpha 1.0
+        linear 1.0 alpha 1.0
+        linear 4.0 alpha 0.0
 
-    scene white with dissolve
-    scene cockpit2 with dissolve
-    scene hours with fade
+    with dissolve
 
     b "THE TIME IS NOW 1200 HOURS!"
-
     p "Ah... that time again, huh..."
 
     "If nothing else, Budapest was punctual. I made to undo my pretzel body from a heap of limbs, rising slowly to the day. My hair was a mess, matted down in awkward places. I rustled it back in somewhat presentable shape."

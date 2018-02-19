@@ -244,9 +244,10 @@ image nebula               = "bg/nebula.jpg"
 image blackocean1          = "bg/blackocean1_ad.jpg"   
 image blackocean2          = "bg/blackocean2_ad.jpg"   
 image blackocean3          = "bg/blackocean3_ad.jpg"   
-image blackocean4          = "bg/blackocean4_ad.jpg"   
-image blue                 = "#191970" #used for a split second to ease a fade transition in.
+image blackocean4          = "bg/blackocean4_ad.jpg"  
+image capepalinuro         = "bg/capepalinuro_ad.png"
 image offwhite             = "#A9A9A9"
+image offred            = "#2F0D0D"
 
 ###################
 # Anniversary CGs #
@@ -382,21 +383,35 @@ image blackrain = SnowBlossom("blackoceanrain1", count=20, border=50, xspeed=(50
 image blackoceanrain2 = "vfx/blackoceanrain2_ad.png" #Lighter rain for when the ocean consumes you   
 image lightrain = SnowBlossom("blackoceanrain2", count=20, border=50, xspeed=(250, -250), yspeed=(1400, 1800), start=0, fast=True, horizontal=False)
 
+image redrecoloredrain = im.Recolor("vfx/blackoceanrain2_ad.png", 139, 0, 0, 255)
+image bloodrain = SnowBlossom("redrecoloredrain", count=7, border=50, xspeed=(0, 0), yspeed=(1600, 2000), start=0, fast=True, horizontal=False)
+
 image bubble1 = "vfx/bubble1_ad.png" #Bubbles used during dream sequence  
 image bubbles1 = SnowBlossom("bubble1", count=20, border=50, xspeed=(500, -500), yspeed=(-1400, -1800), start=0, fast=True, horizontal=False)
 image bubbles2 = SnowBlossom("bubble1", count=10, border=50, xspeed=(500, -500), yspeed=(-900, -1200), start=0, fast=True, horizontal=False)
 
 image spray = "vfx/spray_ad.png" #Easiest Animation ever.
 image sprayeffect = SnowBlossom("spray", count=20, border=50, xspeed=(1500, -1500), yspeed=(-900, -1000), start=0, fast=True, horizontal=False)
+image dust = SnowBlossom("spray", count=10, border=10, xspeed=(-50, -125), yspeed=(50, 100), start=0, fast=True, horizontal=False)
+image dust2 = SnowBlossom("spray", count=10, border=10, xspeed=(-50, 50), yspeed=(50, 70), start=0, fast=True, horizontal=False)
+image dust3 = SnowBlossom("spray", count=50, border=10, xspeed=(1000, -1000), yspeed=(1000, -1000), start=0, fast=True, horizontal=False)
 
 image blink movie = Movie(channel="blink", play="vfx/budapestblinking.m2t")     #Animation/Movie clip of  Budapest blinking during the protagonist's dream sequence
+
+
 
 image freezing1 = "vfx/freezingeffect1_ad.png"                          #Used for when Budapest administers the cyrostasis on the protagonist
 image freezing2 = "vfx/freezingeffect2_ad.png"
 
-image redlight = "vfx/redlight_ad.png"                                  #Annoying red light, used in various scenes as a warning light
+image life1 = im.Recolor("vfx/freezingeffect1_ad.png", 168, 0, 0, 255)
+image life2 = im.Recolor("vfx/freezingeffect2_ad.png", 118, 6, 6, 255)
 
-image greenlight = "vfx/greenlight_ad.png"                              #Used once when Budapest fixes te various errors popping up
+
+image redlight = "vfx/redlight_ad.png"                                  #Annoying red light, used in various scenes as a warning light
+                             
+image greenlight = "vfx/greenlight_ad.png"      #Used once when Budapest fixes te various errors popping up
+
+
 
 image spotlight = "vfx/spotlight_ad.png"                                #Used for various scenes of Budapest appearing and reappearing as a subtle effect
 
@@ -427,8 +442,13 @@ image blackoceancorner1 = "vfx/blackoceancorner1_ad.png"
 image blackoceancorner2 = "vfx/blackoceancorner2_ad.png"
 
 image darkclouds = "vfx/darkdreamclouds_ad.png"
+image stormclouds = im.MatrixColor("vfx/darkdreamclouds_ad.png", im.matrix.invert())
 
 image budapestcorner = "vfx/budapestcorner_ad.png"
+
+image budapestcity1 = "vfx/budapestcity1_ad.png"
+image budapestcity2 = "vfx/budapestcity2_ad.png"
+image budapestcity3 = "vfx/budapestcity3_ad.png"
 
     
 image firefilmstrip = anim.Filmstrip("vfx/fire.png", (2,2), (1,250), 0.1) 
@@ -464,6 +484,8 @@ image osb 7 = "vfx/osreboot7_ad.png"
 image osb 8 = "vfx/osreboot8_ad.png"
 image osb 9 = "vfx/osreboot9_ad.png"
 
+image pole1 = SnowBlossom("vfx/pole_ad.png", count=6, border=30, xspeed=(-450, 450), yspeed=(1000, 1200), start=1, fast=True, horizontal=False)
+image redrocks = SnowBlossom("vfx/redrock_ad.png", count=3, border=30, xspeed=(-500, 500), yspeed=(1000, 1200), start=1, fast=True, horizontal=False)
 init:
     image emotionaleyes = Animation("vfx/emoeyes1_ad.png", 0.05,           #Subtle glint when Budapest loses part of herself; her eyes glint upon the mention of "Emotion"
                                     "vfx/emoeyes2_ad.png", 0.05,
@@ -473,9 +495,93 @@ init:
                                     "vfx/emoeyes6_ad.png", 0.05,
                                     "vfx/emoeyes7_ad.png", 0.05,)
     
+init:
+    image shipflight = Animation("vfx/shipwarp1_ad.png", 0.1,           #Subtle glint when Budapest loses part of herself; her eyes glint upon the mention of "Emotion"
+                                    "vfx/shipwarp2_ad.png", 0.1,
+                                    "vfx/shipwarp3_ad.png", 0.1,
+                                    "vfx/shipwarp4_ad.png", 0.1,
+                                    "shipwarp5", 0.1,
+                                    "shipwarp6", 0.1,
+                                    "shipwarp7", 0.1,
+                                    "shipwarp8", 0.1,)
+    
+init:
+    image filmgrains = Animation("vfx/filmgrain1_ad.png", 0.05,           #Subtle glint when Budapest loses part of herself; her eyes glint upon the mention of "Emotion"
+                                    "vfx/filmgrain2_ad.png", 0.05,
+                                    "vfx/filmgrain3_ad.png", 0.05,
+                                    "vfx/filmgrain4_ad.png", 0.05,
+                                    "vfx/filmgrain5_ad.png", 0.05,
+                                    "vfx/filmgrain6_ad.png", 0.05,)
+    
+image desertsky = "vfx/deserthorizon_ad.png"
+
+image emptypod = "vfx/stasispod_ad.png"
+
+image budapestface = "vfx/facezoom_ad.png"
+    
+image shipwarp5 = im.Flip("vfx/shipwarp1_ad.png",horizontal=True)
+image shipwarp6 = im.Flip("vfx/shipwarp2_ad.png",horizontal=True)
+image shipwarp7 = im.Flip("vfx/shipwarp3_ad.png",horizontal=True)
+image shipwarp8 = im.Flip("vfx/shipwarp4_ad.png",horizontal=True)
+    
 image helmet = "vfx/helmet_ad.png"                                         #Used for the final scene when the cockpit breaks.
 
+image unumpromultisdabiturcaput  = "cg/bottomofthesea_ad.png"  
+
+image hallway = "vfx/hallway_ad.png"
+
+init:
+    image appleblossumsspin = Animation("vfx/blossum_ad1.png", 0.6,
+                                    "vfx/blossum_ad2.png", 0.4,
+                                    "vfx/blossum_ad3.png", 0.6,
+                                    "vfx/blossum_ad2.png", 0.4,
+                                    "vfx/blossum_ad1.png", 0.6,
+                                    "vfx/blossum_ad2.png", 0.4,
+                                    "vfx/blossum_ad3.png", 0.4,
+                                    "vfx/blossum_ad4.png", 0.4,
+                                    "vfx/blossum_ad5.png", 0.4,
+                                    "vfx/blossum_ad6.png", 0.4,
+                                    "vfx/blossum_ad7.png", 0.4,
+                                    "vfx/blossum_ad8.png", 0.4,)
+image blossums1 = SnowBlossom("appleblossumsspin", count=2, border=100, xspeed=(-300, 300), yspeed=(50, 150), start=1, fast=True, horizontal=False)
+image blossums3 = SnowBlossom("appleblossumsspin", count=4, border=100, xspeed=(-200, -400), yspeed=(-100, -150), start=1, fast=True, horizontal=False)
+    
+image wakingstatic = Animation("vfx/wakingstatic1_ad.png", 0.1,                 
+                                "vfx/wakingstatic2_ad.png", 0.1,
+                                "vfx/wakingstatic3_ad.png", 0.1,
+                                "wakingstatic1v", 0.1,                 
+                                "wakingstatic2v", 0.1,
+                                "wakingstatic3v", 0.1,
+                                "wakingstatic1h", 0.1,                 
+                                "wakingstatic2h", 0.1,
+                                "wakingstatic3h", 0.1)
+
+image wakingstatic1v = im.Flip("vfx/wakingstatic1_ad.png", vertical=True)     
+image wakingstatic2v = im.Flip("vfx/wakingstatic2_ad.png", vertical=True)
+image wakingstatic3v = im.Flip("vfx/wakingstatic3_ad.png", vertical=True)
+image wakingstatic1h = im.Flip("vfx/wakingstatic1_ad.png", horizontal=True)
+image wakingstatic2h = im.Flip("vfx/wakingstatic2_ad.png", horizontal=True)
+image wakingstatic3h = im.Flip("vfx/wakingstatic3_ad.png", horizontal=True)
+
+image blurryvision = "vfx/blurryvision_ad.png"  
+
+image budapestrise = "vfx/elysianghostbudapest_ad.png"
+    
+init:
+    image appleblossumssway = Animation("vfx/blossum_ad1.png", 0.5,           
+                                    "vfx/blossum_ad2.png", 0.5,
+                                    "vfx/blossum_ad3.png", 0.5,
+                                    "vfx/blossum_ad2.png", 0.5,)
+image blossums2 = SnowBlossom("appleblossumssway", count=9, border=100, xspeed=(-300, 300), yspeed=(50, 150), start=1, fast=True, horizontal=False)
+image blossums4 = SnowBlossom("appleblossumssway", count=4, border=100, xspeed=(-200, -400), yspeed=(-100, -150), start=1, fast=True, horizontal=False)
+
+
 image watercresspalinurus = "vfx/watercresspalinurus.png"                  #Used as an alternate unlock screen after the game is completed
+
+image dessertdream = "vfx/dessertdream_ad.png"  
+image elysianclouds = "vfx/elysianclouds_ad.png"
+image 2015 = "vfx/2015_ad.png"
+image estars = SnowBlossom("vfx/elysianstar_ad.png", count=200, border=100, xspeed=(0, 0), yspeed= (-300, -300), start=1, fast=False, horizontal=False)
 
 
 # Applies transitions to all characters

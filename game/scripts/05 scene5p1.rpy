@@ -395,7 +395,11 @@ label scene5p1:
     show bud neutraltalk
 
     b "Budapest was a union of three cities. The two cities of Buda and Óbuda were on the hilly western side of the Danube River; the city of Pest on the flat eastern side."
-
+    
+    show budapestcity1 with dissolve:
+        alpha 0.0
+        linear 5.0 alpha 0.5
+    
     b "They were connected via bridges, and... oh, my!"
 
     p "What is it?"
@@ -406,18 +410,30 @@ label scene5p1:
 
     "I squinted to read the caption beneath it."
 
-    show bud neutraltalk
+    show bud neutraltalk at Position (xalign = -0.5, yalign = 1.0) with MoveTransition(0.5)
+
+    show budapestcity1 behind bud
+        
+    show bud neutraltalk at Position (xalign = 0.1, yalign = 1.0) with MoveTransition(0.5)
 
     p "Budapest's Parliament Building. Its grounds extend across 18,000 square meters, mm... What? Forty kilos of gold?"
+    
+    show budapestcity2 behind bud with dissolve:
+        alpha 0.0
+        linear 5.0 alpha 0.5
 
     b "They decorated the rooms with gold. I don't think you'd be able to find any left over, though."
 
     p "Nah, guess not. Damn."
 
-    show bud neutralsmalltalk
+    show bud neutralsmalltalk at Position (xalign = 0.5, yalign = 1.0) with MoveTransition(0.5)
 
     b "Hehe... according to this, Budapest was remarkably artistic and cultured... oh, look at this!"
-
+    
+    show budapestcity3 behind bud with dissolve:
+        alpha 0.0
+        linear 5.0 alpha 0.5
+        
     "She brought up the image of another building. An Opera House, the caption said. It already looked ancient by the time the photograph was taken... odds were that it was nothing but dust in this day and age."
 
     "I grimaced."
@@ -574,7 +590,13 @@ label scene5p1:
 
     b "S-sleep well!"
 
-    scene black
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -1.0
+        linear 3.9 xpos 0.0 ypos -0.1
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 3.9 xpos 0.0 ypos 0.1
+    with dissolve
 
     "And so, I closed my eyes and rubbed against the fabric of the co-pilot's seat."
 

@@ -1,11 +1,8 @@
 label scene8:
 
     play music "music/Budapest.ogg" fadein 1.0
-    scene white with dissolve
-    scene black with dissolve
-    scene white with dissolve
-    scene black with dissolve
-    
+    scene black
+    pause
     scene cockpit1
     show cockpit1blurry
     show spotlight at Position (xalign = 0.5, yalign = 0.5):
@@ -27,14 +24,13 @@ label scene8:
         xpos 0.0 ypos 0.1
         linear 6.0 xpos 0.0 ypos 0.5
         linear 1.0 xpos 0.0 ypos 1.0
+    show wakingstatic:
+        alpha 1.0
+        linear 10.0 alpha 0.3
     with dissolve
         
-    
-
     "My eyes stirred open. First slowly, and then bolting open all at once."
     
-    
-
     "I grasped for air."
     
     show cockpit1blurry:
@@ -97,6 +93,12 @@ label scene8:
         linear 0.1 alpha 0.3
         linear 0.6 alpha 0.2
         repeat
+    show blurryvision:
+        alpha 0.2
+        linear 5.0 alpha 0.7
+        linear 5.0 alpha 0.2
+    show wakingstatic:
+        alpha 0.3
     with Dissolve(2.0)
 
     b "... Welcome back, Illarion."
@@ -130,6 +132,8 @@ label scene8:
     b "I know it hurts. I'm sorry. The pain should wear off in due time. The fluorocarbon-insulation chemicals are working their way out through your bloodstream right now."
 
     i "I think I can feel them starting to take effect."
+    
+    
 
     i "God, I don't think I've ever felt this sore before."
 
@@ -170,6 +174,11 @@ label scene8:
     b "But..."
 
     "As my senses began to recover, I started to regain some semblance of my situation, and I noticed that something felt wrong."
+    
+    hide blurryvision with dissolve
+    hide wakingstatic
+    show dust2:
+        alpha 0.2
 
     "Something felt very wrong."
 
@@ -274,8 +283,6 @@ label scene8:
     show bud neutralhalf:
         alpha 0.8
         linear 1.0 alpha 1.0
-        
-    
 
     b "Mm. And you know..."
 

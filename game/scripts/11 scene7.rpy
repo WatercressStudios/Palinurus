@@ -715,6 +715,13 @@ label scene7:
         linear 5.0 alpha 0.2
     show sprayeffect:
         alpha 0.5
+    show stormclouds at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.3 rotate 0
+        linear 2.0 rotate -90
+        linear 2.0 rotate -180
+        linear 2.0 rotate -270
+        linear 2.0 rotate -360
+        repeat
     with Fade(0.0, 0.0, 5.0, color='#fff')
     
     "I... {p}I was dreaming..."
@@ -762,7 +769,7 @@ label scene7:
         alpha 0.0
         linear 5.0 alpha 1.0
 
-    "My mind walked and talked. There were two of me, three of me, or only one. And there she was, at the end of the corridor, her deep... eyes... blue?"
+    "My mind walked and talked. There were two of me, three of me, or only one. {w}And there she was, at the end of the corridor, her deep... eyes... {w}blue?"
     
     $ renpy.pause(2.0, hard=False) 
     show blink movie with dissolve:
@@ -771,18 +778,20 @@ label scene7:
     $ renpy.pause(1.9, hard=True) #Forces a pause to occur to play the duration of the movie, set to False so the user can skip
     $ renpy.pause(4.0, hard=False) #Makes the player take a hard stop for a two seconds to help prevent skipping the animation at first
     hide blink movie with dissolve
-    
-    scene blue with dissolve
-    show silouettebudapest:
-        alpha 0.0 zoom 1.5 xalign 0.5 yalign 0.5
-        linear 1.0 alpha 0.0 zoom 1.5 xalign 0.5 yalign 0.5
-        linear 5.0 alpha 1.0 zoom 0.7 xalign 0.5 yalign 0.5
+    scene white
+    show unumpromultisdabiturcaput:
+        alpha 0.0 zoom 1.5 xalign 0.5 yalign 0.4
+        linear 2.0 alpha 0.0 zoom 1.5 xalign 0.5 yalign 0.4
+        linear 5.0 alpha 1.0 zoom 0.45 xalign 0.5 yalign 0.5
+    show bubbles2:
+        alpha 0.2
+    with dissolve
 
     "Black like space, those eyes."
 
     "She winked slowly, and deliberately, her... skirt swirling in the empty air."
     
-    scene black 
+    scene black with dissolve
     show blackoceancorner1
     show blackoceancorner2
     show darkclouds:
@@ -795,7 +804,7 @@ label scene7:
     with dissolve
     show budapestcorner behind blackoceancorner2:
         xalign -1.0 yalign 0.5 
-        linear 10.0 xalign 2.0 yalign 0.5
+        linear 5.0 xalign 2.0 yalign 0.5
     
     "She turned a corner and disappeared."
 
@@ -804,28 +813,65 @@ label scene7:
     i "Don't leave!"
 
     b "And even today, we carry their dream with us, along with their memories."
-
+    scene black with dissolve
     b "Their dream of meeting travellers like us, just... just from a different walk of the worlds."
-    
-    scene white with dissolve
-
+    $ renpy.pause(2.0, hard=False) 
+    scene white
+    show fireup
+    show firedown
+    show hallway:
+        xalign 0.5 yalign 0.5 zoom 0.5 alpha 1.0
+        linear 1.0 xalign 0.5 yalign 0.5 zoom 0.7 alpha 1.0
+        linear 5.0 xalign 0.5 yalign 0.5 zoom 1.5 alpha 0.7
+        linear 5.0 xalign 0.5 yalign 0.5 zoom 2.3 alpha 0.0
+    show airescaping:
+        alpha 0.5 xalign 0.5 yalign 0.5 zoom 0.8
+    with dissolve
     "My absent legs propelled me down the tunnel of steel; I could smell her... perfume? Apple blossoms, something lost, something hard to find."
-
+    
     b "Budapest, Hungary. Situated in Central Europe back on Old Earth. They say it was one of the most beautiful cities on the continent."
+    
+    
 
     "There was warmth there, the scent of her burning copper hair, the feeling of slender limbs and taut tendons and the whirring of servomotors, the smell of industrial lubricants..."
 
     b "I guess that book just... got me thinking about how humans hold their pasts close to themselves. They never really forget, and it sticks with them for their whole lives."
+    
+    scene offred
+    show bloodrain: 
+        alpha 0.5
+    show life1:
+        alpha 0.1
+        linear 1.0 alpha 0.5
+        linear 1.0 alpha 0.1
+        repeat
+    show life2:
+        alpha 0.5
+        linear 1.0 alpha 0.1
+        linear 1.0 alpha 0.5
+        repeat
 
     "Blood."
-
+    show blackrain: 
+        alpha 0.5
     "Oil."
-
+    show black behind bloodrain:
+        alpha 0.0
+        linear 3.0 alpha 1.0
     "Life and death. I turned the corner, but she wasn't there."
-
+    
     "She was never there. The sense of loss was like a vacuum, in the midst of my last breath."
-
+    show blackoceanlight at Position (xalign = 0.5, yalign = 0.5) with dissolve
     scene white with dissolve
+    show pole1:
+        alpha 0.1
+    show redrocks:
+        alpha 0.1
+    show desertsky
+    show shipflight:
+        zoom 0.7
+    show filmgrains
+    with dissolve
 
     "This time, it was light, but dark. I was moving, on my last tour of duty, my last flight over a great white desert, an expanse with a mighty rock of red stone and ancient paintings etched on it. From pole to pole, I swept out the fading magnetic lines across the dying world."
 
@@ -834,30 +880,58 @@ label scene7:
     "She was there with me, and far away. In the other pod, I saw my gunner, my lover, the woman in dark-green protective webbing, whose breasts I couldn't see, whose loins were like mine, plumbed with waste-extraction lines and diagnostic fluids."
 
     b "Beautiful dreamer, awake unto me!"
-
+    show budapestface behind filmgrain:
+        alpha 0.0
+        linear 3.0 alpha 0.1
     b "...awake unto me!"
 
     "Waiting, I was waiting for you."
 
-    scene black with dissolve
-
+    scene white with dissolve
+    show emptypod
+    show budapestface:
+        alpha 0.4
+        linear 4.0 alpha 0.9
+        linear 5.0 alpha 0.0
+    show waterdown
+    show filmgrains
+    
+    with dissolve
     "I heard her voice. She sounded happy, her lips made music in my ears. I turned to look, but the hard hulls were opaque, and all I saw was illusion. The idea of red hair and ocean eyes on a pale face."
-
+    hide budapestface
+    show dessertdream behind filmgrains:
+        alpha 0.0
+        linear 7.0 alpha 0.8
     "I turn, and there's nobody in the other pod."
-
     "Her scent filled my heart, cherry blossoms, apple blossoms, the spring wind."
-
+    show blossums1 behind filmgrains:
+        alpha 0.5
+    show blossums2 behind filmgrains:
+        alpha 0.5
+    with dissolve
     "But I couldn't understand what I saw."
-
+    
     "Was I dreaming?"
-
+    
     "Was this a dream?"
 
     "I didn't know what to do. I watched the flower petals fall."
-
+    
     scene white with dissolve
-    scene black with dissolve
-
+    scene capepalinuro
+    
+    show silouettebudapest:
+        alpha 0.0 xalign 0.15 yalign 0.4 zoom 1.0
+        linear 3.0 alpha 0.3
+        linear 10.0 alpha 0.8 xalign 0.5 yalign 0.5 zoom 0.7
+    show sprayeffect:
+        alpha 0.0
+        linear 5.0 alpha 1.0
+    show blossums1
+    show blossums2
+    show filmgrains
+    with dissolve
+    
     "Sunset on the beach. Her fingernails dug into me, stabbing me, forcing hard silicon into my own flesh."
 
     "The sand was like a crash-shell, expanding warmly with her weight, warm, welcoming, coming down."
@@ -880,26 +954,35 @@ label scene7:
 
     "We made the time last by compressing space, and I heard the tip of her musical tongue in my ear."
 
-    scene black with dissolve
-
+    scene black
+    scene elysianclouds
+    show filmgrains
+    
     "Wait..."
 
     "No more..."
 
     "No more waiting..."
-
+    
     b "Would you like to know what I would want in an afterlife?"
+    show budapestrise at Position (xalign = 0.5, yalign = 0.5) with moveinbottom:
+        alpha 0.3
+        linear 1.0 alpha 0.4
+        linear 1.0 alpha 0.3
+        repeat
 
     "Against the purple night sky, an Elysian field of stars behind her, she rose from me."
-
-    scene white with dissolve
+    
+    show estars
 
     b "Would it be alright if I..."
 
     b "If I addressed you by your name from now on?"
 
     "Her dress, how could I have forgotten. Her dress flowed in the moonlight, white. White:"
-
+    show white:
+        alpha 0.0
+        linear 5.0 alpha 1.0
     "The color of of her innocence, the color of her fate."
 
     "White of dreams."
@@ -907,8 +990,27 @@ label scene7:
     "The color of her heart, and the end of the world."
 
     scene white with dissolve
-    scene black with dissolve
-
+    scene 2015
+    show dust
+    show darkclouds:
+        alpha 0.7 rotate 0 xalign 0.3 yalign 0.6 zoom 1.5
+        linear 6.0 rotate 90
+        linear 6.0 rotate 180
+        linear 6.0 rotate 270
+        linear 6.0 rotate 360
+        repeat
+    show blackoceanlight at Position (xalign = 1.1, yalign = -0.25):
+        zoom 3.0 alpha 0.0
+        linear 3.0 alpha 1.0
+        linear 3.0 alpha 0.0
+        repeat
+    
+    with dissolve
+    show blackrain
+    show filmgrains
+    
+    
+    
     "I gasped for air."
 
     "Air."
@@ -926,6 +1028,8 @@ label scene7:
     "There was only inhibitor fluid, the cold jelly that collected the soul in a shroud around me."
 
     "I was buried alive; petrified, the state of being forgotten. I screamed but my mouth was frozen shut."
+    
+    scene black with dissolve
 
     "The stars were lost in the clouds. There was the sound of distant thunder, the rattling of rain on the roof."
 
@@ -936,6 +1040,11 @@ label scene7:
     "Tears... was I... crying in my sleep?"
 
     scene dream
+    show blossums3:
+        alpha 0.2
+    show blossums4:
+        alpha 0.2
+    with dissolve
 
     "I'd reserved my heart for her, the fire in my veins. I turned across the infinite expanse of space, like bedsheets of black silk."
 

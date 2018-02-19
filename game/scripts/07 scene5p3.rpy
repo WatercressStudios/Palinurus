@@ -160,7 +160,12 @@ label scene5p3:
 
     p "Well, I suppose you won’t be needing my company, then…"
 
-    scene black with dissolve
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -1.0
+        linear 1.0 xpos 0.0 ypos -0.1
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 1.0 xpos 0.0 ypos 0.1
     with dissolve
 
     "With a teasing look, I settled back into the co-pilot’s seat and closed my eyes."
@@ -175,6 +180,13 @@ label scene5p3:
 
     scene cockpit2
     show bud angryfrown
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 1.0 xpos 0.0 ypos -0.7
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 1.0 xpos 0.0 ypos 0.7
+    with dissolve
 
     p "... To catch Budapest pouting angrily at me."
 
@@ -184,11 +196,21 @@ label scene5p3:
 
     p "Oh I’m not, am I?"
 
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.7
+        linear 1.0 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.7
+        linear 1.0 xpos 0.0 ypos 1.0
+    with dissolve
+
     show bud angryclosedx
 
     "She shook her head emphatically."
 
     show bud angryyellclosedx
+    hide blink1
+    hide blink2
 
     b "I do get bored when you’re asleep; or, to be more accurate, I…"
 

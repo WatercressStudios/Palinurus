@@ -204,8 +204,7 @@ screen main_menu_bonus():
         style_group "mm"
         xalign .02
         yalign .98
-
-
+        
         has vbox
 
         textbutton _("Start Game") action Start()
@@ -216,7 +215,7 @@ screen main_menu_bonus():
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Credits") action Start("credits")
         textbutton _("Quit") action Quit(confirm=False)
-
+        
 init -2:
 
     # Make all the main menu buttons be the same size.
@@ -250,6 +249,7 @@ screen main_menu_normies():
 
 screen the_img(img):
     add img pos (0, 0)
+    
 
 init -2:
 

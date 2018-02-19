@@ -451,7 +451,7 @@ label scene10:
     
     show helmet at Position (xalign = 0.5, yalign = 2.0) with dissolve
     $ renpy.pause(1.0, hard=True)
-    show helmet at Position (xalign = 0.5, yalign = 0.0) with MoveTransition(1.0)
+    show helmet at Position (xalign = 0.5, yalign = 0.0) with MoveTransition(3.0)
 
     "My suit pressurized shut, tight against my skin; a helmet closed over my head."
 
@@ -463,7 +463,10 @@ label scene10:
     i "Goodbye."
 
     scene end6
-    
+    show dust3 at Position (xalign = 0.5, yalign = 0.5):
+        rotate 0 alpha 0.3
+        linear 1.0 rotate 360
+        repeat
     show airescaping at Position (xalign = 0.5, yalign = 0.5):
         alpha 0.5 rotate 0 zoom 0.9
         linear 0.1 rotate 90
@@ -472,16 +475,19 @@ label scene10:
         linear 0.1 rotate 360
         repeat
     show helmet at Position (xalign = 0.5, yalign = 0.0)
-
+    
     "And in a split second, the glass of the cockpit shattered into billions of shards, and I was launched into the realm of space."
     
     scene end6:
         zoom 1.0 xalign 0.5 yalign 0.5 
         linear 0.1 xalign 0.5 yalign 0.5 zoom 1.7
+    show helmet at Position (xalign = 0.5, yalign = 0.0)
+        
     $ renpy.pause(0.1, hard=False) #Emphasis the lie
 
     scene space with fade
     show helmet at Position (xalign = 0.5, yalign = 0.0)
+    with dissolve
 
     stop music fadeout 1.0
 
@@ -500,8 +506,8 @@ label scene10:
         xpos 0.0 ypos 1.0
         linear 1.0 xpos 0.0 ypos 0.8
     with dissolve
-
     "Drowning me in an ocean of brazen memories."
+    
     
     show blink1:                                                                  
         xpos 0.0 ypos -0.8
@@ -512,7 +518,6 @@ label scene10:
     with dissolve
 
     "..."
-    
     show blink1:                                                                  
         xpos 0.0 ypos -0.6
         linear 2.0 xpos 0.0 ypos -0.4
@@ -522,7 +527,6 @@ label scene10:
     with dissolve
 
     "..."
-    
     show blink1:                                                                  
         xpos 0.0 ypos -0.4
         linear 2.0 xpos 0.0 ypos -0.2

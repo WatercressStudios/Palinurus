@@ -233,6 +233,9 @@ label scene3:
     "... Did she pull it off?"
 
     scene cockpit1
+    show greenlight at Position (xalign = 0.5, yalign = -0.9):
+        alpha 1.0
+        linear 2.0 alpha 0.0
     with dissolve
 
     "I felt the g-forces previously pinning my body to my seat ebb away, until finally I found I could move comfortably."
