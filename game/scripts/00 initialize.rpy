@@ -439,6 +439,16 @@ init python:
 
     config.all_character_callbacks = [callback_transition]
 
+
+########################
+# Added by InstantRiot #
+########################
+
+image cry1 = im.Scale("cg/Cry1.png", 1280, 720) 
+image cry2 = im.Scale("cg/Cry2.png", 1280, 720)
+image cry3 = im.Scale("cg/Cry3.png", 1280, 720)
+
+
 # Game starts here
 # Shortest scene ever
 
