@@ -12,7 +12,7 @@ label scene1:
     v "Daughter of Elysium."
 
     scene black with fade
-    scene station with fade
+    scene station with Dissolve(5.0)
     play music "music/DataCube Loop.ogg"
 
     "Mirabelle Station spiraled, ceaselessly, in an otherwise unremarkable corner of deep space."
@@ -49,8 +49,8 @@ label scene1:
 
     "And sometimes, if you were lucky, you'd get the occasional nebula, or debris cloud, or band of pirates..."
 
-    # scene shuttle
-    # with dissolve
+    scene shuttle at Position (xalign = 1.0,  yalign = 0.5)
+    with dissolve
 
     "I focused my attention on the silver spaceship which laid before me. I'd seen many like it before; it was small, intended for a single occupant."
 
@@ -59,6 +59,10 @@ label scene1:
     "The cockpit stood out. The windshield wrapped itself around the front of the vessel, stopping just as the ship's nose began to flow downwards into its underbelly."
 
     "Its exterior was sleek, its curving wings wide like that of an albatross."
+    scene shuttle at Position (xalign = 1.0,  yalign = 0.5):
+        zoom 1.0
+        linear 1.0 zoom 1.0
+        linear 5.0 zoom 0.67
 
     '"Attention, Attention, Mirabelle Station."'
 
@@ -243,7 +247,7 @@ label scene1:
 
     p "Roger that, loud and clear."
 
-    scene black with fade
+    scene cabin with fade
 
     "I took a few paces to my seat in the cabin, not too far from the Personal Navigator stationed in the cockpit. I lowered myself into the chair..."
 

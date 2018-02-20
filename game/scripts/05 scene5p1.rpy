@@ -398,7 +398,7 @@ label scene5p1:
     
     show budapestcity1 with dissolve:
         alpha 0.0
-        linear 5.0 alpha 0.5
+        linear 5.0 alpha 0.7
     
     b "They were connected via bridges, and... oh, my!"
 
@@ -420,7 +420,7 @@ label scene5p1:
     
     show budapestcity2 behind bud with dissolve:
         alpha 0.0
-        linear 5.0 alpha 0.5
+        linear 5.0 alpha 0.7
 
     b "They decorated the rooms with gold. I don't think you'd be able to find any left over, though."
 
@@ -432,7 +432,7 @@ label scene5p1:
     
     show budapestcity3 behind bud with dissolve:
         alpha 0.0
-        linear 5.0 alpha 0.5
+        linear 5.0 alpha 0.7
         
     "She brought up the image of another building. An Opera House, the caption said. It already looked ancient by the time the photograph was taken... odds were that it was nothing but dust in this day and age."
 
@@ -553,11 +553,18 @@ label scene5p1:
     show bud smiletalkclosed
 
     "And right then and there, Budapest and I had something of a contract. This was a way of getting through the day, and it wasn't necessarily a disagreeable one."
-
+    show london behind bud with dissolve:
+        alpha 0.9
     "What I wasn't counting on was how much sheer data she'd flip through in a single day."
+    
+    show athens behind bud with dissolve:
+        alpha 0.9
 
     "She didn't stop at Hungary. We ended up taking a whirlwind tour through the rest of mainland Europe. Berlin, Bucharest, Vienna, Florence, Bruges, the list went on and on."
-
+    
+    show abbotsford behind bud with dissolve:
+        alpha 0.9
+        
     "She was feverish, insatiable in her search for knowledge. It was an information overload."
 
     "Damn it, she was enamored by a COOKBOOK now!"

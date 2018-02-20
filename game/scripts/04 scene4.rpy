@@ -661,7 +661,7 @@ label scene4:
     
     show black
     show starslongtrip at Position (xalign = 0.5, yalign = 0.5):
-        zoom 1.3
+        zoom 1.4
         rotate 0
         linear 40 rotate 90
         linear 40 rotate 180

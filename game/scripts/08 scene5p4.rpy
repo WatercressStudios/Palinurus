@@ -8,7 +8,7 @@ label scene5p4:
 
     # play boom sound
     scene white with dissolve
-    scene black with dissolve
+    scene black with vpunch
 
     "'Boom!'"
 
@@ -32,14 +32,17 @@ label scene5p4:
 
     "Waking up in a hazy daze, I frantically scramble to undo my seatbelt, ready to duck under cover. The pressure cleaner would have to be sacrificed; I yanked it up from underneath the console and prepared to scramble underneath."
 
-    scene white with dissolve
-    scene cockpit3 with dissolve
+    scene white with vpunch
+    scene cockpit3
     show bud angry
+    with dissolve
 
     b "Who, what? What's shooting at us?"
 
     i "HOW SHOULD I KNOW, BUT THEY'RE OUT THERE!"
-
+    
+    hide bud
+    show spotlight at center with dissolve
     scene cockpit3 with dissolve
 
     "'Boom!'"
@@ -235,7 +238,10 @@ label scene5p4:
 
     "...It occurred to me that I hadn't really looked outside the front of the cockpit in a while. Sure, it was hard to ignore, but… I hadn't done any real stargazing in a few weeks."
 
-    scene cockpit3
+    scene starsgazing at Position (xalign = 0.5, yalign = 0.5):
+        rotate 0 zoom 1.4
+        linear 60 rotate -360
+        repeat
     with dissolve
 
     "I turn my attention ahead to the stars drifting off in the far distance."
@@ -245,7 +251,5 @@ label scene5p4:
     "The expanse of space is terrifying, but at the same time..."
 
     "Wonderful."
-
-    scene black
 
     jump scene5p5

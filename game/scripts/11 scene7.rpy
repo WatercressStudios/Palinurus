@@ -268,8 +268,11 @@ label scene7:
 
     b "I can't understand myself at all!"
 
-    scene cockpit4 with fade
-
+    scene cockpit4
+    show spotlight at center:
+        alpha 1.0
+        linear 2.0 alpha 0.0
+    with fade
     "In a fit of rage, Budapest’s visage shimmered into nothingness."
 
     "I found myself at a loss for words. I could think of nothing to say. I couldn't comfort her."
@@ -283,6 +286,12 @@ label scene7:
     "The restraints and harnesses bracing me against the co-pilot's seat tightened."
 
     "I heard the scattering and assembling of mechanisms and robotic arms just behind my ears, just outside the corner of my vision."
+    
+    show needles:
+        zoom 1.0 xalign 0.5 yalign 0.5
+        linear 0.1 zoom 0.7
+        linear 0.0 zoom 1.0
+        repeat
 
     "Without warning, a frozen, stinging-cold metal clamp crushed into my spine."
 
@@ -874,7 +883,7 @@ label scene7:
     with dissolve
 
     "This time, it was light, but dark. I was moving, on my last tour of duty, my last flight over a great white desert, an expanse with a mighty rock of red stone and ancient paintings etched on it. From pole to pole, I swept out the fading magnetic lines across the dying world."
-
+    
     "What was different was that my one-man planetary scout was now a two-man dart, a jagged thing that would not breathe air, that hung between the stars at awful velocity."
 
     "She was there with me, and far away. In the other pod, I saw my gunner, my lover, the woman in dark-green protective webbing, whose breasts I couldn't see, whose loins were like mine, plumbed with waste-extraction lines and diagnostic fluids."
@@ -890,8 +899,8 @@ label scene7:
     scene white with dissolve
     show emptypod
     show budapestface:
-        alpha 0.4
-        linear 4.0 alpha 0.9
+        alpha 0.3
+        linear 4.0 alpha 0.5
         linear 5.0 alpha 0.0
     show waterdown
     show filmgrains
@@ -902,13 +911,14 @@ label scene7:
     show dessertdream behind filmgrains:
         alpha 0.0
         linear 7.0 alpha 0.8
-    "I turn, and there's nobody in the other pod."
-    "Her scent filled my heart, cherry blossoms, apple blossoms, the spring wind."
     show blossums1 behind filmgrains:
         alpha 0.5
     show blossums2 behind filmgrains:
         alpha 0.5
     with dissolve
+    "I turn, and there's nobody in the other pod."
+    "Her scent filled my heart, cherry blossoms, apple blossoms, the spring wind."
+    
     "But I couldn't understand what I saw."
     
     "Was I dreaming?"
@@ -1030,7 +1040,8 @@ label scene7:
     "I was buried alive; petrified, the state of being forgotten. I screamed but my mouth was frozen shut."
     
     scene black with dissolve
-
+    show glare:
+        alpha 0.1
     "The stars were lost in the clouds. There was the sound of distant thunder, the rattling of rain on the roof."
 
     "The melody of an old Earth."

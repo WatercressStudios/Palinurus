@@ -162,6 +162,9 @@ label scene5p2:
     b "Oh, I think I've got one in mind! I was really sucked into it."
 
     show bud bigsmileneutral
+    
+    show myanton1 behind bud with dissolve:
+        alpha 0.7
 
     b '"My Ántonia," by Willa Cather. I read it was considered a classic.'
 
@@ -180,6 +183,9 @@ label scene5p2:
     b "It was written in the United States. The first one, on Old Earth."
 
     b "It's a fictional work, but it's rooted in the history of the sweeping American Midwest."
+    
+    show myanton2 behind bud with dissolve:
+        alpha 0.7
 
     show bud neutralupx
 
@@ -190,6 +196,9 @@ label scene5p2:
     show bud depressedtalkx
 
     b "It was dreadful."
+    
+    show myanton3 behind bud with dissolve:
+        alpha 0.7
 
     show bud neutralupthinkx
 
@@ -202,6 +211,9 @@ label scene5p2:
     show bud smallsmile
 
     b "When they gathered as a family, and, well, enjoyed supper, the fruits of their labor, it felt it was... doubly meaningful."
+    
+    show myanton5 behind bud with dissolve:
+        alpha 0.7
 
     show bud smallsmileclosed
 
@@ -216,6 +228,9 @@ label scene5p2:
     show bud smallsmile
 
     b "Historical fiction, yes. Actually, it takes on the form of a memoir, from the perspective of a lawyer reflecting on his childhood."
+    
+    show myanton4 behind bud with dissolve:
+        alpha 0.7
 
     show bud neutraltalk
 
@@ -442,7 +457,13 @@ label scene5p2:
     p "And you'd be making memories: your memories, and yours alone."
 
     show bud surprise
-
+    hide myanton1
+    hide myanton2 
+    hide myanton3 
+    hide myanton4 
+    hide myanton5 
+    with dissolve
+    
     b "..."
 
     "I wasn't exactly sure where I was going with that. It sounded like a nice enough idea as I was saying it, but she was pretty attached to her position as a Personal Navigator."

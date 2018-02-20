@@ -246,6 +246,8 @@ image blackocean2          = "bg/blackocean2_ad.jpg"
 image blackocean3          = "bg/blackocean3_ad.jpg"   
 image blackocean4          = "bg/blackocean4_ad.jpg"  
 image capepalinuro         = "bg/capepalinuro_ad.png"
+image shuttle              = "bg/palinurushanger_ad.png"
+image cabin                = "bg/shipcabin_ad.png"
 image offwhite             = "#A9A9A9"
 image offred            = "#2F0D0D"
 
@@ -402,6 +404,7 @@ image blink movie = Movie(channel="blink", play="vfx/budapestblinking.m2t")     
 
 image freezing1 = "vfx/freezingeffect1_ad.png"                          #Used for when Budapest administers the cyrostasis on the protagonist
 image freezing2 = "vfx/freezingeffect2_ad.png"
+image needles = "vfx/needles_ad.png"
 
 image life1 = im.Recolor("vfx/freezingeffect1_ad.png", 168, 0, 0, 255)
 image life2 = im.Recolor("vfx/freezingeffect2_ad.png", 118, 6, 6, 255)
@@ -423,7 +426,7 @@ image map3 = "vfx/cyclemaps3_ad.png"
 image map4 = "vfx/cyclemaps4_ad.png"
 
 image starslongtrip = "vfx/starspalinurus_ad.png"                       #Upon learning of their perdicament, the protagonist and Budapest look to the stars, this is used during that scene
-
+image starsgazing = "vfx/starspalinurus2_ad.png"
 image blink1 = Image("vfx/blink_ad.png",)
 image blink2 = im.Flip("vfx/blink_ad.png", vertical=True,)              #Used for blinking/eyes closing animations, mirrored to save space
 
@@ -543,7 +546,7 @@ init:
                                     "vfx/blossum_ad6.png", 0.4,
                                     "vfx/blossum_ad7.png", 0.4,
                                     "vfx/blossum_ad8.png", 0.4,)
-image blossums1 = SnowBlossom("appleblossumsspin", count=2, border=100, xspeed=(-300, 300), yspeed=(50, 150), start=1, fast=True, horizontal=False)
+image blossums1 = SnowBlossom("appleblossumsspin", count=7, border=100, xspeed=(-300, 300), yspeed=(50, 150), start=1, fast=True, horizontal=False)
 image blossums3 = SnowBlossom("appleblossumsspin", count=4, border=100, xspeed=(-200, -400), yspeed=(-100, -150), start=1, fast=True, horizontal=False)
     
 image wakingstatic = Animation("vfx/wakingstatic1_ad.png", 0.1,                 
@@ -572,7 +575,7 @@ init:
                                     "vfx/blossum_ad2.png", 0.5,
                                     "vfx/blossum_ad3.png", 0.5,
                                     "vfx/blossum_ad2.png", 0.5,)
-image blossums2 = SnowBlossom("appleblossumssway", count=9, border=100, xspeed=(-300, 300), yspeed=(50, 150), start=1, fast=True, horizontal=False)
+image blossums2 = SnowBlossom("appleblossumssway", count=13, border=100, xspeed=(-300, 300), yspeed=(50, 150), start=1, fast=True, horizontal=False)
 image blossums4 = SnowBlossom("appleblossumssway", count=4, border=100, xspeed=(-200, -400), yspeed=(-100, -150), start=1, fast=True, horizontal=False)
 
 
@@ -583,6 +586,17 @@ image elysianclouds = "vfx/elysianclouds_ad.png"
 image 2015 = "vfx/2015_ad.png"
 image estars = SnowBlossom("vfx/elysianstar_ad.png", count=200, border=100, xspeed=(0, 0), yspeed= (-300, -300), start=1, fast=False, horizontal=False)
 
+image london = "vfx/london_ad.png"
+image abbotsford = "vfx/abbotsford_ad.png"
+image athens = "vfx/athens_ad.png"
+
+image myanton1 = "vfx/alberta1_ad.png"
+image myanton2 = "vfx/alberta2_ad.png"
+image myanton3 = "vfx/alberta3_ad.png"
+image myanton4 = "vfx/alberta4_ad.png"
+image myanton5 = "vfx/alberta5_ad.png"
+
+image glare = SnowBlossom("vfx/glare_ad.png", count=13, border=100, xspeed=(-150, 150), yspeed=(50, -50), start=1, fast=True, horizontal=False)
 
 # Applies transitions to all characters
 
