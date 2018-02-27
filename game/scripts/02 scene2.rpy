@@ -4,7 +4,7 @@ label scene2:
 
     p "A debris storm...?"
 
-    scene black
+    scene cabin
     with dissolve
 
     "I hurried back to my seat in the cabin to look out the window, squinting my eyes to see through the blackness of space."
@@ -32,13 +32,21 @@ label scene2:
 
     b "No cause for alarm."
 
-    scene black
+    scene cabin
     with dissolve
 
     "I repeated those words to myself, more incredulously each time."
 
     "I took a deep breath, steeling myself for what I feared was to come."
-
+    
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -1.0
+        linear 1.0 xpos 0.0 ypos -0.1
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 1.0 xpos 0.0 ypos 0.1
+    with dissolve
+    
     "Still as a statue, I closed my eyes, content not to watch it go down."
 
     b "... Oh, that's not good."
@@ -56,14 +64,27 @@ label scene2:
     "I could imagine the cold wind hitting my face; the fury of Old Earth."
 
     "I think it was a better coping mechanism. I'd rather be lost in a thunderstorm on a terrestrial surface than weathering a debris storm in a dingy old shuttle in one of the most remote parts of charted space."
-
+    
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 1.0 xpos 0.0 ypos -0.5
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 1.0 xpos 0.0 ypos 0.5
+    with dissolve
+    
     "I winced, popping an eye open. A heavier rock pounded against the hull, and the ship lurched to one side."
 
     "It didn't seem like we'd sustained any serious damage yet, so I sat there, clenching my legs, wringing my hands in desperation, hoping the storm would soon pass."
 
     scene white with dissolve
-    scene black with dissolve
-
+    scene cabin with vpunch
+    show cabin2:
+        alpha 0.0
+        linear 1.0 alpha 0.0
+        linear 20.0 alpha 1.0
+    show firedown:
+        alpha 0.2
     "'Wham! Wham!'"
 
     "Like fists driven by fury and rage, the meteoroids continued to pound against the shuttle."
@@ -99,37 +120,90 @@ label scene2:
 
     "It was going to impact, and it was going to impact very soon."
 
-    scene white with dissolve
-    scene black
-    with dissolve
+    scene cabin2 with dissolve
+    scene black with Dissolve(0.1)
+    scene cabin2 with Dissolve(0.1)
+    scene black with Dissolve(0.1)
+    scene cabin3 with vpunch
+    show wakingstatic:
+        alpha 0.2
 
     "I swallowed hard and lowered my hands to undo my harness. My hands shook thunderously; I couldn't get at the switches and belts."
+    
+    show dust:
+        alpha 0.1
+    show dust2:
+        alpha 0.1
+    show dust3:
+        alpha 0.1
 
     "I tugged at the straps, but they only seemed to tighten."
 
     p "Come on... come on, God damn it!"
+    
+    show redcabin:
+        alpha 0.1
+        linear 1.0 alpha 1.0
+        linear 1.0 alpha 0.1
+        repeat
 
     "Before all the strength had been drained from my arms, the belts miraculously disengaged."
 
     b "Passenger-sir, you need to get into the cockpit."
+    
+    show sparks:
+        alpha 0.8
 
     b "It's the most isolated part of the ship, and we can seal it if worst comes to worst."
+    
+    show sparks2
 
     b "... Oh, dear."
 
     b "You need to get here now!"
+    
+    scene black
+    show cabin3:
+        zoom 1.0 xalign 0.5 yalign 0.5
+        linear 2.0 zoom 2.5
+    show sparks3
+    show sparks4
+    with dissolve
 
     "I exhaled, deeply, and darted towards the cockpit."
 
-    scene white
-
+    scene black with dissolve
+    show sparks3
+    show sparks4
+    show explosion2 at Position (xalign = 0.5, yalign = 0.5):
+        alpha 1.0 rotate 0 zoom 0.7
+        linear 0.4 rotate 360
+        repeat
+    show explosion1 at Position (xalign = 0.5, yalign = 0.5):
+        alpha 1.0 rotate 0 zoom 0.7
+        linear 0.4 rotate -360
+        repeat
+    with vpunch
+    
     "'CRASH!'"
 
-    scene black
-    with dissolve
-
     "Shrapnel and sparks flew everywhere, lighting up the world in a blaze of yellow and orange. The entire cabin swayed and shook, and the horrendous sound of metal sheets rending apart filled my ears."
-
+    show door1 behind explosion2
+    show door2 behind explosion2
+    with Dissolve(2.0)
+    
+    scene cockpitemergency
+    show door1 at Position (xalign = 0.5, yalign = 0.5):
+        xpos 0.5 ypos 0.5
+        linear 0.5 xpos 0.5 ypos 0.5
+        linear 2.0 xpos -1.0 ypos 0.5
+    show door2 at Position (xalign = 0.5, yalign = 0.5):
+        xpos 0.5 ypos 0.5
+        linear 0.5 xpos 0.5 ypos 0.5
+        linear 2.0 xpos 2.0 ypos 0.5
+    show sparks3
+    show sparks4
+    
     "I slammed into the cockpit door, opened it, let myself fall through, and then kicked it shut."
 
     scene cockpitemergency
@@ -159,14 +233,19 @@ label scene2:
     show console warning
 
     "I paused; I felt an odd sensation where my hand was resting on the windshield. I drifted my eyes down to take a look..."
+    
+    show broken with dissolve
 
     "A hairline fracture along the window pane. My finger ran along the thin, narrow line formed in the ultra-hardened glass. The splintered patterns it formed were remarkable, but..."
 
     "I was paralyzed with terror."
-
-    "Suddenly, another lurch forwards. Another large collision."
-
+    
+    scene cockpitsideemergency
     show console worrylook
+    with vpunch
+    
+    "Suddenly, another lurch forwards. Another large collision."
+    
 
     p "Ack! Damn it!"
 

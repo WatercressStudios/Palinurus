@@ -638,9 +638,9 @@ label scene7:
     "Was I..."
 
     "Was I dreaming?"
-    
+    pause(5.0)
     show black behind blackoceanlight with Dissolve(4.0):
-    $ renpy.pause(1.0, hard=False) 
+    $ renpy.pause(1.0, hard=True) 
     scene black
 
     show blackocean2 at Position (xalign = 0.5, yalign = 0.5): ##Rocking back and forth effect
@@ -837,10 +837,19 @@ label scene7:
         alpha 0.5 xalign 0.5 yalign 0.5 zoom 0.8
     with dissolve
     "My absent legs propelled me down the tunnel of steel; I could smell her... perfume? Apple blossoms, something lost, something hard to find."
-    
+    $ renpy.pause(2.0, hard=False)
+    scene white with dissolve
+    show budapestcityzoom:
+        alpha 0.1
+        linear 3.0 alpha 0.2
+        linear 3.0 alpha 0.1
+        repeat
+    show filmgrains
+    show fireup
+    show firedown
+    show firelast
+    with dissolve
     b "Budapest, Hungary. Situated in Central Europe back on Old Earth. They say it was one of the most beautiful cities on the continent."
-    
-    
 
     "There was warmth there, the scent of her burning copper hair, the feeling of slender limbs and taut tendons and the whirring of servomotors, the smell of industrial lubricants..."
 
@@ -975,19 +984,22 @@ label scene7:
     "No more waiting..."
     
     b "Would you like to know what I would want in an afterlife?"
-    show budapestrise at Position (xalign = 0.5, yalign = 0.5) with moveinbottom:
-        alpha 0.3
-        linear 1.0 alpha 0.4
-        linear 1.0 alpha 0.3
-        repeat
+    show budapestrise: #with moveinbottom
+        alpha 0.1 xalign 0.5 ypos 1.0
+        linear 1.0 alpha 0.1 xalign 0.5 ypos 0.0
+        linear 3.0 alpha 0.2 xalign 0.5 ypos 0.0
+    show estars
 
     "Against the purple night sky, an Elysian field of stars behind her, she rose from me."
     
-    show estars
-
     b "Would it be alright if I..."
 
     b "If I addressed you by your name from now on?"
+    show budapestrise:
+        alpha 0.2
+        linear 2.0 alpha 0.3
+        linear 1.0 alpha 0.2
+        repeat
 
     "Her dress, how could I have forgotten. Her dress flowed in the moonlight, white. White:"
     show white:

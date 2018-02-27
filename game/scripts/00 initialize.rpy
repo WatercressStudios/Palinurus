@@ -247,9 +247,13 @@ image blackocean3          = "bg/blackocean3_ad.jpg"
 image blackocean4          = "bg/blackocean4_ad.jpg"  
 image capepalinuro         = "bg/capepalinuro_ad.png"
 image shuttle              = "bg/palinurushanger_ad.png"
-image cabin                = "bg/shipcabin_ad.png"
+image cabin                = "bg/shipcabin1_ad.png"
+image cabin2                = "bg/shipcabin2_ad.png"
+image cabin3                = "bg/shipcabin3_ad.png"
 image offwhite             = "#A9A9A9"
-image offred            = "#2F0D0D"
+image offred               = "#2F0D0D"
+image stationdeparture     = "bg/mirabellestation window_ad.png"
+
 
 ###################
 # Anniversary CGs #
@@ -293,6 +297,7 @@ init:
     image singingdreamgirl         = "cg/singingdreamgirl_ad.png"
     image starhands                = "cg/handsofstars_ad.png"
     image silouettebudapest        = "cg/silouettebudapest_ad.png"
+    image broken                   = "cg/crackedwindshield_ad.png"
 
 
     # Art Gallery Images
@@ -452,7 +457,15 @@ image budapestcorner = "vfx/budapestcorner_ad.png"
 image budapestcity1 = "vfx/budapestcity1_ad.png"
 image budapestcity2 = "vfx/budapestcity2_ad.png"
 image budapestcity3 = "vfx/budapestcity3_ad.png"
+image budapestcityzoom = "vfx/budapestzoom_ad.png"
 
+image departlights = "vfx/departurelights_ad.png"
+
+image sparkstrip = anim.Filmstrip("vfx/sparks_ad.png", (4,4), (1,500), 0.01) 
+image sparks = SnowBlossom("sparkstrip", count=30, border=5, xspeed=(-300, 300), yspeed=(1300, 800), start=10, fast=True, horizontal=False)
+image sparks2 = SnowBlossom("firefilmstrip", count=50, border=5, xspeed=(-300, 300), yspeed=(1000, 800), start=10, fast=True, horizontal=False)
+image sparks3 = SnowBlossom("sparkstrip", count=30, border=5, xspeed=(-500, 500), yspeed=(1300, 2300), start=10, fast=True, horizontal=False)
+image sparks4 = SnowBlossom("firefilmstrip", count=50, border=5, xspeed=(-500, 500), yspeed=(1000, 2300), start=10, fast=True, horizontal=False)
     
 image firefilmstrip = anim.Filmstrip("vfx/fire.png", (2,2), (1,250), 0.1) 
 image firedown = SnowBlossom("firefilmstrip", count=30, border=30, xspeed=(-150, 150), yspeed=(25, 75), start=10, fast=True, horizontal=True)           #Red Particle effects for Budapest
@@ -533,6 +546,12 @@ image unumpromultisdabiturcaput  = "cg/bottomofthesea_ad.png"
 
 image hallway = "vfx/hallway_ad.png"
 
+image explosion1 = "vfx/explode1_ad.png"
+image explosion2 = "vfx/explode2_ad.png"
+image door1 = "vfx/door1_ad.png"
+image door2 = "vfx/door2_ad.png"
+
+
 init:
     image appleblossumsspin = Animation("vfx/blossum_ad1.png", 0.6,
                                     "vfx/blossum_ad2.png", 0.4,
@@ -585,6 +604,7 @@ image dessertdream = "vfx/dessertdream_ad.png"
 image elysianclouds = "vfx/elysianclouds_ad.png"
 image 2015 = "vfx/2015_ad.png"
 image estars = SnowBlossom("vfx/elysianstar_ad.png", count=200, border=100, xspeed=(0, 0), yspeed= (-300, -300), start=1, fast=False, horizontal=False)
+image departurestars = SnowBlossom("vfx/elysianstar_ad.png", count=100, border=10, xspeed=(1500, 1700), yspeed= (-300, -550), start=1, fast=False, horizontal=True)
 
 image london = "vfx/london_ad.png"
 image abbotsford = "vfx/abbotsford_ad.png"
@@ -596,7 +616,11 @@ image myanton3 = "vfx/alberta3_ad.png"
 image myanton4 = "vfx/alberta4_ad.png"
 image myanton5 = "vfx/alberta5_ad.png"
 
+image shipcabinframe = "vfx/cabinwindowframe_ad.png"
+
 image glare = SnowBlossom("vfx/glare_ad.png", count=13, border=100, xspeed=(-150, 150), yspeed=(50, -50), start=1, fast=True, horizontal=False)
+
+image redcabin = "vfx/cabinredlight_ad.png"
 
 # Applies transitions to all characters
 
