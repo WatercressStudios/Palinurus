@@ -277,13 +277,13 @@ screen bscenes():
         textbutton _("Blue Pearl") action Start("blue_pearl") hovered ShowTransient("the_img", img="Blue_Pearl_Icon_Test_1.png") unhovered Hide("the_img")
 
 screen bonus():
-    
+
     # This ensures that any other menu screen is replaced.
     tag menu
 
     use navigation
     use bscenes
-    
+
 
 ##############################################################################
 # Navigation
@@ -883,28 +883,25 @@ init python:
 
     mr = MusicRoom(fadeout=1.0)
 
-    mr.add("music/Ambivalence original.ogg", always_unlocked=True)
     mr.add("music/Ambivalence.ogg", always_unlocked=True)
+    mr.add("music/Ambivalence original.ogg", always_unlocked=True)
     mr.add("music/Beautiful Dreamer.mp3", always_unlocked=True)
-    mr.add("music/Budapest original.ogg", always_unlocked=True)
     mr.add("music/Budapest.ogg", always_unlocked=True)
+    mr.add("music/Budapest original.ogg", always_unlocked=True)
     mr.add("music/Colorless Aura.mp3", always_unlocked=True)
     mr.add("music/DataCube Loop.ogg", always_unlocked=True)
     mr.add("music/Digital Virulence.mp3", always_unlocked=True)
     mr.add("music/Dream.ogg", always_unlocked=True)
-    mr.add("music/Glass Cockpit REDUX.ogg", always_unlocked=True)
     mr.add("music/Glass Cockpit.ogg", always_unlocked=True)
-    mr.add("music/Glasscockpit.mp3", always_unlocked=True)
-    mr.add("music/Lights.mp3", always_unlocked=True)
-    mr.add("music/Meteor Storm.mp3", always_unlocked=True)
-    mr.add("music/Meteorstorm.mp3", always_unlocked=True)
-    mr.add("music/Ode To Joy.ogg", always_unlocked=True)
-    mr.add("music/Overture.ogg", always_unlocked=True)
-    mr.add("music/Promises to Keep.mp3", always_unlocked=True)
+    mr.add("music/Glass Cockpit REDUX.ogg", always_unlocked=True)
     mr.add("music/Scene3.mp3", always_unlocked=True)
     mr.add("music/Scene3.ogg", always_unlocked=True)
+    mr.add("music/Lights.mp3", always_unlocked=True)
+    mr.add("music/Meteor Storm.mp3", always_unlocked=True)
+    mr.add("music/Overture.ogg", always_unlocked=True)
+    mr.add("music/Promises to Keep.mp3", always_unlocked=True)
     mr.add("music/Stasis.ogg", always_unlocked=True)
-    
+
 
 screen music_room:
 
@@ -913,71 +910,79 @@ screen music_room:
     # The background of the game menu.
     window:
         style "gm_root"
-    
+
     frame:
         style_group "gm_nav"
         xalign 0.02
         yalign 0.02
-        
+
         has vbox
 
         # The buttons that play each track.
-        grid 3 7:
+        grid 2 9:
             transpose True
             xspacing 5
-            yspacing 2
-            
-            textbutton "Ambivalence (Original)" action mr.Play("music/Ambivalence original.ogg")
+            yspacing 1
+
             textbutton "Ambivalence" action mr.Play("music/Ambivalence.ogg")
+            textbutton "Ambivalence (Original)" action mr.Play("music/Ambivalence original.ogg")
             textbutton "Beautiful Dreamer" action mr.Play("music/Beautiful Dreamer.mp3")
-            textbutton "Budapest (Original)" action mr.Play("music/Budapest original.ogg")
             textbutton "Budapest" action mr.Play("music/Budapest.ogg")
+            textbutton "Budapest (Original)" action mr.Play("music/Budapest original.ogg")
             textbutton "Colorless Aura" action mr.Play("music/Colorless Aura.mp3")
             textbutton "Datacube Loop" action mr.Play("music/DataCube Loop.ogg")
-            
             textbutton "Digital Virulence" action mr.Play("music/Digital Virulence.mp3")
             textbutton "Dream" action mr.Play("music/Dream.ogg")
-            textbutton "Glass Cockpit REDUX" action mr.Play("music/Glass Cockpit REDUX.ogg")
+
             textbutton "Glass Cockpit" action mr.Play("music/Glass Cockpit.ogg")
-            textbutton "Glass Cockpit" action mr.Play("music/Glasscockpit.mp3")
+            textbutton "Glass Cockpit (Redux)" action mr.Play("music/Glass Cockpit REDUX.ogg")
+            textbutton "Glass Cockpit (Alternate)" action mr.Play("music/Scene3.mp3")
+            textbutton "Glass Cockpit (Faster Alternate)" action mr.Play("music/Scene3.ogg")
             textbutton "Lights" action mr.Play("music/Lights.mp3")
             textbutton "Meteor Storm" action mr.Play("music/Meteor Storm.mp3")
-            
-            textbutton "Meteorstorm" action mr.Play("music/Meteorstorm.mp3")
-            textbutton "Ode To Joy" action mr.Play("music/Ode To Joy.ogg")
             textbutton "Overture" action mr.Play("music/Overture.ogg")
             textbutton "Promises to Keep" action mr.Play("music/Promises to Keep.mp3")
-            textbutton "Scene3" action mr.Play("music/Scene3.mp3")
-            textbutton "Scene3 (Fast)" action mr.Play("music/Scene3.ogg")
             textbutton "Stasis" action mr.Play("music/Stasis.ogg")
 
-    # Buttons that let us advance tracks and stop music.
+    frame:
+        style_group "pref"
+        xalign 0.02
+        yalign 0.60
+
+        has vbox
+
+        label _("Music Volume")
+        bar value Preference("music volume")
+
+    # Buttons that let the user advance tracks and stop music.
     frame:
         style_group "gm_nav"
         xalign 0.02
-        yalign 0.35
-        
+        yalign 0.80
+
         has vbox
-        
-        grid 3 1:
-            
+
+        grid 1 3:
+            transpose True
+            yspacing 2
+
             textbutton "Next" action mr.Next()
-            textbutton "Previous" action mr.Previous()
             textbutton "Stop" action mr.Stop()
+            textbutton "Previous" action mr.Previous()
 
     # The buttons that lets the user enter Preferences and exit the jukebox.
     frame:
         style_group "gm_nav"
         xalign 0.02
         yalign 0.98
-        
+
         has vbox
-        
+
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Return") action Return()
 
-    # Stop main menu music playing upon entry to the jukebox.
+    # Stops main menu music playing upon entry to the jukebox.
     on "replace" action mr.Stop()
 
-    # Restore the main menu music upon leaving.
+    # Restores the main menu music upon leaving.
     on "replaced" action Play("music", "music/Ode To Joy.ogg")
