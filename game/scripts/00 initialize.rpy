@@ -291,6 +291,8 @@ init:
     image starhands                = "cg/handsofstars_ad.png"
     image silouettebudapest        = "cg/silouettebudapest_ad.png"
 
+    image budastareout             = "cg/budastareout.png"
+
 
     # Art Gallery Images
     image art1    = "cg/artgal/001.jpg"

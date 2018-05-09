@@ -270,7 +270,7 @@ label scene5p1:
 
     p "..."
 
-    scene budasmile1
+    scene budastareout
     with dissolve
 
     "The dreamy look in her eyes was dissonant. She stared out the front of the cockpit. How long had she been staring out into the stars like that?"
