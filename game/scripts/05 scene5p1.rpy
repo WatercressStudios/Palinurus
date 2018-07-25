@@ -113,7 +113,10 @@ label scene5p1:
 
     "Budapest turned to her display to... what was she bringing up?"
 
-    scene black with dissolve
+    scene sleepingpassenger
+    show wakingstatic:
+        alpha 0.5
+    with dissolve
 
     p "What."
 
@@ -122,6 +125,8 @@ label scene5p1:
     "When did she even capture it, anyway? How'd she capture it?"
 
     "... Why did she capture it?"
+    
+    scene black
 
     "I spun in my seat, towards one of Budapest's cameras, and glared right into it."
 

@@ -700,7 +700,7 @@ label scene7:
     show singingdreamgirl with dissolve:
         alpha 0.0 zoom 0.5 xalign 0.5 yalign 0.5
         linear 2.0 alpha 0.5 zoom 0.5 xalign 0.5 yalign 0.5
-        linear 15.0 alpha 1.0 zoom 1.0 xalign 1.0 yalign 0.5
+        linear 15.0 alpha 1.0 zoom 1.0 xalign 1.0 yalign 1.0
 
 
     "Does music have color?"
@@ -715,9 +715,9 @@ label scene7:
     
     scene white with Fade(0.5, 1.0, 1.0, color='#fff'): 
     scene starhands: 
-        zoom 1.0 xalign 0.5 yalign 0.75
-        linear 2.0 zoom 0.9 xalign 0.5 yalign 0.6
-        linear 5.0 zoom 0.5 xalign 0.5 yalign 0.5
+        zoom 0.5 xalign 0.0 yalign 0.0
+        linear 2.0 zoom 0.5 xalign 0.0 yalign 0.6
+        linear 10.0 zoom 1.0 xalign 0.1 yalign 1.0
     show lightrain:
         alpha 0.0
         linear 2.0 alpha 0.2

@@ -49,7 +49,7 @@ label scene1:
 
     "And sometimes, if you were lucky, you'd get the occasional nebula, or debris cloud, or band of pirates..."
 
-    scene shuttle at Position (xalign = 1.0,  yalign = 0.5)
+    scene shuttle at Position (xalign = 0.0,  yalign = 0.8)
     with dissolve
 
     "I focused my attention on the silver spaceship which laid before me. I'd seen many like it before; it was small, intended for a single occupant."
@@ -59,7 +59,7 @@ label scene1:
     "The cockpit stood out. The windshield wrapped itself around the front of the vessel, stopping just as the ship's nose began to flow downwards into its underbelly."
 
     "Its exterior was sleek, its curving wings wide like that of an albatross."
-    scene shuttle at Position (xalign = 1.0,  yalign = 0.5):
+    scene shuttle at Position (xalign = 0.0,  yalign = 0.8):
         zoom 1.0
         linear 1.0 zoom 1.0
         linear 5.0 zoom 0.67

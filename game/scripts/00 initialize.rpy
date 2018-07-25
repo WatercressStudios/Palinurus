@@ -253,6 +253,7 @@ image cabin3                = "bg/shipcabin3_ad.png"
 image offwhite             = "#A9A9A9"
 image offred               = "#2F0D0D"
 image stationdeparture     = "bg/mirabellestation window_ad.png"
+image sleepingpassenger    = "bg/sleepingpassenger_ad.png"
 
 
 ###################
@@ -621,6 +622,8 @@ image shipcabinframe = "vfx/cabinwindowframe_ad.png"
 image glare = SnowBlossom("vfx/glare_ad.png", count=13, border=100, xspeed=(-150, 150), yspeed=(50, -50), start=1, fast=True, horizontal=False)
 
 image redcabin = "vfx/cabinredlight_ad.png"
+
+
 
 # Applies transitions to all characters
 
