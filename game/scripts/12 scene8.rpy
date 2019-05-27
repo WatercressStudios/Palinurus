@@ -363,14 +363,51 @@ label scene8:
     show bud crysmile
 
     b "I'm just so glad to see you again."
+    
+    show cry2   #ADDED CG
 
     "Budapest smiled, and cried more, but no matter how hard she cried, she didn't stop smiling."
 
-    show bud cryslight
+    show cry3   #ADDED CG
 
     b "I... I'm sorry I'm crying so much. It's all just so sappy, and..."
 
     b "I'm just excited I finally get to use the crying animation, and..."
+    
+    scene cockpit1 
+    show bud cryslight
+
+    show spotlight at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.2
+        linear 0.3 alpha 0.3
+        linear 0.5 alpha 0.2
+        linear 0.5 alpha 0.3
+        linear 0.4 alpha 0.2
+        linear 1.0 alpha 0.3
+        linear 0.1 alpha 0.2
+        linear 0.1 alpha 0.3
+        linear 0.3 alpha 0.2
+        repeat
+    show spotlight behind spotlight at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.2
+        linear 0.7 alpha 0.3
+        linear 1.0 alpha 0.2
+        linear 1.1 alpha 0.3
+        linear 0.8 alpha 0.2
+        linear 1.5 alpha 0.3
+        linear 0.1 alpha 0.2
+        linear 0.1 alpha 0.3
+        linear 0.6 alpha 0.2
+        repeat
+    with Dissolve(2.0)
+    show firedown:
+        alpha 0.4
+        linear 1.0 alpha 0.2
+        linear 1.0 alpha 0.4
+    show waterdown:
+        alpha 0.2
+        linear 3.0 alpha 0.4
+        linear 3.0 alpha 0.2
 
     b "Give me a moment, alright?"
 

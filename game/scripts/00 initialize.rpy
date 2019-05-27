@@ -623,7 +623,15 @@ image glare = SnowBlossom("vfx/glare_ad.png", count=13, border=100, xspeed=(-150
 
 image redcabin = "vfx/cabinredlight_ad.png"
 
+########################
+# Added by InstantRiot #
+########################
 
+image budastareout     = "cg/budastareout.png"
+
+image cry1 = im.Scale("cg/Cry1.png", 1280, 720) 
+image cry2 = im.Scale("cg/Cry2.png", 1280, 720)
+image cry3 = im.Scale("cg/Cry3.png", 1280, 720)
 
 # Applies transitions to all characters
 
