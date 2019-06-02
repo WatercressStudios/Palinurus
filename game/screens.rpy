@@ -207,14 +207,14 @@ screen main_menu_bonus():
         
         has vbox
         
-        textbutton _("Start Game") action Start() text_size 30
-        textbutton _("Load Game") action ShowMenu("load") text_size 30
-        textbutton _("Bonus Scenes") action ShowMenu("bonus") text_size 30
-        textbutton _("CG Gallery") action ShowMenu("cg_gallery") text_size 30
-        textbutton _("Art Gallery") action ShowMenu("art_gallery") text_size 30
-        textbutton _("Preferences") action ShowMenu("preferences") text_size 30
-        textbutton _("Credits") action Start("credits") text_size 30
-        textbutton _("Quit") action Quit(confirm=False) text_size 30
+        textbutton _("Start Game") action Start() 
+        textbutton _("Load Game") action ShowMenu("load") 
+        textbutton _("Bonus Scenes") action ShowMenu("bonus") 
+        textbutton _("CG Gallery") action ShowMenu("cg_gallery") 
+        textbutton _("Art Gallery") action ShowMenu("art_gallery") 
+        textbutton _("Preferences") action ShowMenu("preferences") 
+        textbutton _("Credits") action Start("credits") 
+        textbutton _("Quit") action Quit(confirm=False) 
         
 init -2:
 
