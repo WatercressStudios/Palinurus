@@ -257,7 +257,6 @@ screen preference_page:
         style_group "pref_page"
 
         vbox:
-            textbutton _("Return") action Return()
             textbutton _("Display") action ShowMenu("preferences")
             textbutton _("Skip") action ShowMenu("preference2")
             textbutton _("Sound") action ShowMenu("preference3")
@@ -280,6 +279,7 @@ screen preference_page:
             textbutton _("Display") action ShowMenu("preferences")
             textbutton _("Skip") action ShowMenu("preference2")
             textbutton _("Sound") action ShowMenu("preference3")
+            textbutton _("Return") action Return()
 
 screen preferences:
 
