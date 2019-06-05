@@ -449,7 +449,7 @@ screen yesno_prompt:
             xalign 0.1
             yalign 0.1
 
-        vbox:
+        hbox:
             xalign 0.98
             yalign 0.98
 
