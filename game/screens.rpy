@@ -651,19 +651,21 @@ screen cgnav():
     # The background of the game menu.
     window:
         style "gm_root"
-        ysize 30
+        
 
     # The various buttons.
     frame:
         style_group "gm_nav"
         xalign .90
-        yalign .99
+        yalign .97
+        ysize 125
+        
         
         
         has hbox
         
-        textbutton _("Preferences") action ShowMenu("preferences") 
-        textbutton _("Return") action Return() 
+        textbutton _("Preferences") action ShowMenu("preferences") ysize 114
+        textbutton _("Return") action Return() ysize 114
 
 init -2:
 
