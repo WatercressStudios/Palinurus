@@ -450,8 +450,8 @@ screen yesno_prompt:
             yalign 0.1
 
         hbox:
-            xalign 0.98
-            yalign 0.98
+            xalign 0.78
+            yalign 0.68
 
             textbutton _("Yes") action yes_action
             textbutton _("No") action no_action
