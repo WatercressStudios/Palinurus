@@ -270,18 +270,25 @@ screen bscenes():
         style_group "bonus"
         xalign .98
         yalign .02
-
+        ysize 125
+        
         has hbox
 
-        textbutton _("Blue Pearl") action Start("blue_pearl") hovered ShowTransient("the_img", img="Blue_Pearl_Icon_Test_1.png") unhovered Hide("the_img")
+        textbutton _("Blue Pearl") action Start("blue_pearl") hovered ShowTransient("the_img", img="Blue_Pearl_Icon_Test_1.png") unhovered Hide("the_img") ysize 115
 
 screen bonus():
     
     # This ensures that any other menu screen is replaced.
     tag menu
 
-    use navigation
+    # use navigation
     use bscenes
+    frame:
+        style_group "gm_nav"
+        xalign .02
+        yalign .98
+        has vbox
+        textbutton _("Return") action Return()
     
 
 ##############################################################################
@@ -606,6 +613,11 @@ init -2:
 #
 # A screen that's included by the default say screen, and adds quick access to
 # several useful functions.
+##############################################################################
+# Quick Menu
+#
+# A screen that's included by the default say screen, and adds quick access to
+# several useful functions.
 screen quick_menu():
 
     # Add an in-game quick menu.
@@ -639,6 +651,10 @@ init -2:
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"
         insensitive_color "#4448"
+
+
+
+
 
 
 ##############################################################################

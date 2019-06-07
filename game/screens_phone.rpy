@@ -108,7 +108,7 @@ screen navigation:
         hbox:
             textbutton _("Preferences") action ShowMenu("preferences")
             textbutton _("Main Menu") action MainMenu()
-            #textbutton _("Help") action Help()
+            textbutton _("Return") action Return()
             textbutton _("Quit") action Quit()
 
 init -1:
@@ -471,16 +471,32 @@ init -1:
         variant "android"
         size 30
 
-##############################################################################
-# Quick Menu
-#
-# Quick Menu doesn't used in the screens for Phone.
-screen quick_menu:
+screen quick_menu():
     variant "android"
-    fixed:
-        null
 
-init -1:
-    style menu_choice_button:
-        variant "android"
-        yminimum 100
+    # Add an in-game quick menu.
+    vbox:
+        style_group "quick"
+
+        xalign 0.984
+        yalign 1.0
+
+        textbutton _("M") action ShowMenu('navigation') text_size 30
+        textbutton _("E") action ShowMenu('navigation') text_size 30
+        textbutton _("N") action ShowMenu('navigation') text_size 30
+        textbutton _("U") action ShowMenu('navigation') text_size 30
+
+init -2:
+    style quick_button:
+        is default
+        background None
+        ypadding 3
+        xpadding 5
+        xalign 0.5
+        ypos -4
+
+    style quick_button_text:
+        is default
+        size 12
+        color "#ffffff"
+        bold True
