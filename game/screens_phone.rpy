@@ -161,31 +161,37 @@ screen file_picker:
         hbox:
             style_group "file_picker_nav1"
             xfill True
-            xalign .5
-
-            textbutton _("Previous"):
-                action FilePagePrevious()
+            # xalign .5
 
             textbutton _("Auto"):
                 action FilePage("auto")
+                xsize .5
+                ysize .5
+               
+            textbutton _("Return"): 
+                action Return()
+                xsize .6
+                ysize .5
+                xalign .5
+               
 
             textbutton _("Quick"):
                 action FilePage("quick")
+                xsize .7
+                ysize .5
+                xalign 1.0                
+      
+        # hbox:
+        #     style_group "file_picker_nav2"
+        #     xfill True
+        #     xalign .5
 
-            textbutton _("Next"):
-                action FilePageNext()
-            
-        hbox:
-            style_group "file_picker_nav2"
-            xfill True
-            xalign .5
-
-            for i in range(1, 9):
-                textbutton str(i):
-                    action FilePage(i)
+        #     for i in range(1, 9):
+        #         textbutton str(i):
+        #             action FilePage(i)
 
         $ columns = 2
-        $ rows = 5
+        $ rows = 4
 
         # Display a grid of file slots.
         grid columns rows:
