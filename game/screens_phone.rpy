@@ -59,8 +59,8 @@ screen main_menu_bonus():
 
         has hbox
         
-        textbutton _("Start Game") action Start() 
-        textbutton _("Load Game") action ShowMenu("load") 
+        textbutton _("Start") action Start() 
+        textbutton _("Load") action ShowMenu("load") 
         textbutton _("Bonus Scenes") action ShowMenu("bonus") 
         textbutton _("CG Gallery") action ShowMenu("cg_gallery") 
         textbutton _("Art Gallery") action ShowMenu("art_gallery") 
@@ -98,7 +98,7 @@ screen navigation:
 
         hbox:
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Load Game") action ShowMenu("load")
+            textbutton _("Load") action ShowMenu("load")
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
         hbox:
