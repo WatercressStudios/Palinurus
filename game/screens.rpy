@@ -207,8 +207,8 @@ screen main_menu_bonus():
         
         has vbox
         
-        textbutton _("Start Game") action Start() 
-        textbutton _("Load Game") action ShowMenu("load") 
+        textbutton _("Start") action Start() 
+        textbutton _("Load") action ShowMenu("load") 
         textbutton _("Bonus Scenes") action ShowMenu("bonus") 
         textbutton _("CG Gallery") action ShowMenu("cg_gallery") 
         textbutton _("Art Gallery") action ShowMenu("art_gallery") 
@@ -312,8 +312,8 @@ screen navigation():
         has vbox
 
         textbutton _("Return") action Return()
-        textbutton _("Save Game") action ShowMenu("save")
-        textbutton _("Load Game") action ShowMenu("load")
+        textbutton _("Save") action ShowMenu("save")
+        textbutton _("Load") action ShowMenu("load")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Main Menu") action MainMenu()
         textbutton _("Quit") action Quit()
