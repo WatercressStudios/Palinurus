@@ -273,7 +273,7 @@ init:
     image budasmile1               = "cg/budasmile.png" #Added
     image budasmile2               = "cg/budasmile2.png" #Added
     image budaspeak                = "cg/budaspeak.png" #Added
-    image dream                    = "cg/dream.png" #Added
+    image dream                    = im.Scale("cg/dream.png", 1280, 720) 
     image end1                     = "cg/end1.png" #Added
     image end2                     = "cg/end2.png" #Added
     image end3                     = "cg/end3.png" #Added
@@ -627,11 +627,14 @@ image redcabin = "vfx/cabinredlight_ad.png"
 # Added by InstantRiot #
 ########################
 
-image budastareout     = "cg/budastareout.png"
-
+image budastareout = im.Scale("cg/budastareout.png", 1280, 720)
 image cry1 = im.Scale("cg/Cry1.png", 1280, 720) 
 image cry2 = im.Scale("cg/Cry2.png", 1280, 720)
 image cry3 = im.Scale("cg/Cry3.png", 1280, 720)
+image smilescene6 = im.Scale("cg/budascene6.png", 1280, 720) 
+
+image cryglitch = Animation("cry2", 0.5,                 
+                                "cry3", 0.5)
 
 # Applies transitions to all characters
 

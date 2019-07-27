@@ -349,26 +349,30 @@ label scene8:
     show bud cryclosedneutral
 
     b "No. Please, you have nothing to apologize for."
+    
+    scene cry1
 
     b "I may be dying, but I'm not an idiot."
 
     b "All the wretched things that have happened to me, I brought them all onto myself."
 
-    show bud crysad
-
-    b "This was all my fault."
-
-    b "As for you, Illarion, I... I..."
-
-    show bud crysmile
-
-    b "I'm just so glad to see you again."
-    
     show cry2   #ADDED CG
 
+    b "This was all my fault."
+    
+    show cry3   #ADDED CG
+
+    b "As for you, Illarion, I... I..."
+    
+    show cryglitch
+
+    b "I'm just so glad to see you again."
+
+    
+    
     "Budapest smiled, and cried more, but no matter how hard she cried, she didn't stop smiling."
 
-    show cry3   #ADDED CG
+    
 
     b "I... I'm sorry I'm crying so much. It's all just so sappy, and..."
 

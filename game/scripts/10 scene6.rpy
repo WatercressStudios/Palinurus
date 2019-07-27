@@ -112,8 +112,8 @@ label scene6:
     show bud panicx
 
     b "It's been almost four weeks since we embarked on this journey. I stumbled upon that myth, and…"
-
-    scene budasmile1
+    scene smilescene6
+    #scene budasmile1
 
     b "...I've experienced so many things alongside you. I've learned so much, had so many new sensations coursed through me."
 
@@ -122,21 +122,21 @@ label scene6:
     "She was speaking of our time together. Of course she didn't want to let those memories go."
 
     "She might have been truly alive for all of a month, but for her, that was all she needed. She’d lived more than most humans would ever aspire to."
-
-    scene budasmile2
+    scene smilescene6
+    #scene budasmile2
 
     "I had a wrenching feeling in my gut. When we returned, what would happen to her? Would they call her irreparable? Would they erase her programming, clear her memory banks, install a new suppression chip?"
 
     "Or… would they terminate her being entirely, replace her with a new AI?"
 
     "She was prepared to return to her creators, to face termination… just to ensure my survival."
-
-    scene budaspeak
+    scene smilescene6
+    #scene budaspeak
 
     b "Illarion… when I'm gone, you'll remember me, right?"
 
     i "Don't talk like that. We're almost there, Budapest."
-
+    #scene budasmile2
     i "We'll make it out of this. And when we get to Alpha Centauri, you'll be with me. I won't let them lay a finger on you."
 
     i "You won't have to forget anything. You'll get to live, see more than just empty space and databases. I don't care what it takes. We'll see everything there is to see in this universe. No matter what fate says."
