@@ -1,11 +1,20 @@
 label scene5p2:
+    
+    scene hours behind white
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 1.0 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 1.0 xpos 0.0 ypos 1.0
+    show white behind blink1:
+        alpha 1.0
+        linear 1.0 alpha 1.0
+        linear 4.0 alpha 0.0
 
-    scene white with dissolve
-    scene cockpit2 with dissolve
-    scene hours with fade
+    with dissolve
 
     b "THE TIME IS NOW 1200 HOURS!"
-
     p "Ah... that time again, huh..."
 
     "If nothing else, Budapest was punctual. I made to undo my pretzel body from a heap of limbs, rising slowly to the day. My hair was a mess, matted down in awkward places. I rustled it back in somewhat presentable shape."
@@ -153,6 +162,9 @@ label scene5p2:
     b "Oh, I think I've got one in mind! I was really sucked into it."
 
     show bud bigsmileneutral
+    
+    show myanton1 behind bud with dissolve:
+        alpha 0.7
 
     b '"My Ántonia," by Willa Cather. I read it was considered a classic.'
 
@@ -171,6 +183,9 @@ label scene5p2:
     b "It was written in the United States. The first one, on Old Earth."
 
     b "It's a fictional work, but it's rooted in the history of the sweeping American Midwest."
+    
+    show myanton2 behind bud with dissolve:
+        alpha 0.7
 
     show bud neutralupx
 
@@ -181,6 +196,9 @@ label scene5p2:
     show bud depressedtalkx
 
     b "It was dreadful."
+    
+    show myanton3 behind bud with dissolve:
+        alpha 0.7
 
     show bud neutralupthinkx
 
@@ -193,6 +211,9 @@ label scene5p2:
     show bud smallsmile
 
     b "When they gathered as a family, and, well, enjoyed supper, the fruits of their labor, it felt it was... doubly meaningful."
+    
+    show myanton5 behind bud with dissolve:
+        alpha 0.7
 
     show bud smallsmileclosed
 
@@ -207,6 +228,9 @@ label scene5p2:
     show bud smallsmile
 
     b "Historical fiction, yes. Actually, it takes on the form of a memoir, from the perspective of a lawyer reflecting on his childhood."
+    
+    show myanton4 behind bud with dissolve:
+        alpha 0.7
 
     show bud neutraltalk
 
@@ -433,7 +457,13 @@ label scene5p2:
     p "And you'd be making memories: your memories, and yours alone."
 
     show bud surprise
-
+    hide myanton1
+    hide myanton2 
+    hide myanton3 
+    hide myanton4 
+    hide myanton5 
+    with dissolve
+    
     b "..."
 
     "I wasn't exactly sure where I was going with that. It sounded like a nice enough idea as I was saying it, but she was pretty attached to her position as a Personal Navigator."

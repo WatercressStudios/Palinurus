@@ -204,19 +204,18 @@ screen main_menu_bonus():
         style_group "mm"
         xalign .02
         yalign .98
-
-
+        
         has vbox
-
-        textbutton _("Start Game") action Start()
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Bonus Scenes") action ShowMenu("bonus")
-        textbutton _("CG Gallery") action ShowMenu("cg_gallery")
-        textbutton _("Art Gallery") action ShowMenu("art_gallery")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Credits") action Start("credits")
-        textbutton _("Quit") action Quit(confirm=False)
-
+        
+        textbutton _("Start") action Start() 
+        textbutton _("Load") action ShowMenu("load") 
+        textbutton _("Bonus Scenes") action ShowMenu("bonus") 
+        textbutton _("CG Gallery") action ShowMenu("cg_gallery") 
+        textbutton _("Art Gallery") action ShowMenu("art_gallery") 
+        textbutton _("Preferences") action ShowMenu("preferences") 
+        textbutton _("Credits") action Start("credits") 
+        textbutton _("Quit") action Quit(confirm=False) 
+        
 init -2:
 
     # Make all the main menu buttons be the same size.
@@ -236,20 +235,22 @@ screen main_menu_normies():
     frame:
         style_group "mm"
         xalign .02
-        yalign .98
+        yalign .90
 
-        has vbox
+        has vbox:
+            spacing 5
 
-        textbutton _("Start Game") action Start()
-        textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Bonus Scenes") action ShowMenu("bonus")
-        textbutton _("CG Gallery") action ShowMenu("cg_gallery")
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Credits") action Start("credits")
-        textbutton _("Quit") action Quit(confirm=False)
+        textbutton _("Start") action Start() text_size 40
+        textbutton _("Load") action ShowMenu("load") text_size 40
+        textbutton _("Bonus Scenes") action ShowMenu("bonus") text_size 40
+        textbutton _("CG Gallery") action ShowMenu("cg_gallery") text_size 40
+        textbutton _("Preferences") action ShowMenu("preferences") text_size 40
+        textbutton _("Credits") action Start("credits") text_size 40
+        textbutton _("Quit") action Quit(confirm=False) text_size 40
 
 screen the_img(img):
     add img pos (0, 0)
+    
 
 init -2:
 
@@ -269,18 +270,25 @@ screen bscenes():
         style_group "bonus"
         xalign .98
         yalign .02
+        ysize 125
+        
+        has hbox
 
-        has vbox
-
-        textbutton _("Blue Pearl") action Start("blue_pearl") hovered ShowTransient("the_img", img="Blue_Pearl_Icon_Test_1.png") unhovered Hide("the_img")
+        textbutton _("Blue Pearl") action Start("blue_pearl") hovered ShowTransient("the_img", img="Blue_Pearl_Icon_Test_1.png") unhovered Hide("the_img") ysize 115
 
 screen bonus():
     
     # This ensures that any other menu screen is replaced.
     tag menu
 
-    use navigation
+    # use navigation
     use bscenes
+    frame:
+        style_group "gm_nav"
+        xalign .02
+        yalign .98
+        has vbox
+        textbutton _("Return") action Return()
     
 
 ##############################################################################
@@ -304,8 +312,8 @@ screen navigation():
         has vbox
 
         textbutton _("Return") action Return()
-        textbutton _("Save Game") action ShowMenu("save")
-        textbutton _("Load Game") action ShowMenu("load")
+        textbutton _("Save") action ShowMenu("save")
+        textbutton _("Load") action ShowMenu("load")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Main Menu") action MainMenu()
         textbutton _("Quit") action Quit()
@@ -605,6 +613,11 @@ init -2:
 #
 # A screen that's included by the default say screen, and adds quick access to
 # several useful functions.
+##############################################################################
+# Quick Menu
+#
+# A screen that's included by the default say screen, and adds quick access to
+# several useful functions.
 screen quick_menu():
 
     # Add an in-game quick menu.
@@ -640,6 +653,10 @@ init -2:
         insensitive_color "#4448"
 
 
+
+
+
+
 ##############################################################################
 # CG Nav
 #
@@ -650,17 +667,21 @@ screen cgnav():
     # The background of the game menu.
     window:
         style "gm_root"
+        
 
     # The various buttons.
     frame:
         style_group "gm_nav"
-        xalign .98
-        yalign .98
-
-        has vbox
-
-        textbutton _("Preferences") action ShowMenu("preferences")
-        textbutton _("Return") action Return()
+        xalign .90
+        yalign .97
+        ysize 125
+        
+        
+        
+        has hbox
+        
+        textbutton _("Preferences") action ShowMenu("preferences") ysize 114
+        textbutton _("Return") action Return() ysize 114
 
 init -2:
 

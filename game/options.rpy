@@ -13,7 +13,7 @@ init -1 python hide:
     ## set to False before the game is released, so the user can't
     ## cheat using developer tools.
 
-    config.developer = False
+    config.developer = True             ##Change back to False when not editing game.
 
     ## These control the width and height of the screen.
 
@@ -27,9 +27,11 @@ init -1 python hide:
     ## These control the name and version of the game, that are reported
     ## with tracebacks and other debugging logs.
     config.name = "Palinurus"
-    config.version = "2.2"
+    config.version = "2.3"
 
-    config.rollback_enabled = False
+    config.rollback_enabled = True      ##Change back to False when not editing game.
+
+
 
     #########################################
     # Themes
@@ -72,7 +74,7 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "ui/christmasmenu.png",
+        mm_root = "ui/mainmenu.png",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter

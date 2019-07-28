@@ -106,7 +106,10 @@ label scene9:
 
     b "But I still think there's something I can do."
 
-    show bud neutral
+    show bud neutral:
+        alpha 0.7
+        linear 1.0 alpha 0.8
+        linear 0.5 alpha 0.7
 
     b "As of now, my battery's running on fumes; the power is barely enough to keep my display lit."
 

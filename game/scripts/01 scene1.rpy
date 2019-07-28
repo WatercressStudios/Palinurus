@@ -12,7 +12,7 @@ label scene1:
     v "Daughter of Elysium."
 
     scene black with fade
-    scene station with fade
+    scene station with Dissolve(5.0)
     play music "music/DataCube Loop.ogg"
 
     "Mirabelle Station spiraled, ceaselessly, in an otherwise unremarkable corner of deep space."
@@ -49,8 +49,8 @@ label scene1:
 
     "And sometimes, if you were lucky, you'd get the occasional nebula, or debris cloud, or band of pirates..."
 
-    # scene shuttle
-    # with dissolve
+    scene shuttle at Position (xalign = 0.0,  yalign = 0.8)
+    with dissolve
 
     "I focused my attention on the silver spaceship which laid before me. I'd seen many like it before; it was small, intended for a single occupant."
 
@@ -59,6 +59,10 @@ label scene1:
     "The cockpit stood out. The windshield wrapped itself around the front of the vessel, stopping just as the ship's nose began to flow downwards into its underbelly."
 
     "Its exterior was sleek, its curving wings wide like that of an albatross."
+    scene shuttle at Position (xalign = 0.0,  yalign = 0.8):
+        zoom 1.0
+        linear 1.0 zoom 1.0
+        linear 5.0 zoom 0.67
 
     '"Attention, Attention, Mirabelle Station."'
 
@@ -243,18 +247,37 @@ label scene1:
 
     p "Roger that, loud and clear."
 
-    scene black with fade
+    scene cabin with fade
 
     "I took a few paces to my seat in the cabin, not too far from the Personal Navigator stationed in the cockpit. I lowered myself into the chair..."
 
     "It was surprisingly plushy."
 
     "As usual, I threaded my arms through the safety harnesses and then clicked the connectors together. Leaning back, I turned my head to look through the window to my right."
+    
+    scene black
+    show departlights:
+        xalign -2.0 yalign 0.5 alpha 1.0 zoom 1.2
+        linear 1.0 xalign 2.0 yalign 1.0 alpha 0.3 zoom 0.8
+        repeat
+    show shipcabinframe    
+    with dissolve
+    
 
     "I heard the electronic sputtering and whirring of the shuttle disengaging from the hangar restraints. My stomach twisted with anticipation, and suddenly the shuttle lurched forwards."
 
     "After a few moments of throttle, we reached open space and cruised our way out of the Station."
-
+    
+    scene white with dissolve
+    show stationdeparture:
+        xalign 0.8 yalign 0.3 zoom 1.5 rotate -25
+        linear 3.0 xalign 0.8 yalign 0.3 zoom 1.3 rotate -15
+        linear 30.0 xalign 0.5 yalign 0.5 zoom 0.5 rotate 0
+    show departurestars:
+        alpha 0.5
+    show shipcabinframe
+    with dissolve
+    
     b "And... it appears we are off."
 
     b "Currently at cruising speed of 40,000 kilometers per hour. Plotting navigational route now."
@@ -270,6 +293,7 @@ label scene1:
     b "But never with a Navigator as amiable as yours truly, I assume?"
 
     "I laugh."
+    scene cabin with fade
 
     p "That's pretty clever, for a Navigator, You come up with that, or your programmers?"
 
@@ -370,11 +394,21 @@ label scene1:
     p "Ah, that's great! I had to skip breakfast."
 
     "The Navigator smiled."
-
+    
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -1.0
+        linear 3.9 xpos 0.0 ypos -0.1
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 3.9 xpos 0.0 ypos 0.1
+    with dissolve
+    
     "After the meal, I went ahead and took a short nap."
-
+    
     "Snuggled into the cabin chair, I slept lightly, but well. I didn't dream of anything, but I didn't want to either."
-
+    
+    scene black
+    with dissolve
     stop music
 
     "After some time asleep, however, I was awakened with a start."
@@ -382,6 +416,15 @@ label scene1:
     b "Sir!"
 
     b "Passenger-sir, please come to the cockpit!"
+    
+    scene cabin
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 0.5 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 0.5  xpos 0.0 ypos 1.0
+    with dissolve
 
     "I bolt upright, startled. Something must have gone wrong."
 

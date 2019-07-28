@@ -1,4 +1,6 @@
 label scene5p1:
+    
+    scene black
 
     play music "music/Ambivalence.ogg"
 
@@ -15,21 +17,45 @@ label scene5p1:
     "So for much of the time, I just felt tired."
 
     scene cockpit2 with fade
+    
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -1.0
+        linear 3.9 xpos 0.0 ypos -0.1
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 3.9 xpos 0.0 ypos 0.1
+    with dissolve
+        
+    pause
 
     "I was sleeping, having nodded off in the co-pilot's chair, when..."
+    
+    pause
 
-    scene white with dissolve
-    scene cockpit2
-    scene hours with fade
+    show white behind blink1:
+        alpha 1.0
+        linear 1.0 alpha 1.0
+        linear 4.0 alpha 0.0
+        
+    show hours behind white
+    
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 1.0 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 1.0 xpos 0.0 ypos 1.0
+    with dissolve
+    
 
     b "THE TIME IS NOW 1200 HOURS!"
 
     p "...Mmn!"
 
+    "I stirred in my seat."
+    
     scene cockpit2 with fade
     show bud smile
-
-    "I stirred in my seat."
 
     "At least I, er, knew what time it was."
 
@@ -87,7 +113,10 @@ label scene5p1:
 
     "Budapest turned to her display to... what was she bringing up?"
 
-    scene black with dissolve
+    scene sleepingpassenger
+    show wakingstatic:
+        alpha 0.5
+    with dissolve
 
     p "What."
 
@@ -96,6 +125,8 @@ label scene5p1:
     "When did she even capture it, anyway? How'd she capture it?"
 
     "... Why did she capture it?"
+    
+    scene black
 
     "I spun in my seat, towards one of Budapest's cameras, and glared right into it."
 
@@ -127,22 +158,26 @@ label scene5p1:
     show bud smile
 
     "She had a point. Still, I wasn't ready to concede. Not yet."
+    
 
     p "Well, you're an artificial intelligence, right? Can't you just, like, turn off your audio receptors, or something? Don't think it'd bother you then."
 
-    show bud neutralsmalltalk
+    show bud neutralsmalltalk at Position (xalign = 0.5, yalign = 1.0) with MoveTransition(0.2)
+    show bud neutralsmalltalk at Position (xalign = 0.5, yalign = 1.2) with MoveTransition(0.2)
 
     b "... I could..."
 
     p "Kind of creepy to record all that, in any case. Not gonna lie."
 
-    show bud shock
+    show bud shock at Position  (xalign = 0.5, yalign = 1.4) with MoveTransition(0.2)
 
     p "I thought you said you didn't watch me sleep?"
 
-    show bud blush
+    show bud blush at Position  (xalign = 0.5, yalign = 1.6) with MoveTransition(0.2)
 
     b "I-I-I don't! Not at all! It's for-"
+    
+    show bud blush at Position  (xalign = 0.5, yalign = 1.8) with MoveTransition(0.2)
 
     b "S-s-security!"
 
@@ -152,11 +187,11 @@ label scene5p1:
 
     "She was getting so embarrassingly squirmy, so visibly flustered; I laughed in her face."
 
-    show bud shock
+    show bud shock at Position  (xalign = 0.5, yalign = 1.6) with MoveTransition(0.2)
 
     p "Alright, alright. Fine! I get it. I'll try to get some more sleep."
 
-    show bud weaksmile
+    show bud weaksmile at Position (xalign = 0.5, yalign = 1.0) with MoveTransition(0.2)
 
     "That seemed to satisfy her. A small, warm smile crept across her face."
 
@@ -240,7 +275,7 @@ label scene5p1:
 
     p "..."
 
-    scene budasmile1
+    scene budastareout
     with dissolve
 
     "The dreamy look in her eyes was dissonant. She stared out the front of the cockpit. How long had she been staring out into the stars like that?"
@@ -365,7 +400,11 @@ label scene5p1:
     show bud neutraltalk
 
     b "Budapest was a union of three cities. The two cities of Buda and Óbuda were on the hilly western side of the Danube River; the city of Pest on the flat eastern side."
-
+    
+    show budapestcity1 with dissolve:
+        alpha 0.0
+        linear 5.0 alpha 0.7
+    
     b "They were connected via bridges, and... oh, my!"
 
     p "What is it?"
@@ -376,18 +415,30 @@ label scene5p1:
 
     "I squinted to read the caption beneath it."
 
-    show bud neutraltalk
+    show bud neutraltalk at Position (xalign = -0.5, yalign = 1.0) with MoveTransition(0.5)
+
+    show budapestcity1 behind bud
+        
+    show bud neutraltalk at Position (xalign = 0.1, yalign = 1.0) with MoveTransition(0.5)
 
     p "Budapest's Parliament Building. Its grounds extend across 18,000 square meters, mm... What? Forty kilos of gold?"
+    
+    show budapestcity2 behind bud with dissolve:
+        alpha 0.0
+        linear 5.0 alpha 0.7
 
     b "They decorated the rooms with gold. I don't think you'd be able to find any left over, though."
 
     p "Nah, guess not. Damn."
 
-    show bud neutralsmalltalk
+    show bud neutralsmalltalk at Position (xalign = 0.5, yalign = 1.0) with MoveTransition(0.5)
 
     b "Hehe... according to this, Budapest was remarkably artistic and cultured... oh, look at this!"
-
+    
+    show budapestcity3 behind bud with dissolve:
+        alpha 0.0
+        linear 5.0 alpha 0.7
+        
     "She brought up the image of another building. An Opera House, the caption said. It already looked ancient by the time the photograph was taken... odds were that it was nothing but dust in this day and age."
 
     "I grimaced."
@@ -507,11 +558,18 @@ label scene5p1:
     show bud smiletalkclosed
 
     "And right then and there, Budapest and I had something of a contract. This was a way of getting through the day, and it wasn't necessarily a disagreeable one."
-
+    show london behind bud with dissolve:
+        alpha 0.9
     "What I wasn't counting on was how much sheer data she'd flip through in a single day."
+    
+    show athens behind bud with dissolve:
+        alpha 0.9
 
     "She didn't stop at Hungary. We ended up taking a whirlwind tour through the rest of mainland Europe. Berlin, Bucharest, Vienna, Florence, Bruges, the list went on and on."
-
+    
+    show abbotsford behind bud with dissolve:
+        alpha 0.9
+        
     "She was feverish, insatiable in her search for knowledge. It was an information overload."
 
     "Damn it, she was enamored by a COOKBOOK now!"
@@ -544,7 +602,13 @@ label scene5p1:
 
     b "S-sleep well!"
 
-    scene black
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -1.0
+        linear 3.9 xpos 0.0 ypos -0.1
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 3.9 xpos 0.0 ypos 0.1
+    with dissolve
 
     "And so, I closed my eyes and rubbed against the fabric of the co-pilot's seat."
 

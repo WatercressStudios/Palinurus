@@ -51,33 +51,64 @@ label scene3:
 
     "My eyes shot open as the cockpit rumbled back to life. The cloak of darkness was cut to ribbons by the various displays stuttering back to life."
 
+    show redlight at Position (xalign = 0.5, yalign = 1.7):
+        alpha 0.0 zoom 0.7
+        linear 1.0 alpha 1.0 zoom 1.0
+        linear 1.0 alpha 0.0 zoom 0.7
+        repeat
+
     "A flashing red light, planted to the control board, indicated that something was amiss."
 
     "Don’t worry, flashing light, I noticed."
+    
+    show rebootscreens at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.4
 
     "The operating system booted up before my eyes, green code buzzing across a hovering black screen faster than my human eyes could hope to process."
+    
+    show osb 1 at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.6
 
     '"npvhash=4895"'
+    
+    show osb 2
 
     '"hi mem tramps at 0xffe00000"'
+    
+    show osb 3
 
     '"PRE enabled"'
+    
+    show osb 4
 
     '"enabling database access"'
+    
+    show osb 5
 
     '"Metis Kernel v.12.5.0: mon jun 1 00:12:00 IST 2567; copyright APPLESOFT:xnu-14932/1"'
+    
+    show osb 6
 
     '"standard timeslicing quantum is 10000 us"'
+    
+    show osb 7
 
     '"vm_page_bootstrap: 56.2035T free pages and 84.3821T wired pages"'
+    
+    show osb 8
 
     '"mig_table_max_disp1 == 95"'
+    
+    show osb 9
 
     "Did this... mean the ship was coming back online? I didn't know what was going on..."
+    
+    show spotlight with dissolve
 
     scene white with dissolve
     scene cockpit1
-    show bud excitedclosed with dissolve
+    show bud excitedclosed 
+    with dissolve
 
     "Suddenly, a flash of white light."
 
@@ -103,11 +134,23 @@ label scene3:
 
     b "Ah, er, the stabilizing subsystems have to be recalibrated, the emergency thrusters, remain seated, we'll be undergoing a little turbulence until-"
 
+    show redlight at Position (xalign = 0.5, yalign = -1.2):
+        alpha 0.0 zoom 0.7
+        linear 0.5 alpha 1.0 zoom 1.0
+        linear 0.5 alpha 0.0 zoom 0.7
+        repeat
     show bud panic
+    with hpunch
 
     "Before the AI could provide me with an estimate, the cockpit lurched forward."
 
     p "Ack!"
+    
+    show redscreens at Position (xalign = 0.5, yalign = 0.5):
+        alpha 0.4 zoom 0.7
+        linear 0.5 alpha 1.0
+        linear 0.5 alpha 0.4
+        repeat
 
     hide bud
 
@@ -117,6 +160,12 @@ label scene3:
 
     scene cockpitside
     show console worrylook
+    show redlight at Position (xalign = 1.3, yalign = -0.2):
+        alpha 0.0 zoom 0.7
+        linear 0.5 alpha 1.0 zoom 1.0
+        linear 0.5 alpha 0.0 zoom 0.7
+        repeat
+    with Fade(0.25, 1.0, 0.25, color='#FF0000')
 
     b "Just one moment!"
 
@@ -137,8 +186,8 @@ label scene3:
     show console warning
 
     p "Mm... hey... there's no need to sho-"
-
-    show console warningangryshout
+    
+    show console warningangryshout with vpunch
 
     b "I'M NOT SHOUTING!"
 
@@ -169,12 +218,24 @@ label scene3:
     "Maybe this was just some sort of scenario... the Personal Navigators had never been programmed for?"
 
     "'Ping!'"
+    
+    hide redlight with dissolve
+    show greenlight at Position (xalign = 1.3, yalign = -0.2):
+        alpha 0.0 zoom 0.7
+        linear 0.5 alpha 1.0 zoom 1.0
+        linear 0.5 alpha 0.0 zoom 0.7
+        repeat
 
     "Another chime rang out. The obnoxious red light turned green."
+    
+
 
     "... Did she pull it off?"
 
     scene cockpit1
+    show greenlight at Position (xalign = 0.5, yalign = -0.9):
+        alpha 1.0
+        linear 2.0 alpha 0.0
     with dissolve
 
     "I felt the g-forces previously pinning my body to my seat ebb away, until finally I found I could move comfortably."
@@ -198,12 +259,18 @@ label scene3:
     "As I cracked my neck, I found myself face-to-face with the program at the helm."
 
     "There was something... different in her eyes now. I couldn't quite tell what it was, it was abstract, almost..."
+    
+    show emotionaleyes at center:
+        alpha 1.0
+        linear 2.0 alpha 0.0
 
     "Emotional."
 
     show bud neutral
 
     "...The girl was staring at me."
+    
+    hide emotionaleyes
 
     p "... Oh."
 

@@ -2,7 +2,7 @@ label blue_pearl:
     
     play music "music/Colorless Aura.mp3" loop
 
-    $ renpy.movie_cutscene("vfx/Intro.mpg")
+    #$ renpy.movie_cutscene("vfx/Intro.mpg")
     
     scene space with dissolve
 

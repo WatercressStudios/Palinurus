@@ -1,11 +1,9 @@
 label scene5p3:
-
+    scene black with Dissolve(5.0)
     stop music
-
-    "I wonder how long I slept this time."
-
-    scene cockpit2 with dissolve
     play music "music/Beautiful Dreamer.mp3"
+    show estars
+    "I wonder how long I slept this time."
 
     "That was the first thought that popped into my head as I parted my eyelids to an expanse of stars that might as well have been the same ones I fell asleep counting."
 
@@ -18,11 +16,28 @@ label scene5p3:
     "I straightened up in my chair and opened my eyes to see her facing the wind-shield, her back turned towards me; she was singing an old familiar melody, one I must have heard dozens of times as a kid, in movies and cartoons."
 
     "Her voice gave it a grace that I never knew it could have."
-
-    scene sing1 with fade
-
+    scene sing1
+    show glare:
+        alpha 0.3
+        linear 3.0 alpha 0.1
+        linear 3.0 alpha 0.3
+        repeat
+    show spotlight at center:
+        alpha 0.1
+        linear 3.0 alpha 0.5
+        linear 3.0 alpha 0.1
+        repeat
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 1.0 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 1.0 xpos 0.0 ypos 1.0
+    
+    
     b "Beautiful dreamer, wake unto me,"
-
+    
+    
     b "Starlight and dewdrops are waiting for thee;"
 
     b "Sounds of the rude world, heard in the day,"
@@ -71,8 +86,11 @@ label scene5p3:
 
     b "Beautiful dreamer, awake unto me!"
 
-    scene cockpit2 with fade # CG2 END
-    show bud peacefulsmile with dissolve
+    scene cockpit2 # CG2 END
+    show bud peacefulsmile
+    show glare:
+        alpha 0.2
+    with dissolve
 
     "She finished her performance with a contented sigh and opened her eyes."
 
@@ -85,6 +103,7 @@ label scene5p3:
     b "Ah?! Passenger-sir, you were awake?!"
 
     show bud blushsurprise
+    hide glare with dissolve
 
     "Her face blushed crimson red, which elicited a chuckle from me."
 
@@ -160,7 +179,12 @@ label scene5p3:
 
     p "Well, I suppose you won’t be needing my company, then…"
 
-    scene black with dissolve
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -1.0
+        linear 1.0 xpos 0.0 ypos -0.1
+    show blink2:
+        xpos 0.0 ypos 1.0
+        linear 1.0 xpos 0.0 ypos 0.1
     with dissolve
 
     "With a teasing look, I settled back into the co-pilot’s seat and closed my eyes."
@@ -175,6 +199,13 @@ label scene5p3:
 
     scene cockpit2
     show bud angryfrown
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.1
+        linear 1.0 xpos 0.0 ypos -0.7
+    show blink2:
+        xpos 0.0 ypos 0.1
+        linear 1.0 xpos 0.0 ypos 0.7
+    with dissolve
 
     p "... To catch Budapest pouting angrily at me."
 
@@ -184,11 +215,21 @@ label scene5p3:
 
     p "Oh I’m not, am I?"
 
+    show blink1:                                                                   ##Blink/ Eyes drooping VFX
+        xpos 0.0 ypos -0.7
+        linear 1.0 xpos 0.0 ypos -1.0
+    show blink2:
+        xpos 0.0 ypos 0.7
+        linear 1.0 xpos 0.0 ypos 1.0
+    with dissolve
+
     show bud angryclosedx
 
     "She shook her head emphatically."
 
     show bud angryyellclosedx
+    hide blink1
+    hide blink2
 
     b "I do get bored when you’re asleep; or, to be more accurate, I…"
 
