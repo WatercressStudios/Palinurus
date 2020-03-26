@@ -1,7 +1,7 @@
 label scene5p3:
     scene black with Dissolve(5.0)
     stop music
-    play music "music/Beautiful Dreamer.mp3"
+    play music "music/Beautiful-Dreamer.ogg"
     show estars
     "I wonder how long I slept this time."
 

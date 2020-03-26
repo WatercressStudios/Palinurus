@@ -1,6 +1,6 @@
 label scene6:
 
-    play music "music/glasscockpit.mp3"
+    play music "music/glasscockpit.ogg"
     scene white with dissolve
     scene black with dissolve
 
