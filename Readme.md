@@ -1,4 +1,4 @@
-# Palinurus 2.4 #
+# Palinurus 2.6 #
 Our Entry for NaNoReNo 2015 Visual Novel Jam
 
 *"A drifting traveler boards a one-man space shuttle destined for Alpha Centauri. This shuttle is piloted by Budapest, an artificial intelligence program designed to serve humanity. She is a hardworking, diligent program, just a little naïve to the ways of the universe, and intensely dedicated to her directive."*
