@@ -1,6 +1,6 @@
 label blue_pearl:
     
-    play music "music/Colorless Aura.mp3" loop
+    play music "music/Colorless-Aura.ogg" loop
 
     #$ renpy.movie_cutscene("vfx/Intro.mpg")
     
@@ -198,8 +198,6 @@ label blue_pearl:
     stop music fadeout 1.0
 
     scene black with Dissolve(1.0)
-
-    $ renpy.movie_cutscene("vfx/Outro.mpg")
 
     scene black 
     with Pause(1)

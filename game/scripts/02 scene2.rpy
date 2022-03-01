@@ -1,6 +1,6 @@
 label scene2:
 
-    play music "music/meteorstorm.mp3"
+    play music "music/meteorstorm.ogg"
 
     p "A debris storm...?"
 

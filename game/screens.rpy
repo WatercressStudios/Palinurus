@@ -209,7 +209,7 @@ screen main_menu_bonus():
         
         textbutton _("Start") action Start() 
         textbutton _("Load") action ShowMenu("load") 
-        textbutton _("Bonus Scenes") action ShowMenu("bonus") 
+        textbutton _("Bonus Scene") action ShowMenu("bonus") 
         textbutton _("CG Gallery") action ShowMenu("cg_gallery") 
         textbutton _("Art Gallery") action ShowMenu("art_gallery") 
         textbutton _("Preferences") action ShowMenu("preferences") 
@@ -242,7 +242,7 @@ screen main_menu_normies():
 
         textbutton _("Start") action Start() text_size 40
         textbutton _("Load") action ShowMenu("load") text_size 40
-        textbutton _("Bonus Scenes") action ShowMenu("bonus") text_size 40
+        # textbutton _("Bonus Scene") action ShowMenu("bonus") text_size 40
         textbutton _("CG Gallery") action ShowMenu("cg_gallery") text_size 40
         textbutton _("Preferences") action ShowMenu("preferences") text_size 40
         textbutton _("Credits") action Start("credits") text_size 40
