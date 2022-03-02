@@ -1,4 +1,4 @@
-# Palinurus 2.6 #
+# Palinurus 2.7 #
 Our Entry for NaNoReNo 2015 Visual Novel Jam
 
 *"A drifting traveler boards a one-man space shuttle destined for Alpha Centauri. This shuttle is piloted by Budapest, an artificial intelligence program designed to serve humanity. She is a hardworking, diligent program, just a little naïve to the ways of the universe, and intensely dedicated to her directive."*
@@ -11,8 +11,9 @@ Our Entry for NaNoReNo 2015 Visual Novel Jam
 * Check the README.html
 * Run the correct distribution for your operating system.
 
-
 Check the Releases tab for releases.
+
+Developers: please build with [Ren'Py 6.99.14.3 "A funny thing happened."](https://www.renpy.org/release/6.99.14.3).
 
 Check LICENSE.md for licensing information.
 
