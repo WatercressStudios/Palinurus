@@ -8,26 +8,25 @@
 ## appropriate.
 
 init -1 python hide:
+    ## This controls the title of the window, when Ren'Py is
+    ## running in a window.
+    config.window_title = u"Palinurus: Anniversary Edition"
+    ## These control the name and version of the game, that are reported
+    ## with tracebacks and other debugging logs.
+    config.name = "Palinurus"
+    config.version = "2.7"
 
     ## Should we enable the use of developer tools? This should be
     ## set to False before the game is released, so the user can't
     ## cheat using developer tools.
 
-    config.developer = True             ##Change back to False when not editing game.
+    config.developer = False             ##Change back to False when not editing game.
 
     ## These control the width and height of the screen.
 
     config.screen_width = 1280
     config.screen_height = 720
-    ## This controls the title of the window, when Ren'Py is
-    ## running in a window.
 
-    config.window_title = u"Palinurus: Anniversary Edition"
-
-    ## These control the name and version of the game, that are reported
-    ## with tracebacks and other debugging logs.
-    config.name = "Palinurus"
-    config.version = "2.3"
 
     config.rollback_enabled = True      ##Change back to False when not editing game.
 
@@ -303,7 +302,10 @@ init python:
     ## The name that's used for directories and archive files. For example, if
     ## this is 'mygame-1.0', the windows distribution will be in the
     ## directory 'mygame-1.0-win', in the 'mygame-1.0-win.zip' file.
-    build.directory_name = "Palinurus-2.1"
+    build.directory_name = config.name+"-"+config.version
+    if config.developer:
+        # No more excuses
+        build.directory_name += "-DEV"
 
     ## The name that's uses for executables - the program that users will run
     ## to start the game. For example, if this is 'mygame', then on Windows,
